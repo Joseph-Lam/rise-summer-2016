@@ -20,6 +20,8 @@ get_header(); ?>
 			
 			<p> HELLO TERRA</p>
 
+			<p> Cats are fun, dogs are kinda smelly </p>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
