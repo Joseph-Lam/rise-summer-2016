@@ -10,3 +10,27 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin flexify($justify, $align-items) {
+	justify-content: $justify;
+	align-items: $align-items;
+}
+
+@mixin button($bg, $font-color) {
+	background-color: $bg;
+	color: $font-color;
+	height: 50px;
+	width: 200px;
+	border-radius: 10px;
+	@include desktop {
+		&:hover {
+			background: darken($bg,8%);
+		}
+	}
+}
