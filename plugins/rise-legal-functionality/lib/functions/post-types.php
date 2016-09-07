@@ -6,7 +6,7 @@
  */
 
 // Register Custom Services Post Type
-function rise_legal_register_services_offered() {
+function rise_legal_register_services_cpt() {
 
 	$labels = array(
 		'name'                  => 'Services',
@@ -38,7 +38,7 @@ function rise_legal_register_services_offered() {
 	$args = array(
 		'label'                 => 'Service',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -57,4 +57,4 @@ function rise_legal_register_services_offered() {
 	register_post_type( 'services', $args );
 
 }
-add_action( 'init', 'rise_legal_register_services_offered', 0 );
+add_action( 'init', 'rise_legal_register_services_cpt', 0 );
