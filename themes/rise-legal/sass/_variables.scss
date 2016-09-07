@@ -42,7 +42,7 @@ $font_header: 'raleway';
 $font_link: 'montserrat';
 
 
-//size
+//font size
 
 $font_size_base_mobile: 18px;
 $font_size_base_desktop: 20px;
@@ -60,3 +60,8 @@ $font_size_header2_desktop: $font_size_header2 * 1.5;
 $font_size_about: 1.75rem;
 $font_size_link_desktop: 0.9rem;
 $font_size_body_note_desktop: 0.9rem;
+
+//Layout
+$base_spacing: 0.5rem; 
+$base_spacing_large: $base_spacing * 3;
+$base_spacing_extra_large: $base_spacing * 5;
