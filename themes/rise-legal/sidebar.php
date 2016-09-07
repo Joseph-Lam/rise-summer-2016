@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.s
  *
- * @package RED_Starter_Theme
+ * @package Rise_Legal_theme
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

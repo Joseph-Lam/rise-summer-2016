@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Rise_Legal_theme
  */
 
 get_header(); ?>
