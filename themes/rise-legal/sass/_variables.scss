@@ -25,8 +25,6 @@ $color_body_: #4A4A4A;
 $color_bar_green: #7EB266;
 
 
-
-
 //Screen Size
 $mobile_width: 600px;
 $desktop_width: 1240px;
@@ -43,3 +41,22 @@ $font__line-height-pre: 1.6;
 $font_header: 'raleway';
 $font_link: 'montserrat';
 
+
+//size
+
+$font_size_base_mobile: 18px;
+$font_size_base_desktop: 20px;
+
+$font_size_header1: 1.222rem;
+$font_size_subtitle: 1rem;
+$font_size_header2: 1rem;
+$font_size_link: 1rem;
+$font_size_body_note: 0.889rem;
+$font_size_button: 1rem;
+$font_size_alphabet: 1.222rem;
+
+$font_size_header1_desktop: $font_size_header1 * 2;
+$font_size_header2_desktop: $font_size_header2 * 1.5;
+$font_size_about: 1.75rem;
+$font_size_link_desktop: 0.9rem;
+$font_size_body_note_desktop: 0.9rem;
