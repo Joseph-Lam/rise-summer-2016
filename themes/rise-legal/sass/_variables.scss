@@ -19,6 +19,19 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+$color_header_blue: #155E89;
+$color_link_red: #A44F52;
+$color_body_: #4A4A4A;
+$color_bar_green: #7EB266;
+
+
+
+
+//Screen Size
+$mobile_width: 600px;
+$desktop_width: 1240px;
+
+
 // Typography
 
 $font__main: sans-serif;
@@ -26,3 +39,7 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+$font_header: 'raleway';
+$font_link: 'montserrat';
+
