@@ -58,3 +58,57 @@ function rise_legal_register_services_cpt() {
 
 }
 add_action( 'init', 'rise_legal_register_services_cpt', 0 );
+
+// Register Resources Custom Post Type
+function rise_legal_register_resources_cpt() {
+
+	$labels = array(
+		'name'                  => 'Resources',
+		'singular_name'         => 'Resource',
+		'menu_name'             => 'Resources',
+		'name_admin_bar'        => 'Resources',
+		'archives'              => 'Resources Archives',
+		'parent_item_colon'     => 'Resource Item:',
+		'all_items'             => 'All Resources',
+		'add_new_item'          => 'Add New Resource',
+		'add_new'               => 'Add New Resource',
+		'new_item'              => 'New Resource',
+		'edit_item'             => 'Edit Resource',
+		'update_item'           => 'Update Resources',
+		'view_item'             => 'View Resource',
+		'search_items'          => 'Search Resource',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into resource',
+		'uploaded_to_this_item' => 'Uploaded to this resource',
+		'items_list'            => 'Resource list',
+		'items_list_navigation' => 'Resources list navigation',
+		'filter_items_list'     => 'Filter resources list',
+	);
+	$args = array(
+		'label'                 => 'Resource',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-book-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'resources', $args );
+
+}
+add_action( 'init', 'rise_legal_register_resources_cpt', 0 );
