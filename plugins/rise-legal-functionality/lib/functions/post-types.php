@@ -112,3 +112,59 @@ function rise_legal_register_resources_cpt() {
 
 }
 add_action( 'init', 'rise_legal_register_resources_cpt', 0 );
+
+
+
+// Register People Custom Post Type
+function rise_legal_register_our_people_cpt() {
+
+	$labels = array(
+		'name'                  => 'People',
+		'singular_name'         => 'Person',
+		'menu_name'             => 'Our People',
+		'name_admin_bar'        => 'Our People',
+		'archives'              => 'People Archives',
+		'parent_item_colon'     => 'Person Item:',
+		'all_items'             => 'All People',
+		'add_new_item'          => 'Add New Person',
+		'add_new'               => 'Add New Person',
+		'new_item'              => 'New Person',
+		'edit_item'             => 'Edit Person',
+		'update_item'           => 'Update People',
+		'view_item'             => 'View Person',
+		'search_items'          => 'Search People',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into person',
+		'uploaded_to_this_item' => 'Uploaded to this person',
+		'items_list'            => 'People list',
+		'items_list_navigation' => 'People list navigation',
+		'filter_items_list'     => 'Filter people list',
+	);
+	$args = array(
+		'label'                 => 'Person',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-universal-access-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'our_people', $args );
+
+}
+add_action( 'init', 'rise_legal_register_our_people_cpt', 0 );
