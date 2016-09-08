@@ -743,3 +743,14 @@ object {
   background-color: #155E89;
   color: white;
   padding: 1.5rem; }
+
+.donate-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  text-align: center; }

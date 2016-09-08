@@ -19,7 +19,7 @@
 }
 
 
-//Contact Process Styles
+//Contact Process Section Styles
 .contact-process{
 	@include flexify(center, center);
 	flex-flow: column;
@@ -41,5 +41,9 @@
 	color: white;
 	padding: $base_spacing_large;
 }
-
+.donate-content{
+	@include flexify(center, center);
+	flex-flow: column;
+	text-align: center;
+}
 

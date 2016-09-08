@@ -38,9 +38,11 @@
 
 		<section class="donate">
 			<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
-			<button>
-				Why Donate?
-			</button>
+			<div class="donate-content">
+				<button>
+					Why Donate?
+				</button>
+			</div>
 		</section>
 		
 		<?php
