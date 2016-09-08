@@ -688,6 +688,14 @@ object {
 .container {
   margin: 0 auto; }
 
+.flex-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .front-banner {
   color: white;
   display: -ms-flexbox;
@@ -731,13 +739,9 @@ object {
     text-align: center;
     padding: 0.5rem; }
 
-.flex-center {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+.contact-content {
+  -ms-flex-flow: column;
+      flex-flow: column; }
 
 .title-banner {
   -ms-flex-flow: column;

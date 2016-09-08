@@ -6,6 +6,10 @@
 .container{
 	margin: 0 auto;
 }
+.flex-center{
+	@include flexify(center, center);
+}
+//Homepage Banner styles
 .front-banner{
 	color: white;
 	@include flexify(center, center);
@@ -32,8 +36,8 @@
 		padding: $base_spacing;
 	}
 }
-.flex-center{
-	@include flexify(center, center);
+.contact-content{
+	flex-flow: column;
 }
 //Title Banner Styles
 .title-banner{

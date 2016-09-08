@@ -21,19 +21,21 @@
 
 	<div class="entry-content">
 
-		<section>
-			<h2> Contact Process</h2>
+		<section class="">
+			<h2 class="flex-center"> Contact Process</h2>
 		<!-- This function gets the contact process icons -->
 			<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
-			<p> 
-				We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month') ?> 
-			</p>
-			<button>
-				Legal Contact Form
-			</button>
-			<button>
-				Who We Can Help
-			</button>
+			<div class="contact-content flex-center">
+				<p> 
+					We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month') ?> 
+				</p>
+				<button>
+					Legal Contact Form
+				</button>
+				<button>
+					Who We Can Help
+				</button>
+			</div>
 		</section>
 
 		<section class="donate">
