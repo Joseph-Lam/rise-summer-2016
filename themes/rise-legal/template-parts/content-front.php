@@ -14,7 +14,16 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<section>
+
+		<!-- This function gets the contact process icons -->
+			<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
+			<p> 
+				We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month') ?> 
+			</p>
+		</section>
 		
+
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
