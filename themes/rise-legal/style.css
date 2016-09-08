@@ -685,10 +685,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-
-.menu {
-  width: 100px; }
-
 .container {
   margin: 0 auto; }
 
@@ -764,3 +760,29 @@ object {
       flex-flow: column;
   text-align: center; }
 
+.menu {
+  width: 100px; }
+
+.menu-wrap {
+  position: fixed;
+  right: 0; }
+
+.hamburger {
+  text-transform: uppercase; }
+
+.site-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background-image: url("../../assets/backgrounds/mobile-header.png");
+  height: 160px;
+  width: 100%;
+  position: fixed;
+  background-size: cover; }
+
+.site-branding a img {
+  width: 600px;
+  padding: 1.5rem; }

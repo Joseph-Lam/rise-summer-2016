@@ -28,13 +28,15 @@
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
+				<a href="<?php echo home_url()?>"><img src="<?php echo get_template_directory_uri() . '/assets/logos/rise-logo-white.svg' ?>" alt="home-page-icon"></a>
+
 				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="menu-wrap">
-					<button class="hamburger">&#9776;</button>
+					<button class="hamburger">&#9776;menu</button>
   					<button class="cross">&#735;</button>
 				</div>
 				

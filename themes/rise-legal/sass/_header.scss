@@ -1,7 +1,3 @@
-.menu {
-  width: 100px;
-}
-
 // .hamburger{
 //   background:none;
 //   position:absolute;
@@ -33,3 +29,35 @@
 //   outline:none;
 //   z-index:100;
 // }
+
+.menu {
+  width: 100px;
+}
+
+.menu-wrap {
+  position: fixed;
+  right: 0;
+}
+
+.hamburger {
+  text-transform: uppercase;
+}
+
+
+.site-header {
+  @include flexify(space-between, center);
+  background-image: url('../../assets/backgrounds/mobile-header.png');
+  height: 160px;
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+}
+
+.site-branding {
+  a {
+    img{
+      width: 600px;
+      padding: $base_spacing_large;
+      }
+    }
+}
