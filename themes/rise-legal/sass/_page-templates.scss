@@ -3,3 +3,8 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.front-banner{
+	color: white;
+	@include flexify(center, center);
+}

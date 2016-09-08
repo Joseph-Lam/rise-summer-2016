@@ -9,8 +9,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="front-banner">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<?php the_content(); ?>
+		<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
+		<div class="banner-content">
+			<?php the_content(); ?>
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

@@ -685,3 +685,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-banner {
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
