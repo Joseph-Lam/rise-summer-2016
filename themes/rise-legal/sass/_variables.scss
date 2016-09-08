@@ -21,11 +21,12 @@ $color__link-hover: midnightblue;
 
 $color_header_blue: #155E89;
 $color_link_red: #A44F52;
-$color_body_: #4A4A4A;
+$color_body: #4A4A4A;
 $color_bar_green: #7EB266;
 
 
 //Screen Size
+
 $desktop_width: 800px;
 
 
@@ -43,8 +44,8 @@ $font_link: 'montserrat';
 
 //font size
 
-$font_size_base_mobile: 18px;
-$font_size_base_desktop: 20px;
+$font_basesize: 18px;
+$font_basesize_desktop: 20px;
 
 $font_size_header1: 1.222rem;
 $font_size_subtitle: 1rem;

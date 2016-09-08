@@ -4,7 +4,10 @@
 
 html {
 	box-sizing: border-box;
-	@include font-size(1);
+	font-size: $font_basesize;
+	@include desktop {
+		font-size: $font_basesize_desktop;
+	}
 }
 
 *,
@@ -33,23 +36,23 @@ hr {
 	margin-bottom: $base__space-unit;
 }
 
-ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
-}
+// ul, ol {
+// 	margin: 0 0 $base__space-unit ($base__space-unit * 2);
+// }
 
-ul {
-	list-style: disc;
-}
+// ul {
+// 	list-style: disc;
+// }
 
-ol {
-	list-style: decimal;
-}
+// ol {
+// 	list-style: decimal;
+// }
 
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: $base__space-unit;
-}
+// li > ul,
+// li > ol {
+// 	margin-bottom: 0;
+// 	margin-left: $base__space-unit;
+// }
 
 dt {
 	font-weight: bold;

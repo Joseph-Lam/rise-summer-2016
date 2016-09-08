@@ -7,10 +7,13 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main;
+	color: $color_body;
 	font-family: $font__main;
-	@include font-size(1);
+	font-size: $font_basesize;
 	line-height: $font__line-height-body;
+	@include desktop {
+		font-size: $font_basesize_desktop;
+	}
 }
 
 /* Headings */
