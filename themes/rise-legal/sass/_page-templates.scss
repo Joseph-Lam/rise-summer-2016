@@ -3,8 +3,17 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-
+.container{
+	margin: 0 auto;
+}
 .front-banner{
 	color: white;
 	@include flexify(center, center);
+	
+}
+.banner-content{
+	width: 800px;
+	text-align: center;
+	@include flexify(center, center);
+	flex-flow: column;
 }

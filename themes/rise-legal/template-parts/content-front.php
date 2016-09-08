@@ -9,9 +9,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="front-banner">
-		<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
-		<div class="banner-content">
+		
+		<div class="banner-content container">
+			<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
 			<?php the_content(); ?>
+			<button>
+				Learn More
+			</button>
 		</div>
 	</header><!-- .entry-header -->
 

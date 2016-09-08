@@ -685,6 +685,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.container {
+  margin: 0 auto; }
+
 .front-banner {
   color: white;
   display: -ms-flexbox;
@@ -693,3 +696,15 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+
+.banner-content {
+  width: 800px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column; }
