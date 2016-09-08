@@ -708,3 +708,25 @@ object {
       align-items: center;
   -ms-flex-flow: column;
       flex-flow: column; }
+
+.contact-process {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column; }
+
+.contact-process-content {
+  width: 33.333rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .contact-process-content p {
+    text-align: center;
+    padding: 0.5rem; }

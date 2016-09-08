@@ -17,3 +17,18 @@
 	@include flexify(center, center);
 	flex-flow: column;
 }
+
+
+//Contact Process Styles
+.contact-process{
+	@include flexify(center, center);
+	flex-flow: column;
+}
+.contact-process-content{
+	width: 33.333rem;
+	@include flexify(space-between, center);
+	p{
+		text-align: center;
+		padding: $base_spacing;
+	}
+}
