@@ -38,7 +38,7 @@ function rise_legal_banner_image_styles() {
                         width: 100vw;
                         height: 100vh;
                         background: 
-                            linear-gradient( to bottom, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
+                            linear-gradient( to bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)),
                             url({$banner_image});
                         background-size: cover;
                     }";

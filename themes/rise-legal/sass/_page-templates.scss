@@ -11,7 +11,7 @@
 }
 //Homepage Banner styles
 .front-banner{
-	color: white;
+	color: $color_header_blue;
 	@include flexify(center, center);
 	
 }
