@@ -3,7 +3,9 @@
 		<h2>How to Donate</h2>		
 </div>
 <div class="donate-content">
-	<?php echo CFS()->get('how_to_donate') ?>
+	<p>
+		<?php echo CFS()->get('how_to_donate') ?>
+	</p>
 	<button>
 		Donate
 	</button>

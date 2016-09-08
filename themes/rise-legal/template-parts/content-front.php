@@ -20,6 +20,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+
 		<section>
 			<h2> Contact Process</h2>
 		<!-- This function gets the contact process icons -->
@@ -34,6 +35,7 @@
 				Who We Can Help
 			</button>
 		</section>
+
 		<section class="donate">
 			<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
 			<button>
@@ -41,7 +43,6 @@
 			</button>
 		</section>
 		
-
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
@@ -49,4 +50,6 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+
+
 </article><!-- #post-## -->

@@ -35,8 +35,11 @@
 
 //Title Banner Styles
 .title-banner{
+	@include flexify(center, center);
+	flex-flow: column;
 	background-color: $color_header_blue;
 	color: white;
+	padding: $base_spacing_large;
 }
 
 

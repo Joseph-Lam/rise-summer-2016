@@ -732,5 +732,14 @@ object {
     padding: 0.5rem; }
 
 .title-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
   background-color: #155E89;
-  color: white; }
+  color: white;
+  padding: 1.5rem; }
