@@ -1,6 +1,7 @@
 <?php
 /**
  * The template for displaying the front page.
+ * Teamplate Name: Home Page
  *
  * @package Rise_Legal_theme
  */
