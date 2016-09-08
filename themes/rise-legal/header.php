@@ -15,10 +15,11 @@
 
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 	<script type="text/javascript"
    src="<?php bloginfo("template_url"); ?>/build/js/hamburger-menu.min.js"></script>
-
+	
 </head>
 
 <body <?php body_class(); ?>>
@@ -32,23 +33,14 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
 				<div class="menu-wrap">
 					<button class="hamburger">&#9776;</button>
   					<button class="cross">&#735;</button>
-
-					<div class="menu">
-						<ul>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Resources</a></li>
-							<li><a href="#">Students</a></li>
-							<li><a href="#">Donate</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>			
-					</div>
 				</div>
+
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+				
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
