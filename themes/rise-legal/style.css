@@ -685,5 +685,82 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+
 .menu {
   width: 100px; }
+
+.container {
+  margin: 0 auto; }
+
+.flex-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.front-banner {
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.banner-content {
+  width: 800px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column; }
+
+.contact-process {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column; }
+
+.contact-process-content {
+  width: 33.333rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .contact-process-content p {
+    text-align: center;
+    padding: 0.5rem; }
+
+.contact-process-image {
+  padding: 1.5rem; }
+
+.contact-process {
+  -ms-flex-flow: column;
+      flex-flow: column; }
+
+.title-banner {
+  -ms-flex-flow: column;
+      flex-flow: column;
+  color: white;
+  padding: 1.5rem; }
+
+.donate-banner {
+  background-color: #155E89; }
+
+.donate-content {
+  -ms-flex-flow: column;
+      flex-flow: column;
+  text-align: center; }
+

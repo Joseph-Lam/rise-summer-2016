@@ -3,3 +3,58 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.container{
+	margin: 0 auto;
+}
+.flex-center{
+	@include flexify(center, center);
+}
+//Homepage Banner styles
+.front-banner{
+	color: white;
+	@include flexify(center, center);
+	
+}
+.banner-content{
+	width: 800px;
+	text-align: center;
+	@include flexify(center, center);
+	flex-flow: column;
+}
+
+
+//Contact Process Section Styles
+.contact-process{
+	@include flexify(center, center);
+	flex-flow: column;
+}
+.contact-process-content{
+	width: 33.333rem;
+	@include flexify(space-between, center);
+	p{
+		text-align: center;
+		padding: $base_spacing;
+	}
+}
+.contact-process-image{
+	padding: $base_spacing_large;
+}
+
+.contact-process{
+	flex-flow: column;
+}
+//Title Banner Styles
+.title-banner{
+	flex-flow: column;
+	color: white;
+	padding: $base_spacing_large;
+
+}
+.donate-banner{
+	background-color: $color_header_blue;
+}
+.donate-content{
+	flex-flow: column;
+	text-align: center;
+}
+
