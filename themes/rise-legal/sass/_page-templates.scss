@@ -32,17 +32,20 @@
 		padding: $base_spacing;
 	}
 }
-
+.flex-center{
+	@include flexify(center, center);
+}
 //Title Banner Styles
 .title-banner{
-	@include flexify(center, center);
 	flex-flow: column;
-	background-color: $color_header_blue;
 	color: white;
 	padding: $base_spacing_large;
+
+}
+.donate-banner{
+	background-color: $color_header_blue;
 }
 .donate-content{
-	@include flexify(center, center);
 	flex-flow: column;
 	text-align: center;
 }
