@@ -9,11 +9,14 @@
 .footer-content {
 	@include flexify(center, center);
 	flex-direction: column;
+	padding: 20px 0;
 }
 
 .contact-info {
 	p {
 		text-align: center;
+		margin: 0;
+		padding: 0;
 		a {
 			color: white;
 		}
@@ -21,12 +24,14 @@
 }
 
 .rise-location {
+	padding: 0;
 	p {
 		color: white;
 		text-align: center;
+		margin: 0;
 		i {
-			@include flexify(center, center);
-			font-size: 30px;
+			font-size: 40px;
+			margin-bottom: 5px;
 		}
 	}
 }
@@ -34,6 +39,9 @@
 .footer-media {
 	color: white;
 	text-align: center;
+	h3 {
+		padding: 0;
+	}
 	i {
 		color: white;
 		font-size: 30px;

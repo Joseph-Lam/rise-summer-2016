@@ -783,28 +783,31 @@ object {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  padding: 20px 0; }
 
 .contact-info p {
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding: 0; }
   .contact-info p a {
     color: white; }
 
-.rise-location p {
-  color: white;
-  text-align: center; }
-  .rise-location p i {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    font-size: 30px; }
+.rise-location {
+  padding: 0; }
+  .rise-location p {
+    color: white;
+    text-align: center;
+    margin: 0; }
+    .rise-location p i {
+      font-size: 40px;
+      margin-bottom: 5px; }
 
 .footer-media {
   color: white;
   text-align: center; }
+  .footer-media h3 {
+    padding: 0; }
   .footer-media i {
     color: white;
     font-size: 30px;
