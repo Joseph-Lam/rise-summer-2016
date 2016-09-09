@@ -43,6 +43,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/********* Structure **********/
+/********* Colours **********/
+/********* Typography **********/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -274,7 +277,7 @@ input,
 select,
 textarea {
   color: #4A4A4A;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.5; }
   @media (min-width: 800px) {
@@ -291,43 +294,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
   margin: 0 1.5em; }
-
-address {
-  margin: 0 0 1.5em; }
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em; }
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem; }
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help; }
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none; }
-
-big {
-  font-size: 125%; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -346,25 +319,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: white;
   /* Fallback for when there is no custom background color defined. */ }
-
-blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
-
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5em 1.5em; }
 
 img {
   height: auto;
@@ -372,9 +328,10 @@ img {
   max-width: 100%;
   /* Adhere to container width. */ }
 
-table {
-  margin: 0 0 1.5em;
-  width: 100%; }
+blockquote, q {
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
 
 /*--------------------------------------------------------------
 # Forms

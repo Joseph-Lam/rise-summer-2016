@@ -11,7 +11,7 @@
 }
 //Homepage Banner styles
 .front-banner{
-	color: $color_header_blue;
+	color: $color_brand_blue;
 	@include flexify(center, center);
 	
 }
@@ -51,7 +51,7 @@
 
 }
 .donate-banner{
-	background-color: $color_header_blue;
+	background-color: $color_brand_blue;
 }
 .donate-content{
 	flex-flow: column;
