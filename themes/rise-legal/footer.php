@@ -10,6 +10,7 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer footer-content" role="contentinfo">
+<div class="footer-left-container">
 	<div class="contact-info">	
 		<p>
 			<i class="fa fa-phone" aria-hidden="true" style="color: white"></i>
@@ -23,9 +24,11 @@
 	<div class="rise-location">
 		<p>
 			<img src="<?php echo get_template_directory_uri() . "/assets/icons/icon-locationpoint-white.svg"?>">
-			<span></br>#201-456 West Broadway </br> Vancouver, BC V57 1R3</span>
+			<span>#201-456 West Broadway </br> Vancouver, BC V57 1R3</span>
 		</p>
 	</div>
+</div>
+
 	<div class="footer-media">
 		<h3>
 			Connect with us

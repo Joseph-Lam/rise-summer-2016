@@ -785,11 +785,30 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 20px 0; }
+  @media (min-width: 50rem) {
+    .footer-content {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      padding: 20px; } }
+
+@media (min-width: 50rem) {
+  .footer-left-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: inherit;
+        justify-content: inherit;
+    -ms-flex-align: center;
+        align-items: center; } }
 
 .contact-info p {
   text-align: center;
   margin: 0;
   padding: 0; }
+  @media (min-width: 50rem) {
+    .contact-info p {
+      text-align: left; } }
   .contact-info p a {
     color: white; }
   .contact-info p i {
@@ -799,17 +818,35 @@ object {
   padding: 0; }
   .rise-location p {
     color: white;
-    text-align: center;
-    margin: 0; }
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: inherit;
+        align-items: inherit;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .rise-location p img {
+      margin: 5px 0; }
+    .rise-location p span {
+      text-align: center; }
     .rise-location p i {
       font-size: 40px;
       margin-bottom: 5px; }
+    @media (min-width: 50rem) {
+      .rise-location p {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 
 .footer-media {
   color: white;
   text-align: center; }
   .footer-media h3 {
     padding: 0; }
+    @media (min-width: 50rem) {
+      .footer-media h3 {
+        font-size: 2rem; } }
   .footer-media i {
     color: white;
     font-size: 30px;
