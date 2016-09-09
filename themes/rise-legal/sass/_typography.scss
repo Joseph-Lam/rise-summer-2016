@@ -9,10 +9,10 @@ select,
 textarea {
 	color: $color_medium_grey;
 	font-family: $font_stack_body;
-	font-size: $font_basesize;
+	font-size: $font_body_size;
 	line-height: $font__line-height-body;
 	@include desktop {
-		font-size: $font_basesize_desktop;
+		font-size: $font_body_size_desktop;
 	}
 }
 

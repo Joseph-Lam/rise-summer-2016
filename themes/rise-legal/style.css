@@ -278,7 +278,7 @@ select,
 textarea {
   color: #4A4A4A;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.6rem;
   line-height: 1.5; }
   @media (min-width: 800px) {
     body,
@@ -286,7 +286,7 @@ textarea {
     input,
     select,
     textarea {
-      font-size: 20px; } }
+      font-size: 2rem; } }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -307,10 +307,7 @@ blockquote {
 --------------------------------------------------------------*/
 html {
   box-sizing: border-box;
-  font-size: 18px; }
-  @media (min-width: 800px) {
-    html {
-      font-size: 20px; } }
+  font-size: 62.5%; }
 
 *,
 *:before,

@@ -4,10 +4,8 @@
 
 html {
 	box-sizing: border-box;
-	font-size: $font_basesize;
-	@include desktop {
-		font-size: $font_basesize_desktop;
-	}
+	//this percentage makes base size to 10px and makes rem calculation so much easier
+	font-size: 62.5%;
 }
 
 *,

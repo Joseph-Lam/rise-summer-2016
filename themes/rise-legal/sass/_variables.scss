@@ -7,6 +7,10 @@ $base_spacing: 0.5rem;
 $base_spacing_large: $base_spacing * 3;
 $base_spacing_extra_large: $base_spacing * 5;
 
+//Screen Size
+
+$desktop_width: 800px;
+
 /********* Colours **********/
 
 //Rise Brand Colours
@@ -25,9 +29,6 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
-//Screen Size
-
-$desktop_width: 800px;
 
 
 /********* Typography **********/
@@ -39,23 +40,29 @@ $font_stack_body: 'Montserrat', sans-serif;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-//font size
+//Font Sizing
 
-$font_basesize: 18px;
-$font_basesize_desktop: 20px;
+//mobile sizes
+$h1_size: 2.2rem;
+$h2_size: 1.8rem;
+$h3_size: 1.6rem;
+$font_body_size: 1.6rem;
 
-$font_size_h1: 1.222rem;
-$font_size_subtitle: 1rem;
-$font_size_h2: 1rem;
-$font_size_link: 1rem;
-$font_size_body_note: 0.889rem;
-$font_size_button: 1rem;
-$font_size_alphabet: 1.222rem;
+//desktop sizes
+$h1_size_desktop: 4.8rem;
+$h2_size_desktop: 3rem;
+$h3_size_desktop: 2.4rem;
+$font_body_size_desktop: 2rem;
 
-$font_size_h1_desktop: $font_size_h1 * 2;
-$font_size_h2_desktop: $font_size_h2 * 1.5;
-$font_size_about: 1.75rem;
-$font_size_link_desktop: 0.9rem;
-$font_size_body_note_desktop: 0.9rem;
+//Not sure if we'll need the below, will come back too
+// $font_size_subtitle: 1rem;
+// $font_size_link: 1rem;
+// $font_size_body_note: 0.889rem;
+// $font_size_button: 1rem;
+// $font_size_alphabet: 1.222rem;
+
+// $font_size_about: 1.75rem;
+// $font_size_link_desktop: 0.9rem;
+// $font_size_body_note_desktop: 0.9rem;
 
 
