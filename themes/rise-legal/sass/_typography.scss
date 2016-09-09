@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 body,
-button,
 input,
 select,
 textarea {
@@ -18,9 +17,10 @@ textarea {
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
 	font-family: $font_stack_header;
-	clear: both;
+	font-weight: bold;
+	padding: $base_spacing_large 0;
 }
 h1 {
 	font-size: $h1_size;
@@ -45,6 +45,7 @@ h3 {
 
 p {
 	margin-bottom: $base_spacing_large;
+	padding: $base_spacing;
 }
 
 dfn, cite, em, i {
