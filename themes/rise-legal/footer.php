@@ -22,7 +22,7 @@
 	</div>
 	<div class="rise-location">
 		<p>
-			<i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i>
+			<img src="<?php echo get_template_directory_uri() . "/assets/icons/icon-locationpoint-white.svg"?>">
 			<span></br>#201-456 West Broadway </br> Vancouver, BC V57 1R3</span>
 		</p>
 	</div>
