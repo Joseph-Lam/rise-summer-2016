@@ -19,9 +19,27 @@ textarea {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: $font_stack_header;
 	clear: both;
 }
-
+h1 {
+	font-size: $h1_size;
+	@include desktop {
+		font-size: $h1_size_desktop;
+	}
+}
+h2 {
+	font-size: $h2_size;
+	@include desktop {
+		font-size: $h2_size_desktop;
+	}
+}
+h3 {
+	font-size: $h2_size;
+	@include desktop {
+		font-size: $h2_size_desktop;
+	}
+}
 
 /* Copy */
 
