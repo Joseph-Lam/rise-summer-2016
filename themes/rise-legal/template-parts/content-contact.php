@@ -14,11 +14,18 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
+	<!-- 	<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 				'after'  => '</div>',
 			) );
 		?>
+		 -->
+		<?php echo CFS()->get( 'transit_information' ); ?>
+		<?php echo CFS()->get( 'parking_information' ); ?>	
+		<?php echo CFS()->get( 'wait_list_information' ); ?>
+
+
+
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
