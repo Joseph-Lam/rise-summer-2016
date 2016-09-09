@@ -48,6 +48,11 @@ p {
 	padding: $base_spacing;
 }
 
+a {
+	font-family: $font_stack_body;
+	text-decoration: none;
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }

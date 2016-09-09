@@ -4,7 +4,6 @@
 	background-position: center;
 	width: 100%;
 	height: 100%;
-	font-family: $font_header, $font__main;
 }
 
 .footer-content {
@@ -16,7 +15,6 @@
 	p {
 		text-align: center;
 		a {
-			text-decoration: none;
 			color: white;
 		}
 	}
@@ -25,7 +23,6 @@
 .rise-location {
 	p {
 		color: white;
-		font-family: $font_header, $font__main;
 		text-align: center;
 		i {
 			@include flexify(center, center);
@@ -35,16 +32,15 @@
 }
 
 .footer-media {
-	p {
-		i {
-			text-decoration: none;
-			color: white;
-			font-size: 30px;
-			border: 1px solid white;
-			border-radius: 50%;
-			padding: 10px;
-			width: 50px;
-			text-align: center;
-		}
+	color: white;
+	text-align: center;
+	i {
+		color: white;
+		font-size: 30px;
+		border: 1px solid white;
+		border-radius: 50%;
+		padding: 10px;
+		width: 50px;
+		text-align: center;
 	}
 }
