@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying contact page.
  * Template Name: Contact Page
  * @package Rise_Legal_theme
  */
@@ -12,7 +12,8 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part( 'template-parts/content', 'contact' ); ?>
+
 
 			<?php endwhile; // End of the loop. ?>
 
