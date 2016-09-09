@@ -223,34 +223,6 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
-
-body {
-  background: white;
-  /* Fallback for when there is no custom background color defined. */ }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
-blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
-
-/*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
@@ -328,6 +300,34 @@ dfn, cite, em, i {
 
 blockquote {
   margin: 0 1.5em; }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+body {
+  background: white;
+  /* Fallback for when there is no custom background color defined. */ }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+blockquote, q {
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -489,8 +489,7 @@ a {
     clip: auto !important;
     color: #21759b;
     display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
     font-weight: bold;
     height: auto;
     left: 5px;
