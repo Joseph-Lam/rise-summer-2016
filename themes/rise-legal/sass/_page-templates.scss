@@ -16,7 +16,7 @@
 	
 }
 .banner-content{
-	width: 800px;
+	width: 80rem;
 	text-align: center;
 	@include flexify(center, center);
 	flex-flow: column;
@@ -29,7 +29,7 @@
 	flex-flow: column;
 }
 .contact-process-content{
-	width: 33.333rem;
+	width: 60rem;
 	@include flexify(space-between, center);
 	p{
 		text-align: center;
@@ -46,7 +46,7 @@
 //Title Banner Styles
 .title-banner{
 	flex-flow: column;
-	color: white;
+	color: $white;
 	padding: $base_spacing_large;
 
 }
