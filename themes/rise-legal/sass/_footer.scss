@@ -9,7 +9,7 @@
 
 .footer-content {
 	@include flexify(center, center);
-	
+	flex-direction: column;
 }
 
 .contact-info {

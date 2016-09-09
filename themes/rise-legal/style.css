@@ -762,10 +762,9 @@ object {
 
 .site-branding a img {
   width: 600px;
-<<<<<<< 55587e7aabd56de001be827848b61ad60651e1d3
+
   padding: 3rem; }
-=======
-  padding: 1.5rem; }
+
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");
@@ -782,4 +781,33 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
->>>>>>> added background and positioned content in footer
+
+.contact-info p {
+  text-align: center; }
+  .contact-info p a {
+    text-decoration: none;
+    color: white; }
+
+.rise-location p {
+  color: white;
+  font-family: "raleway", sans-serif;
+  text-align: center; }
+  .rise-location p i {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 30px; }
+
+.footer-media p i {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  text-align: center; }
+
