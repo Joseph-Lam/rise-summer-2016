@@ -255,15 +255,15 @@ th {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../montserrat/montserrat-light-webfont.eot");
-  src: url("../../montserrat/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../montserrat/montserrat-light-webfont.woff2") format("woff2"), url("../../montserrat/montserrat-light-webfont.woff") format("woff"), url("../../montserrat/montserrat-light-webfont.ttf") format("truetype"), url("../../montserrat/montserrat-light-webfont.svg#montserratlight") format("svg");
+  src: url("../../assets/fonts/montserrat/montserrat-light-webfont.eot");
+  src: url("../../assets/fonts/montserrat/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat/montserrat-light-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat/montserrat-light-webfont.woff") format("woff"), url("../../assets/fonts/montserrat/montserrat-light-webfont.ttf") format("truetype"), url("../../assets/fonts/montserrat/montserrat-light-webfont.svg#montserratlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../montserrat/montserrat-semibold-webfont.eot");
-  src: url("../../montserrat/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("../../montserrat/montserrat-semibold-webfont.woff") format("woff"), url("../../montserrat/montserrat-semibold-webfont.ttf") format("truetype"), url("../../montserrat/montserrat-semibold-webfont.svg#montserratsemibold") format("svg");
+  src: url("../../assets/fonts/montserrat/montserrat-semibold-webfont.eot");
+  src: url("../../assets/fonts/montserrat/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat/montserrat-semibold-webfont.woff") format("woff"), url("../../assets/fonts/montserrat/montserrat-semibold-webfont.ttf") format("truetype"), url("../../assets/fonts/montserrat/montserrat-semibold-webfont.svg#montserratsemibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
