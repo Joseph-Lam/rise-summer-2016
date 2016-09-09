@@ -792,6 +792,8 @@ object {
   padding: 0; }
   .contact-info p a {
     color: white; }
+  .contact-info p i {
+    font-size: 20px; }
 
 .rise-location {
   padding: 0; }
