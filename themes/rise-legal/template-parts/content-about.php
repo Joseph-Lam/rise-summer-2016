@@ -12,29 +12,44 @@
 		<!-- need to get taxonomy description if there is one -->
 		<ul class="our-staff">
 		<!-- need to loop through people posts tagged with the staff taxonomy -->
-			<li></li>
+			<?php 
+				$args = array(
+					'post_type' => 'our_people',
+					'posts_per_page' => -1,
+					'order' => 'DSC'
+				);
+				$about_page_people_posts = get_posts($args);
+			?>
+
+			<?php foreach($about_page_people_posts as $post) : setup_postdata( $post); ?>
+			<li>
+				<p><?php the_title();?>
+
+			</li>
+		<?php endforeach; wp_reset_postdata(); ?>
+
 		</ul>
 
 		<!-- Need to get our board taxonomy -->
 		<!-- need to get taxonomy description if there is one -->
-		<ul class="our-board">
+		<!-- <ul class="our-board"> -->
 		<!-- Need to loop through people posts tagged with the our board taxonomy and show -->
-			<li></li>
-		</ul>
+		<!-- 	<li></li>
+		</ul> -->
 
 		<!-- Need to get our partners taxonomy -->
 		<!-- need to get taxonomy description if there is one -->
-		<ul class="our-partners">
+		<!-- <ul class="our-partners"> -->
 		<!-- Need to loop through people posts tagged with the our partners taxonomy and show including styles for images-->
-			<li></li>
-		</ul>
+		<!-- 	<li></li>
+		</ul> -->
 
 		<!-- Need to get our students taxonomy -->
-		<!-- need to get taxonomy description if there is one -->
-		<ul class="our-students">
+
+		<!-- <ul class="our-students"> -->
 		<!-- Need to loop through people posts tagged with the our students taxonomy and show -->
-			<li></li>
-		</ul>
+		<!-- 	<li></li>
+		</ul> -->
 	</div>
 
 </section>
