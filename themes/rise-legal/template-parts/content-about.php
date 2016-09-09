@@ -8,16 +8,31 @@
 	</div>
 	
 	<div>
+		<!-- Need to get our staff taxonomy -->
+		<!-- need to get taxonomy description if there is one -->
 		<ul class="our-staff">
+		<!-- need to loop through people posts tagged with the staff taxonomy -->
 			<li></li>
 		</ul>
+
+		<!-- Need to get our board taxonomy -->
+		<!-- need to get taxonomy description if there is one -->
 		<ul class="our-board">
+		<!-- Need to loop through people posts tagged with the our board taxonomy and show -->
 			<li></li>
 		</ul>
+
+		<!-- Need to get our partners taxonomy -->
+		<!-- need to get taxonomy description if there is one -->
 		<ul class="our-partners">
+		<!-- Need to loop through people posts tagged with the our partners taxonomy and show including styles for images-->
 			<li></li>
 		</ul>
+
+		<!-- Need to get our students taxonomy -->
+		<!-- need to get taxonomy description if there is one -->
 		<ul class="our-students">
+		<!-- Need to loop through people posts tagged with the our students taxonomy and show -->
 			<li></li>
 		</ul>
 	</div>
