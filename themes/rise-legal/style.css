@@ -762,4 +762,24 @@ object {
 
 .site-branding a img {
   width: 600px;
+<<<<<<< 55587e7aabd56de001be827848b61ad60651e1d3
   padding: 3rem; }
+=======
+  padding: 1.5rem; }
+
+.site-footer {
+  background-image: url("../../assets/backgrounds/desktop-footer.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  font-family: "raleway", sans-serif; }
+
+.footer-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+>>>>>>> added background and positioned content in footer

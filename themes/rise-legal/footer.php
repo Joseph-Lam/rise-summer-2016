@@ -7,16 +7,34 @@
 
 ?>
 
-			</div><!-- #content -->
+</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="footer-content">
+			<div class="contact-info">	
+				<p>
+					<i class="fa fa-phone" aria-hidden="true" style="color: white"></i>
+					<a href="778-456-7891">778-456-7891</a>
+				</p>
+				<p>
+					<i class="fa fa-envelope" aria-hidden="true" style="color: white"></i>
+					<a href="info@womenslegalcentre.ca">info@womenslegalcentre.ca</a>
+				</p>
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i>
+					<span><br>"#201-456 West Broadway" <br> "Vancouver, BC V57 1R3</span>
+				</p>
+				<p>
+					<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</p>
+			</div>	
+		</div>
+</footer>
 
-		<?php wp_footer(); ?>
+</div><!-- #page -->
 
-	</body>
+<?php wp_footer(); ?>
+
+</body>
 </html>
