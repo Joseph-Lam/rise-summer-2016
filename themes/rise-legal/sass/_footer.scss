@@ -40,6 +40,9 @@
 			font-size: 20px;
 		}
 	}
+	@include desktop {
+		margin: 0 10px;
+	}
 }
 
 .rise-location {
@@ -52,9 +55,15 @@
 
 		img {
 			margin: 5px 0;
+			@include desktop {
+				margin-right: 10px;
+			}
 		}
 		span {
 			text-align: center;
+			@include desktop {
+				text-align: left;
+			}
 		}
 		i {
 			font-size: 40px;
@@ -63,6 +72,9 @@
 		@include desktop {
 			flex-direction: row;
 		}
+	}
+	@include desktop {
+		margin: 0 10px;
 	}
 }
 
@@ -73,6 +85,7 @@
 		padding: 0;
 		@include desktop {
 			font-size: $h3_size;
+			margin: 5px 0;
 		}
 	}
 	i {
