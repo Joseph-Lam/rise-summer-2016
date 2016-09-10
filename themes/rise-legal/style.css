@@ -893,15 +893,15 @@ object {
   left: 0;
   background: rgba(255, 255, 255, 0.6);
   z-index: 99999;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 400ms ease-in;
   pointer-events: none; }
   .modalDialog div {
     width: 40em;
     position: relative;
+    padding: 5rem;
     border-radius: 5rem;
     background-color: #EBF0F3; }
-
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto; }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto; }

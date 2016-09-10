@@ -29,14 +29,15 @@
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li>
-					<button href="#openModal">
+					<a href="#openModal">
 						<?php the_title();?>	
-					</button>
+					</a>
 					
 					<div id="openModal" class="modalDialog">
 						<div>
 							<a href="#close" title="Close" class="close">X</a>
-
+							
+							<h3><?php the_title();?></h3>
 							<?php if ( has_post_thumbnail() ) : ?>
 								<div>
 									<?php the_post_thumbnail( 'original' ); ?>
