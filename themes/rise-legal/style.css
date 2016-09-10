@@ -744,6 +744,9 @@ object {
       flex-flow: column;
   text-align: center; }
 
+.entry-header {
+  padding-top: 75px; }
+
 .menu {
   width: 100px; }
 
