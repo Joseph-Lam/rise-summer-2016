@@ -590,6 +590,9 @@ a {
   clear: both;
   margin: 0 0 1.5em; }
 
+.site-content {
+  padding-top: 150px; }
+
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
