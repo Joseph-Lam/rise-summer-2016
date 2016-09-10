@@ -9,44 +9,41 @@
 	</div>
 	
 	<div>
-		<!-- Need to get our staff taxonomy -->
-		<!-- need to get taxonomy description if there is one -->
-
-
+		
 		<ul class="our-staff">
-			<!-- need to loop through people posts tagged with the staff taxonomy -->
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
 					'numberposts' => -1,
 					'order' => 'ASC',
-					// 'tax_query' => array(
-					// 	array(
-					// 		'taxonomy' => 'people_group',
-					// 		'field' => 'term_id',
-					// 		'terms' => 'our_staff',	
-					// 		),
-					// 	),
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'people_group',
+							'field' => 'slug',
+							'terms' => 'our-staff',	
+							),
+						),
 					);
-
 				$about_page_staff_posts = get_posts($args);
 				?>
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li>
 					<p><?php the_title();?></p>
-					<div>
-						<?php if ( has_post_thumbnail() ) : ?>
+
+					<?php if ( has_post_thumbnail() ) : ?>
+						<div>
+						
 							<?php the_post_thumbnail( 'original' ); ?>
-						<?php endif; ?>
-					</div>
+						</div>
+					<?php endif; ?>
 
 					<?php if( CFS()->get('position_title')):?>
 						<?php echo CFS()->get('position_title')?>
 					<?php endif; ?>
 
 					<?php if( CFS()->get('employed_at')):?>
-						<?php echo CFS()->get('employed_at')?>
+							<?php echo CFS()->get('employed_at')?>
 					<?php endif; ?>
 					
 					<p><?php echo CFS()->get('biography')?></p>
