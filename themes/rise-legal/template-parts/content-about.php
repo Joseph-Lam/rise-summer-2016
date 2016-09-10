@@ -16,40 +16,39 @@
 		<ul class="our-staff">
 			<!-- need to loop through people posts tagged with the staff taxonomy -->
 			<?php 
-				/* Add your taxonomy. */
-				// $args = array(
-				// 	'taxonomy' => 'people_group',
-				// 	'hide_empty' => true,
-				// 	); 
+				// $groups = array(
+				// 	'taxonomy' 		=> 'people-group', 
+				// 	'hide_empty' 	=> true,
+				// 	);
 
-				// $terms = get_terms( $args );
+				// $terms = get_terms( $groups );
 			?>
-
-			<?php //foreach ( $terms as $term ) : {
-				
+			<?php
 				$args = array(
 					'post_type' => 'our_people',
-					'showposts' => -1,
+					'numberposts' => -1,
 					'order' => 'DSC',
-					// 'people_group' => 'our_staff'
-					// 'tax_query' => array(
-					// 	array(
-					// 		'taxonomy' => 'people_group'
-					// 		'field' => 'term_id',
-					// 		'terms' = 'our_staff'	
-					// 		)
-					// 	)
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'people_group',
+							'field' => 'slug',
+							'terms' => 'our_staff',	
+							),
+						),
 					);
 
-				$about_page_people_posts = get_posts($args);
+				$about_page_staff_posts = get_posts($args);
 				?>
 
-				<?php foreach($about_page_people_posts as $post) : setup_postdata( $post); ?>
+				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li>
 					<p><?php the_title();?></p>
+					<div>
 					<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'original' ); ?>
 					<?php endif; ?>
+					</div>
+					<p><?php echo CFS()->get('position_title')?></p>
 				</li>
 			<?php endforeach; wp_reset_postdata(); ?>
 
