@@ -899,9 +899,21 @@ object {
   .modalDialog div {
     width: 40em;
     position: relative;
-    padding: 5rem;
-    border-radius: 5rem;
+    padding: 3rem;
     background-color: #EBF0F3; }
   .modalDialog:target {
     opacity: 1;
     pointer-events: auto; }
+
+.close {
+  background: #155E89;
+  color: white;
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  width: 4rem;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px; }
+  .close:hover {
+    background: #EBF0F3; }

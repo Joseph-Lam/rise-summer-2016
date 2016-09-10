@@ -18,8 +18,7 @@
 	div{
 		width: 40em;
 		position: relative;
-		padding: $base_spacing_extra_large;
-		border-radius: 5rem;
+		padding: $base_spacing_large;
 		background-color: $color_light_blue;
 	}
 	&:target{
@@ -31,17 +30,17 @@
 // .modalDialog:target {
 	
 // }
-// .close {
-// 	background: $color_brand_blue;
-// 	color: $white;
-// 	position: absolute;
-// 	right: 4rem;
-// 	top: 4rem;
-// 	width: 4rem;
-// 	font-weight: bold;
-// 	border-radius: 50%;
-// 	box-shadow: 1px 1px 1px;
-// 	&:hover{
-// 		background: $color_light_blue;
-// 	}
-// }
+.close {
+	background: $color_brand_blue;
+	color: $white;
+	position: absolute;
+	right: 4rem;
+	top: 4rem;
+	width: 4rem;
+	font-weight: bold;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px;
+	&:hover{
+		background: $color_light_blue;
+	}
+}

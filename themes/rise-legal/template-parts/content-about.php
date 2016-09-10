@@ -29,11 +29,11 @@
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li>
-					<a href="#openModal">
+					<a href="#<?php the_title();?>">
 						<?php the_title();?>	
 					</a>
 					
-					<div id="openModal" class="modalDialog">
+					<div id="<?php the_title();?>" class="modalDialog">
 						<div>
 							<a href="#close" title="Close" class="close">X</a>
 							
