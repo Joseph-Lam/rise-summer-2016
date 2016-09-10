@@ -15,26 +15,18 @@
 
 		<ul class="our-staff">
 			<!-- need to loop through people posts tagged with the staff taxonomy -->
-			<?php 
-				// $groups = array(
-				// 	'taxonomy' 		=> 'people-group', 
-				// 	'hide_empty' 	=> true,
-				// 	);
-
-				// $terms = get_terms( $groups );
-			?>
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
 					'numberposts' => -1,
-					'order' => 'DSC',
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'people_group',
-							'field' => 'slug',
-							'terms' => 'our_staff',	
-							),
-						),
+					'order' => 'ASC',
+					// 'tax_query' => array(
+					// 	array(
+					// 		'taxonomy' => 'people_group',
+					// 		'field' => 'term_id',
+					// 		'terms' => 'our_staff',	
+					// 		),
+					// 	),
 					);
 
 				$about_page_staff_posts = get_posts($args);
@@ -44,11 +36,20 @@
 				<li>
 					<p><?php the_title();?></p>
 					<div>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'original' ); ?>
-					<?php endif; ?>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'original' ); ?>
+						<?php endif; ?>
 					</div>
-					<p><?php echo CFS()->get('position_title')?></p>
+
+					<?php if( CFS()->get('position_title')):?>
+						<?php echo CFS()->get('position_title')?>
+					<?php endif; ?>
+
+					<?php if( CFS()->get('employed_at')):?>
+						<?php echo CFS()->get('employed_at')?>
+					<?php endif; ?>
+					
+					<p><?php echo CFS()->get('biography')?></p>
 				</li>
 			<?php endforeach; wp_reset_postdata(); ?>
 
