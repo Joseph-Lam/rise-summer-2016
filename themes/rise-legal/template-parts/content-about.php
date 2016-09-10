@@ -34,7 +34,7 @@
 					</button>
 					
 					<div id="open-modal" class="modal-dialog">
-						<div>
+						<div class="modal-content">
 							<a href="#close" title="Close" class="close">X</a>
 
 							<?php if ( has_post_thumbnail() ) : ?>
