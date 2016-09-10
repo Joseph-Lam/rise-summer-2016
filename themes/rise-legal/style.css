@@ -421,17 +421,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
 .main-navigation {
   clear: both;
@@ -906,14 +895,8 @@ object {
     pointer-events: auto; }
 
 .close {
-  background: #155E89;
-  color: white;
   position: absolute;
   right: 4rem;
-  top: 4rem;
-  width: 4rem;
-  font-weight: bold;
-  border-radius: 50%;
-  box-shadow: 1px 1px 1px; }
+  top: 4rem; }
   .close:hover {
     background: #EBF0F3; }

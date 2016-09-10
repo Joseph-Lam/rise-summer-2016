@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#filter-2);}
+	.st1{fill:#155E89;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="200%" id="filter-2" width="200%" x="-50%" y="-50%">
+	<feOffset  dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"></feGaussianBlur>
+	<feColorMatrix  in="shadowBlurOuter1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"></feColorMatrix>
+</filter>
+<title>Fill 79</title>
+<desc>Created with Sketch.</desc>
+<g id="Mobile">
+	<g id="_x30_.0-SandwichMenu" transform="translate(-190.000000, -18.000000)">
+		<g id="Fill-79">
+			<g class="st0">
+				<polygon class="st1" points="226.4,20 212,34.4 197.6,20 194,23.6 208.4,38 194,52.4 197.6,56 212,41.6 226.4,56 230,52.4 
+					215.6,38 230,23.6 				"/>
+			</g>
+			<g>
+				<polygon id="path-1_1_" class="st1" points="226.4,20 212,34.4 197.6,20 194,23.6 208.4,38 194,52.4 197.6,56 212,41.6 
+					226.4,56 230,52.4 215.6,38 230,23.6 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

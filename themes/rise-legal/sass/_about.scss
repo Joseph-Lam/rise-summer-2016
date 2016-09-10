@@ -27,19 +27,11 @@
 	}
 
 }
-// .modalDialog:target {
-	
-// }
+
 .close {
-	background: $color_brand_blue;
-	color: $white;
 	position: absolute;
 	right: 4rem;
 	top: 4rem;
-	width: 4rem;
-	font-weight: bold;
-	border-radius: 50%;
-	box-shadow: 1px 1px 1px;
 	&:hover{
 		background: $color_light_blue;
 	}
