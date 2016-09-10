@@ -341,6 +341,9 @@ body {
   background: white;
   /* Fallback for when there is no custom background color defined. */ }
 
+ul {
+  list-style: none; }
+
 p:empty {
   display: none; }
 
