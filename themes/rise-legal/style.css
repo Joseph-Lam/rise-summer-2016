@@ -872,3 +872,11 @@ object {
     padding: 10px;
     width: 50px;
     text-align: center; }
+
+.contact-container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center; }
+
+.responsive-map iframe {
+  width: 80%; }
