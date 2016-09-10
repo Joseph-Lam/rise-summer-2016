@@ -1,6 +1,6 @@
 <section class="about-content">
 	<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
-	<?php the_content(); ?>
+	<?php echo get_the_content(); ?>
 </section>
 
 <section class="our-people">
@@ -37,9 +37,9 @@
 						</div>
 					<?php endif; ?>
 			
-					<?php echo CFS()->get('position_title')?>
+					<p><?php echo CFS()->get('position_title')?></p>
 	
-					<?php echo CFS()->get('employed_at')?>
+					<p><?php echo CFS()->get('employed_at')?></p>
 				
 					<p><?php echo CFS()->get('biography')?></p>
 				</li>
