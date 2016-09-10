@@ -747,6 +747,10 @@ object {
 .entry-header {
   padding-top: 75px; }
 
+.entry-title {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
 .menu {
   width: 100px; }
 
