@@ -29,19 +29,33 @@
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li>
-					<h2><?php the_title();?></h2>
-
-					<?php if ( has_post_thumbnail() ) : ?>
+					<button href="#open-modal">
+						<?php the_title();?>	
+					</button>
+					
+					<div id="open-modal" class="modal-dialog">
 						<div>
-							<?php the_post_thumbnail( 'original' ); ?>
+							<a href="#close" title="Close" class="close">X</a>
+
+							<?php if ( has_post_thumbnail() ) : ?>
+								<div>
+									<?php the_post_thumbnail( 'original' ); ?>
+								</div>
+							<?php endif; ?>
+			
+							<p><?php echo CFS()->get('position_title')?></p>
+	
+							<p><?php echo CFS()->get('employed_at')?></p>
+				
+							<p><?php echo CFS()->get('biography')?></p>
+	
 						</div>
-					<?php endif; ?>
+					</div>
 			
 					<p><?php echo CFS()->get('position_title')?></p>
 	
 					<p><?php echo CFS()->get('employed_at')?></p>
-				
-					<p><?php echo CFS()->get('biography')?></p>
+
 				</li>
 			<?php endforeach; wp_reset_postdata(); ?>
 
