@@ -36,7 +36,6 @@
 					<div id="<?php the_title();?>" class="modalDialog">
 						<div>
 							<a href="#close" title="Close" class="close">
-								<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-exit-white.svg"?>">
 							</a>
 							
 							<h3><?php the_title();?></h3>

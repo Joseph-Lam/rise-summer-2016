@@ -29,10 +29,16 @@
 }
 
 .close {
+	width: 6rem;
+	height: 6rem;
+	background: url(../../assets/icons/icon-exit-white.svg) no-repeat;
+	background-position: center;
 	position: absolute;
 	right: 4rem;
 	top: 4rem;
+	transition: background 400ms linear ;
 	&:hover{
-		background: $color_light_blue;
+		background: url(../../assets/icons/icon-exit.svg) no-repeat;
+		background-position: center;
 	}
 }
