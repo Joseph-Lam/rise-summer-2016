@@ -17,6 +17,9 @@ html {
 body {
 	background: $white; /* Fallback for when there is no custom background color defined. */
 }
+p:empty {
+	display: none;
+}
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */

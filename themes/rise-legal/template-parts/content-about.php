@@ -1,6 +1,6 @@
 <section class="about-content">
 	<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
-	<?php echo get_the_content(); ?>
+	<?php the_content(); ?>
 </section>
 
 <section class="our-people">
@@ -29,7 +29,7 @@
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li>
-					<p><?php the_title();?></p>
+					<h2><?php the_title();?></h2>
 
 					<?php if ( has_post_thumbnail() ) : ?>
 						<div>
