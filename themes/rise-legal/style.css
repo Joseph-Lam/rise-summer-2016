@@ -885,5 +885,17 @@ object {
       flex-direction: column;
   text-align: center; }
 
-.responsive-map iframe {
-  width: 80%; }
+.contact-content p {
+  margin: 0;
+  padding: 0; }
+
+.contact-meta {
+  margin: 40px 0; }
+
+.responsive-map {
+  margin-bottom: 40px; }
+  .responsive-map iframe {
+    width: 100%; }
+    @media (min-width: 60rem) {
+      .responsive-map iframe {
+        width: 80%; } }

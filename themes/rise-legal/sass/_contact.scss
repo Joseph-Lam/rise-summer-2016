@@ -3,10 +3,25 @@
 	text-align: center;
 }
 
-.responsive-map {
-
-	iframe {
-		width: 80%;
+.contact-content {
+	p {
+		margin: 0;
+		padding: 0;
 	}
 }
 
+.contact-meta {
+	margin: 40px 0;
+}
+
+
+.responsive-map {
+	margin-bottom: 40px;
+	iframe {
+		width: 100%;
+		@include desktop {
+			width: 80%;
+		}
+	}
+
+}
