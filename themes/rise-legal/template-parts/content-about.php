@@ -65,56 +65,84 @@
 	</div>
 
 	<ul class="our-board">
-			<?php
-				$args = array(
-					'post_type' => 'our_people',
-					'numberposts' => -1,
-					'order' => 'ASC',
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'people_group',
-							'field' => 'slug',
-							'terms' => 'our-board',	
-							),
+		<?php
+			$args = array(
+				'post_type' => 'our_people',
+				'numberposts' => -1,
+				'order' => 'ASC',
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'people_group',
+						'field' => 'slug',
+						'terms' => 'our-board',	
 						),
-					);
-				$about_page_board_posts = get_posts($args);
-				?>
+					),
+				);
+			$about_page_board_posts = get_posts($args);
+			?>
 
-				<?php foreach($about_page_board_posts as $post) : setup_postdata( $post); ?>
-				<li>
-					<a href="#<?php the_title();?>" class="modal-btn">
-						<?php the_title();?>	
-					</a>
-					
-					<div id="<?php the_title();?>" class="modalDialog">
-						<div>
-							<a href="#close" title="Close" class="close">
-							</a>
-							
-							<h3><?php the_title();?></h3>
-							<?php if ( has_post_thumbnail() ) : ?>
-								<div>
-									<?php the_post_thumbnail( 'original' ); ?>
-								</div>
-							<?php endif; ?>
-			
-							<p><?php echo CFS()->get('position_title')?></p>
+			<?php foreach($about_page_board_posts as $post) : setup_postdata( $post); ?>
+			<li>
+				<a href="#<?php the_title();?>" class="modal-btn">
+					<?php the_title();?>	
+				</a>
 				
-							<p><?php echo CFS()->get('biography')?></p>
-	
-						</div>
-					</div>
+				<div id="<?php the_title();?>" class="modalDialog">
+					<div>
+						<a href="#close" title="Close" class="close">
+						</a>
+						
+						<h3><?php the_title();?></h3>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<div>
+								<?php the_post_thumbnail( 'original' ); ?>
+							</div>
+						<?php endif; ?>
+		
+						<p><?php echo CFS()->get('position_title')?></p>
 			
-					<p><?php echo CFS()->get('position_title')?></p>
+						<p><?php echo CFS()->get('biography')?></p>
 
-				</li>
-			<?php endforeach; wp_reset_postdata(); ?>
+					</div>
+				</div>
+		
+				<p><?php echo CFS()->get('position_title')?></p>
+
+			</li>
+		<?php endforeach; wp_reset_postdata(); ?>
 	</ul>
 
-	<!-- <ul class="our-partners"> -->
-		<!-- 	<li></li>
-	</ul> -->
+	<ul class="our-partners">
+		<ul class="our-partners">
+		<?php
+			$args = array(
+				'post_type' => 'our_people',
+				'numberposts' => -1,
+				'order' => 'ASC',
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'people_group',
+						'field' => 'slug',
+						'terms' => 'our-partners',	
+						),
+					),
+				);
+			$about_page_partner_posts = get_posts($args);
+			?>
+
+			<?php foreach($about_page_partner_posts as $post) : setup_postdata( $post); ?>
+			<li>	
+				<?php if ( has_post_thumbnail() ) : ?>
+					<div>
+						<?php the_post_thumbnail( 'original' ); ?>
+					</div>
+				<?php endif; ?>
+
+				<p class="partner-copy"><?php echo CFS()->get('biography')?></p>
+
+			</li>
+		<?php endforeach; wp_reset_postdata(); ?>
+	</ul>
 
 	<!-- <ul class="our-students"> -->
 		<!-- 	<li></li>
