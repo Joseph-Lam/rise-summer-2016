@@ -71,7 +71,7 @@
 				?>
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
-				<li>
+				<li class="indvid-staff-member">
 					<a href="#<?php the_title();?>" class="modal-btn">
 						<?php the_title();?>	
 					</a>

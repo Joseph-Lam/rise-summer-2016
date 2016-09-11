@@ -86,8 +86,16 @@
 
 //Staff section styles
 .our-staff{
+	
 
 }
+.indvid-staff-member {
+	@include desktop {
+		flex: 50%;
+		margin-bottom: $base_spacing_extra_large;
+	}
+}
+
 //Board section styles
 .our-board{
 	@include desktop {
