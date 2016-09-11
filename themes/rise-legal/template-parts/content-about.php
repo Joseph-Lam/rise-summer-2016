@@ -6,10 +6,28 @@
 <section class="our-people">
 
 	<div class="title-banner donate-banner flex-center">
-		<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>">	
+		<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>" class="rise-about-logo">	
 	</div>
 	
 	<div>
+		<!-- STAFF HEADING -->
+		<?php 
+			$categories = array(
+				'taxonomy' => 'people_group',
+				'slug' => 'our-staff', 
+				'hide_empty' => true,
+				);
+
+			$terms = get_terms( $categories );
+			?>
+		<div class="group-title">	
+			<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-staff.svg"?>">
+			<?php foreach ( $terms as $term ) :  ?>
+				<h3><?php echo $term->name ?></h3>
+				<p><?php echo $term->description?><p>
+			<?php endforeach; ?>
+		</div>
+
 		<ul class="our-staff">
 			<?php
 				$args = array(
@@ -63,6 +81,24 @@
 
 		</ul>
 	</div>
+<!-- BOARD HEADING -->
+	<?php 
+		$categories = array(
+			'taxonomy' => 'people_group',
+			'slug' => 'our-board', 
+			'hide_empty' => true,
+			);
+
+		$terms = get_terms( $categories );
+		?>
+		
+	<div class="group-title">	
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-boardmembers.svg"?>">
+		<?php foreach ( $terms as $term ) :  ?>
+			<h3><?php echo $term->name ?></h3>
+			<p><?php echo $term->description?><p>
+		<?php endforeach; ?>
+	</div>
 
 	<ul class="our-board">
 		<?php
@@ -111,6 +147,25 @@
 			</li>
 		<?php endforeach; wp_reset_postdata(); ?>
 	</ul>
+	<!-- PARTNERS HEADING -->
+	<?php 
+		$categories = array(
+			'taxonomy' => 'people_group',
+			'slug' => 'our-partners', 
+			'hide_empty' => true,
+			);
+
+		$terms = get_terms( $categories );
+		?>
+		
+	<div class="group-title">	
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-partners.svg"?>">
+		<?php foreach ( $terms as $term ) :  ?>
+			<h3><?php echo $term->name ?></h3>
+			<p><?php echo $term->description?><p>
+		<?php endforeach; ?>
+	</div>
+
 
 	<ul class="our-partners">
 		<?php
@@ -144,6 +199,7 @@
 		<?php endforeach; wp_reset_postdata(); ?>
 	</ul>
 
+	<!-- STUDENTS HEADING -->
 	<?php 
 		$categories = array(
 			'taxonomy' => 'people_group',
@@ -154,10 +210,14 @@
 		$terms = get_terms( $categories );
 		?>
 		
-	<?php foreach ( $terms as $term ) :  ?>
-		<h3><?php echo $term->name ?></h3>
-		<p><?php echo $term->description?><p>
-	<?php endforeach; ?>
+	<div class="group-title">	
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-studentbuilding.svg"?>">
+		<?php foreach ( $terms as $term ) :  ?>
+			<h3><?php echo $term->name ?></h3>
+			<p><?php echo $term->description?><p>
+		<?php endforeach; ?>
+	</div>
+
 
 	<ul class="our-students">
 		<?php
