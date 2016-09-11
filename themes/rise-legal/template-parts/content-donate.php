@@ -83,9 +83,8 @@
 				<div class="donate-content flex-center">
 					<button>
 						Why Donate?
-						
 					</button>
-				</div>
+					</div>
 			</section>
 
 
