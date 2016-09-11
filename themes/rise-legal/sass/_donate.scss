@@ -1,6 +1,69 @@
+.donate-container {
+	flex-direction: column;
+	text-align: center;
+}
+
+.donate-content {
+	p {
+		margin: 10px;
+	}
+}
+
+.donate-legal-stat {
+	background-color: $color_brand_blue;
+	color: white;
+	padding: 60px 10%;
+	margin: 20px 0;
+}	
+
+.donate-criteria {
+
+}
+
+
 .donate-who-title {
-	background-color: black;
+	background-image: url('../../assets/images/mobile/donate-whodohelp-mobile.jpg');
+	padding: 30px;
+	margin: 20px 0;
 	h2 {
 		text-transform: capitalize;
+		margin: 0;
+		padding: 0;
+		color: white;
+	}
+}
+
+.donate-who-content {
+
+}
+
+.donate-how-title {
+	background-image: url('../../assets/images/mobile/donate-howwehelp-mobile.jpg');
+	padding: 30px;
+	margin: 20px 0;
+	h2 {
+		text-transform: capitalize;
+		margin: 0;
+		padding: 0;
+		color: white;
+	}
+}
+
+.donate-how-content {
+
+}
+
+.donate-justice-container {
+	display: flex;
+	flex-direction: column;
+	.donate-justice {
+		display: flex;
+		flex-direction: row;
+		.justice-number-container {
+			flex: 30%;
+		}
+		.donate-justice-meta {
+			flex: 70%;
+		}
 	}
 }
