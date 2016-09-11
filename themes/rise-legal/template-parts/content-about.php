@@ -113,7 +113,6 @@
 	</ul>
 
 	<ul class="our-partners">
-		<ul class="our-partners">
 		<?php
 			$args = array(
 				'post_type' => 'our_people',
@@ -131,9 +130,10 @@
 			?>
 
 			<?php foreach($about_page_partner_posts as $post) : setup_postdata( $post); ?>
-			<li>	
+			<li class="indvid-partner">
+
 				<?php if ( has_post_thumbnail() ) : ?>
-					<div>
+					<div class="partner-logo">
 						<?php the_post_thumbnail( 'original' ); ?>
 					</div>
 				<?php endif; ?>
