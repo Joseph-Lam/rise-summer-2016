@@ -50,16 +50,21 @@
 
 .group-title{
 	flex-direction: column;
+	padding-top: $base_spacing_large;
+	text-align: center;
+	h3{
+		color: $color_brand_blue;
+		margin-bottom: 0;
+	}
 	@include desktop {
 		display: none;
-
 	}
 }
 .our-staff,
 .our-board,
 .our-partners,
 .our-student{
-	padding: $base_spacing_extra_large 0;
+	// padding: $base_spacing_extra_large 0;
 }
 .our-staff,
 .our-board,
@@ -77,8 +82,17 @@
 }
 //Board section styles
 .our-board{
-
+	
 }
+.indvid-board-member{
+	margin-bottom: $base_spacing_large;
+
+	p{
+		margin-bottom: $base_spacing_large;
+		font-weight: bold;
+	}
+}
+
 //Partners section styles
 .our-partners{
 	@include flexify(center, flex-start);

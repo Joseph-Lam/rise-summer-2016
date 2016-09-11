@@ -49,7 +49,7 @@
 			<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-staff.svg"?>">
 			<?php foreach ( $terms as $term ) :  ?>
 				<h3><?php echo $term->name ?></h3>
-				<p><?php echo $term->description?><p>
+				<?php echo $term->description?>
 			<?php endforeach; ?>
 		</div>
 		<!-- Staff Listing -->
@@ -119,9 +119,10 @@
 		
 	<div class="group-title flex-center" >	
 		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-boardmembers.svg"?>">
+		
 		<?php foreach ( $terms as $term ) :  ?>
 			<h3><?php echo $term->name ?></h3>
-			<p><?php echo $term->description?><p>
+			<?php echo $term->description?>
 		<?php endforeach; ?>
 	</div>
 <!-- Board Listing -->
@@ -143,7 +144,10 @@
 			?>
 
 			<?php foreach($about_page_board_posts as $post) : setup_postdata( $post); ?>
-			<li>
+			<li class="indvid-board-member">
+
+				<p><?php echo CFS()->get('position_title')?></p>
+
 				<a href="#<?php the_title();?>" class="modal-btn">
 					<?php the_title();?>	
 				</a>
@@ -154,6 +158,7 @@
 						</a>
 						
 						<h3><?php the_title();?></h3>
+
 						<?php if ( has_post_thumbnail() ) : ?>
 							<div>
 								<?php the_post_thumbnail( 'original' ); ?>
@@ -166,8 +171,6 @@
 
 					</div>
 				</div>
-		
-				<p><?php echo CFS()->get('position_title')?></p>
 
 			</li>
 		<?php endforeach; wp_reset_postdata(); ?>
