@@ -260,9 +260,9 @@
 			?>
 			
 			<?php foreach($about_page_student_posts as $post) : setup_postdata( $post); ?>
-			<li>
-				<p class="studen-copy"><?php echo CFS()->get('biography')?></p>
-			</li>
+				<li class="student-copy">
+					<?php echo CFS()->get('biography')?>
+				</li>
 			<?php endforeach; wp_reset_postdata(); ?>
 			<button>
 				Learn More

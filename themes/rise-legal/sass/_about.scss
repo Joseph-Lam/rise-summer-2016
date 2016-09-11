@@ -67,3 +67,27 @@
 
 	}
 }
+//Staff section styles
+.our-staff{
+
+}
+//Board section styles
+.our-board{
+
+}
+//Partners section styles
+.our-partners{
+
+}
+//Student section styles
+.our-student{
+
+}
+.student-copy{
+	display:none;
+	@include desktop {
+		display: flex;
+	}
+}
+
+
