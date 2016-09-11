@@ -10,16 +10,27 @@
 		background-image: url(../../assets/images/desktop/about-banner-desktop.jpg);
 	}
 }
-//Show/hide the people group about nav
-.about-people {
-	display: none;
-	@include desktop {
-		@include flexify(center, center);
-	}
-}
-//show/hide the rise logo
+//LOGO ON BANNER STYLES
 .rise-about-logo {
+	padding: $base_spacing_extra_large $base_spacing_large;
 	@include desktop {
 		display: none;
+	}
+}
+//NAV  ON BANNER STYLES
+.about-people-nav {
+	display: none;
+	@include desktop {
+		width: 100vw;
+		@include flexify(space-around, center);
+		flex-flow: row nowrap;
+		text-align: center;
+		a{
+			color: $white;
+		}
+		img {
+			width: 10rem;
+			height: 10rem;
+		}
 	}
 }
