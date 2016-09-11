@@ -900,6 +900,17 @@ object {
       .responsive-map iframe {
         width: 80%; } }
 
+.get-directions {
+  background-color: white;
+  color: black;
+  height: 5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 10px black; }
+  @media (min-width: 60rem) {
+    .get-directions:hover {
+      background: black; } }
+
 .contact-notes {
   display: -ms-flexbox;
   display: flex;
@@ -909,4 +920,6 @@ object {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 25px 10%; }
+  margin: 40px 10%; }
+  .contact-notes img {
+    margin-bottom: 30px; }

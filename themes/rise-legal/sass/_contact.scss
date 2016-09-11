@@ -26,8 +26,15 @@
 
 }
 
+.get-directions {
+	@include white-button;
+}
+
 .contact-notes {
 	@include flexify(center, center);
 	flex-direction: column;
-	margin: 25px 10%;
+	margin: 40px 10%;
+	img {
+		margin-bottom: 30px;
+	}
 }
