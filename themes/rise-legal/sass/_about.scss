@@ -47,3 +47,23 @@
 		margin: 0;
 	}
 }
+
+.group-title{
+	flex-direction: column;
+	@include desktop {
+		display: none;
+
+	}
+}
+.our-staff,
+.our-board,
+.our-partners,
+.our-student{
+	flex-direction: column;
+	text-align: center;
+
+	@include desktop {
+		flex-direction: row;
+
+	}
+}

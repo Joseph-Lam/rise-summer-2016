@@ -45,15 +45,15 @@
 
 			$terms = get_terms( $categories );
 			?>
-		<div class="group-title" >	
+		<div class="group-title flex-center" >	
 			<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-staff.svg"?>">
 			<?php foreach ( $terms as $term ) :  ?>
 				<h3><?php echo $term->name ?></h3>
 				<p><?php echo $term->description?><p>
 			<?php endforeach; ?>
 		</div>
-
-		<ul class="our-staff" id="our-staff">
+		<!-- Staff Listing -->
+		<ul class="our-staff flex-center" id="our-staff">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -117,15 +117,15 @@
 		$terms = get_terms( $categories );
 		?>
 		
-	<div class="group-title" >	
+	<div class="group-title flex-center" >	
 		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-boardmembers.svg"?>">
 		<?php foreach ( $terms as $term ) :  ?>
 			<h3><?php echo $term->name ?></h3>
 			<p><?php echo $term->description?><p>
 		<?php endforeach; ?>
 	</div>
-
-	<ul class="our-board" id="our-board">
+<!-- Board Listing -->
+	<ul class="our-board flex-center" id="our-board">
 		<?php
 			$args = array(
 				'post_type' => 'our_people',
@@ -183,16 +183,15 @@
 		$terms = get_terms( $categories );
 		?>
 		
-	<div class="group-title">	
+	<div class="group-title flex-center">	
 		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-partners.svg"?>">
 		<?php foreach ( $terms as $term ) :  ?>
 			<h3><?php echo $term->name ?></h3>
 			<p><?php echo $term->description?><p>
 		<?php endforeach; ?>
 	</div>
-
-
-	<ul class="our-partners" id="our-partners">
+<!-- Partners listing -->
+	<ul class="our-partners flex-center" id="our-partners">
 		<?php
 			$args = array(
 				'post_type' => 'our_people',
@@ -235,16 +234,15 @@
 		$terms = get_terms( $categories );
 		?>
 		
-	<div class="group-title" >	
+	<div class="group-title flex-center" >	
 		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-studentbuilding.svg"?>">
 		<?php foreach ( $terms as $term ) :  ?>
 			<h3><?php echo $term->name ?></h3>
 			<p><?php echo $term->description?><p>
 		<?php endforeach; ?>
 	</div>
-
-
-	<ul class="our-students" id="our-student">
+<!-- Students listing -->
+	<ul class="our-students flex-center" id="our-student">
 		<?php
 			$args = array(
 				'post_type' => 'our_people',
