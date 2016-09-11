@@ -32,11 +32,38 @@
 
 	<div class="donate-who-title">
 		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-familyhelp.svg"?>">
+		<h2> who do we help </h2>
 	</div>
 
 	<div class="donate-who-content">
 		<?php echo CFS()->get( 'who_do_we_help' ); ?>
 	</div>
+
+	<div class="donate-how-title">
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand.svg"?>">
+		<h2> how we help </h2>
+	</div>
+
+	<div class="donate-how-content">
+		<?php echo CFS()->get( 'how_we_help_main_content' ); ?>
+	</div>
+		
+	<div class="donate-justice-1">
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
+		<?php echo CFS()->get( 'how_we_help_justice_1' ); ?>
+	</div>
+	
+	<div class="donate-justice-2">
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-2.svg"?>">
+		<?php echo CFS()->get( 'how_we_help_justice_2' ); ?>
+	</div>
+
+	<div class="donate-justice-3">
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-3.svg"?>">
+		<?php echo CFS()->get( 'how_we_help_justice_3' ); ?>
+	</div>
+
+
 
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
