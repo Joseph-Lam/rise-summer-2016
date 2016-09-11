@@ -25,3 +25,9 @@
 	}
 
 }
+
+.contact-notes {
+	@include flexify(center, center);
+	flex-direction: column;
+	margin: 25px 10%;
+}

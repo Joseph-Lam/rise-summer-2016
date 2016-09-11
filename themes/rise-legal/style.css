@@ -899,3 +899,14 @@ object {
     @media (min-width: 60rem) {
       .responsive-map iframe {
         width: 80%; } }
+
+.contact-notes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 25px 10%; }
