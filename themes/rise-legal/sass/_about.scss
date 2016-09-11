@@ -2,3 +2,24 @@
 # About Page Styles
 --------------------------------------------------------------*/
 
+.about-banner {
+	background-image: url(../../assets/images/mobile/about-banner-mobile.jpg);
+	background-position: center;
+	background-size: cover;
+	@include desktop {
+		background-image: url(../../assets/images/desktop/about-banner-desktop.jpg);
+	}
+}
+//Show/hide the people group about nav
+.about-people {
+	display: none;
+	@include desktop {
+		@include flexify(center, center);
+	}
+}
+//show/hide the rise logo
+.rise-about-logo {
+	@include desktop {
+		display: none;
+	}
+}

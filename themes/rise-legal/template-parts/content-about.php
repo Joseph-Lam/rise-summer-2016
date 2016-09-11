@@ -5,7 +5,7 @@
 
 <section class="our-people">
 
-	<div class="title-banner donate-banner flex-center">
+	<div class="title-banner about-banner flex-center">
 	<!-- display logo on mobile -->
 		<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>" class="rise-about-logo">	
 	<!-- display this nav on desktop -->
