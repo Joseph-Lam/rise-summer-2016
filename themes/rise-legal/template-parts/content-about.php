@@ -96,11 +96,11 @@
 	
 						</div>
 					</div>
-			
-					<p><?php echo CFS()->get('position_title')?></p>
-	
-					<p><?php echo CFS()->get('employed_at')?></p>
-
+					<div class="staff-info">
+						<p><?php echo CFS()->get('position_title')?></p>
+		
+						<p><?php echo CFS()->get('employed_at')?></p>
+					</div>
 				</li>
 			<?php endforeach; wp_reset_postdata(); ?>
 

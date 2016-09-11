@@ -42,6 +42,6 @@
 	}
 }
 .modal-btn{
-	@include white-button
-	color: $color_medium_grey;
+	@include blue-button;
+	color: $white;
 }
