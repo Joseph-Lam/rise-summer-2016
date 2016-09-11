@@ -32,6 +32,7 @@
 .about-people-nav {
 	display: none;
 	@include desktop {
+		height: 25rem;
 		width: 100vw;
 		@include flexify(space-around, center);
 		flex-flow: row nowrap;
