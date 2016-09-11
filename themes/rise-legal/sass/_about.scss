@@ -12,7 +12,6 @@
 }
 //LOGO ON BANNER STYLES
 .rise-about-logo {
-	padding: $base_spacing_extra_large $base_spacing_large;
 	@include desktop {
 		display: none;
 	}
@@ -32,5 +31,12 @@
 			width: 10rem;
 			height: 10rem;
 		}
+		
+	}
+}
+	//puts the our staff category first
+.indvid-people-group {
+	&:nth-child(3){
+		order: -1;
 	}
 }
