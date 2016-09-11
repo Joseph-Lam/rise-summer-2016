@@ -56,16 +56,14 @@
 		color: $color_brand_blue;
 		margin-bottom: 0;
 	}
+	img {
+		width: 5rem;
+	}
 	@include desktop {
 		display: none;
 	}
 }
-.our-staff,
-.our-board,
-.our-partners,
-.our-student{
-	// padding: $base_spacing_extra_large 0;
-}
+
 .our-staff,
 .our-board,
 .our-student{
