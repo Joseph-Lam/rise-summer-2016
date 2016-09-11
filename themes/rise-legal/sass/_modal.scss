@@ -16,10 +16,18 @@
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 	div{
-		width: 40em;
+		width: 65rem;
 		position: relative;
 		padding: $base_spacing_large;
 		background-color: $color_light_blue;
+		border-radius: 10px;
+		text-align: left;
+		h3{
+			margin: 0;
+		}
+		p{
+			margin: 0;
+		}
 	}
 	&:target{
 		opacity: 1;

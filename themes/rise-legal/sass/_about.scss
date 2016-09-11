@@ -98,7 +98,7 @@
 	}
 }
 
-//Staff section styles
+//STAFF section styles
 .our-staff{
 	width: 80%;
 	margin: 0 auto;	
@@ -121,8 +121,19 @@
 		}
 	}
 }
+//Staff Modal styles
+.position,
+.employed{
+	padding: 0;
+}
+.position{
+	font-weight: bold;
+}
+.employed {
+	padding-bottom: $base_spacing_large;
+}
 
-//Board section styles
+//BOARD section styles
 .our-board{
 	@include desktop {
 		//include centering styles here
@@ -134,14 +145,14 @@
 	margin-bottom: $base_spacing_large;
 	p{
 		margin-bottom: $base_spacing_large;
-		font-weight: bold;
+	}
+	.position{
+		margin-bottom: $base_spacing_large;
 	}
 	@include desktop {
 		flex: 20%;
 		margin-bottom: $base_spacing_extra_large;
-		p{
-			color: $color_brand_blue;
-		}
+
 		&:nth-child(1),
 		&:nth-child(2) {
 			flex: 100%;
@@ -150,7 +161,7 @@
 	}
 }
 
-//Partners section styles
+//PARTNERS section styles
 .our-partners{
 	@include flexify(center, flex-start);
 
@@ -180,7 +191,7 @@
 		}
 	}
 }
-//Student section styles
+//STUDENT section styles
 
 .student-copy{
 	display:none;

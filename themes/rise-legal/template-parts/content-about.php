@@ -88,11 +88,11 @@
 								</div>
 							<?php endif; ?>
 			
-							<p><?php echo CFS()->get('position_title')?></p>
+							<p class="position"><?php echo CFS()->get('position_title')?></p>
 	
-							<p><?php echo CFS()->get('employed_at')?></p>
+							<p class="employed"><?php echo CFS()->get('employed_at')?></p>
 				
-							<p><?php echo CFS()->get('biography')?></p>
+							<p class="biography"><?php echo CFS()->get('biography')?></p>
 	
 						</div>
 					</div>
@@ -147,7 +147,7 @@
 				<?php foreach($about_page_board_posts as $post) : setup_postdata( $post); ?>
 				<li class="indvid-board-member">
 
-					<p><?php echo CFS()->get('position_title')?></p>
+					<p class="position"><?php echo CFS()->get('position_title')?></p>
 
 					<a href="#<?php the_title();?>" class="modal-btn">
 						<?php the_title();?>	
@@ -166,7 +166,7 @@
 								</div>
 							<?php endif; ?>
 			
-							<p><?php echo CFS()->get('position_title')?></p>
+							<p class="position"><?php echo CFS()->get('position_title')?></p>
 				
 							<p><?php echo CFS()->get('biography')?></p>
 
