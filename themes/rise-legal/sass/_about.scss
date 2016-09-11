@@ -1,7 +1,19 @@
 /*--------------------------------------------------------------
 # About Page Styles
 --------------------------------------------------------------*/
+.about-content {
+	@include flexify (center, center);
+	flex-direction: column;
+	text-align: center;
+	h1 {
+		margin: 0;
+	}
+	@include desktop {
+		text-align: left;
+	}
+}
 
+//Page Title Banner styles
 .about-banner {
 	background-image: url(../../assets/images/mobile/about-banner-mobile.jpg);
 	background-position: center;
