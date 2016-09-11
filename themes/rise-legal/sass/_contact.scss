@@ -1,0 +1,40 @@
+.contact-container {
+	flex-direction: column;
+	text-align: center;
+}
+
+.contact-content {
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.contact-meta {
+	margin: 40px 0;
+}
+
+
+.responsive-map {
+	margin-bottom: 40px;
+	iframe {
+		width: 100%;
+		@include desktop {
+			width: 80%;
+		}
+	}
+
+}
+
+.get-directions {
+	@include white-button;
+}
+
+.contact-notes {
+	@include flexify(center, center);
+	flex-direction: column;
+	margin: 40px 10%;
+	img {
+		margin-bottom: 30px;
+	}
+}

@@ -56,3 +56,4 @@ themes/rise-legal/node_modules/*
 # ================== #
 themes/rise-legal/build/*
 themes/rise-legal/gulpfile.js
+themes/rise-legal/style.css
