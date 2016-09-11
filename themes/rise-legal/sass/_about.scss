@@ -57,10 +57,15 @@
 }
 .our-staff,
 .our-board,
+.our-partners,
+.our-student{
+	padding: $base_spacing_extra_large 0;
+}
+.our-staff,
+.our-board,
 .our-student{
 	flex-direction: column;
 	text-align: center;
-
 	@include desktop {
 		flex-direction: row;
 
@@ -77,25 +82,32 @@
 //Partners section styles
 .our-partners{
 	@include flexify(center, flex-start);
-	width: 80rem;
-	margin: 0 auto;
 
 }
 .indvid-partner {
-	@include flexify(space-between,center);
+	@include flexify(center,center);
 	flex-direction:column;
-	width: 40rem;
-	p{
+	width: 40%;
+	text-align: justify;
+
+	p {
 		display: none;
-		@include desktop {
+	}
+	@include desktop {
+		padding-right: $base_spacing_large;
+		p {
 			display: flex;
 		}
 	}
 }
 .partner-logo {
-	img{
-		height: 20rem;
+	img {
+		height: 15rem;
 		width: auto;
+		@include desktop {
+			height: 20rem;
+			width: auto;
+		}
 	}
 }
 //Student section styles
