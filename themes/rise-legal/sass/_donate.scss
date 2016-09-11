@@ -59,11 +59,14 @@
 	.donate-justice {
 		display: flex;
 		flex-direction: row;
+		margin: 20px 0;
+
 		.justice-number-container {
-			flex: 30%;
+			flex: 20%;
 		}
 		.donate-justice-meta {
-			flex: 70%;
+			flex: 80%;
+			text-align: left;
 		}
 	}
 }

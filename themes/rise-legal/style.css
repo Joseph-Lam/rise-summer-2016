@@ -967,10 +967,12 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row; }
+        flex-direction: row;
+    margin: 20px 0; }
     .donate-justice-container .donate-justice .justice-number-container {
-      -ms-flex: 30%;
-          flex: 30%; }
+      -ms-flex: 20%;
+          flex: 20%; }
     .donate-justice-container .donate-justice .donate-justice-meta {
-      -ms-flex: 70%;
-          flex: 70%; }
+      -ms-flex: 80%;
+          flex: 80%;
+      text-align: left; }

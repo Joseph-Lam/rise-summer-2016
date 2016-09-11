@@ -77,7 +77,16 @@
 					</div>
 				</div>
 			</div>
-
+			
+			<section class="donate">
+				<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
+				<div class="donate-content flex-center">
+					<button>
+						Why Donate?
+						
+					</button>
+				</div>
+			</section>
 
 
 		</div><!-- .entry-content -->
