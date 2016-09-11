@@ -905,8 +905,8 @@ object {
   color: black;
   height: 5rem;
   width: 20rem;
-  border-radius: 1rem;
-  box-shadow: 0px 3px 10px black; }
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 6px black; }
   @media (min-width: 60rem) {
     .get-directions:hover {
       background: black; } }
