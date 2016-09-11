@@ -31,12 +31,19 @@
 			width: 10rem;
 			height: 10rem;
 		}
-		
+		p {
+			font-weight: bold;
+			margin: 0;
+		}
 	}
 }
 	//puts the our staff category first
 .indvid-people-group {
 	&:nth-child(3){
 		order: -1;
+	}
+	&:hover {
+		border-bottom: 5px solid $white;
+		margin: 0;
 	}
 }
