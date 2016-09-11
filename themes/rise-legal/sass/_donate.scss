@@ -71,13 +71,18 @@
 		display: flex;
 		flex-direction: row;
 		margin: 20px 0;
-
+		@include desktop {
+			flex-direction: column;
+		}
 		.justice-number-container {
 			flex: 20%;
 		}
 		.donate-justice-meta {
 			flex: 80%;
 			text-align: left;
+			@include desktop {
+				text-align: center;
+			}
 		}
 	}
 }

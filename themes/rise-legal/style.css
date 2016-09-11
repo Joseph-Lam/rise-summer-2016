@@ -980,6 +980,10 @@ object {
     -ms-flex-direction: row;
         flex-direction: row;
     margin: 20px 0; }
+    @media (min-width: 60rem) {
+      .donate-justice-container .donate-justice {
+        -ms-flex-direction: column;
+            flex-direction: column; } }
     .donate-justice-container .donate-justice .justice-number-container {
       -ms-flex: 20%;
           flex: 20%; }
@@ -987,3 +991,6 @@ object {
       -ms-flex: 80%;
           flex: 80%;
       text-align: left; }
+      @media (min-width: 60rem) {
+        .donate-justice-container .donate-justice .donate-justice-meta {
+          text-align: center; } }
