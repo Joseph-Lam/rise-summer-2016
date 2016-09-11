@@ -89,7 +89,7 @@
 //sets flex direction for the sections
 .our-staff,
 .our-board,
-.our-student{
+.our-students{
 	flex-direction: column;
 	text-align: center;
 	@include desktop {
@@ -180,13 +180,12 @@
 	}
 }
 //Student section styles
-.our-student{
 
-}
 .student-copy{
 	display:none;
 	@include desktop {
 		display: flex;
+		margin-bottom: $base_spacing_extra_large;
 	}
 }
 
