@@ -7,8 +7,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class=""<?php post_class(); ?>>
 	<header class="entry-header">
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-whydonate.svg"?>">
+
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
@@ -20,6 +22,21 @@
 				'after'  => '</div>',
 			) );
 		?>
+	<div class="donate-legal-stat">
+		<?php echo CFS()->get( 'legal_stat' ); ?>
+	</div>
+
+	<div class="donate-criteria">
+		<?php echo CFS()->get( 'criteria' ); ?>
+	</div>
+
+	<div class="donate-who-title">
+		<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-familyhelp.svg"?>">
+	</div>
+
+	<div class="donate-who-content">
+		<?php echo CFS()->get( 'who_do_we_help' ); ?>
+	</div>
 
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
