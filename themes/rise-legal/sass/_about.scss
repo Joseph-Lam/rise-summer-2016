@@ -37,7 +37,7 @@
 		}
 	}
 }
-	//puts the our staff category first
+	//puts the our staff category first in banner
 .indvid-people-group {
 	&:nth-child(3){
 		order: -1;
@@ -48,6 +48,15 @@
 	}
 }
 
+//give what space to sections
+.staff,
+.board,
+.partners,
+.students {
+	margin: $base_spacing_extra_large 0;
+}
+
+// style the section titles for mobile
 .group-title{
 	flex-direction: column;
 	padding-top: $base_spacing_large;
@@ -64,13 +73,14 @@
 	}
 }
 
+//sets flex direction for the sections
 .our-staff,
 .our-board,
 .our-student{
 	flex-direction: column;
 	text-align: center;
 	@include desktop {
-		flex-direction: row;
+		flex-flow: row wrap;
 
 	}
 }
@@ -80,7 +90,9 @@
 }
 //Board section styles
 .our-board{
-	
+	@include desktop {
+
+	}
 }
 .indvid-board-member{
 	margin-bottom: $base_spacing_large;
