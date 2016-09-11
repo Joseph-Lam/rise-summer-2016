@@ -57,7 +57,6 @@
 }
 .our-staff,
 .our-board,
-.our-partners,
 .our-student{
 	flex-direction: column;
 	text-align: center;
@@ -77,7 +76,27 @@
 }
 //Partners section styles
 .our-partners{
+	@include flexify(center, flex-start);
+	width: 80rem;
+	margin: 0 auto;
 
+}
+.indvid-partner {
+	@include flexify(space-between,center);
+	flex-direction:column;
+	width: 40rem;
+	p{
+		display: none;
+		@include desktop {
+			display: flex;
+		}
+	}
+}
+.partner-logo {
+	img{
+		height: 20rem;
+		width: auto;
+	}
 }
 //Student section styles
 .our-student{

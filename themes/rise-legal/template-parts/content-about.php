@@ -191,7 +191,7 @@
 		<?php endforeach; ?>
 	</div>
 <!-- Partners listing -->
-	<ul class="our-partners flex-center" id="our-partners">
+	<ul class="our-partners" id="our-partners">
 		<?php
 			$args = array(
 				'post_type' => 'our_people',
@@ -217,7 +217,7 @@
 					</div>
 				<?php endif; ?>
 
-				<p class="partner-copy"><?php echo CFS()->get('biography')?></p>
+				<?php echo CFS()->get('biography')?>
 
 			</li>
 		<?php endforeach; wp_reset_postdata(); ?>
