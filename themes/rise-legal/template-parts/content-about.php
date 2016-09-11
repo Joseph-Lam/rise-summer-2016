@@ -144,9 +144,46 @@
 		<?php endforeach; wp_reset_postdata(); ?>
 	</ul>
 
-	<!-- <ul class="our-students"> -->
-		<!-- 	<li></li>
-	</ul> -->
+	<?php 
+		$categories = array(
+			'taxonomy' => 'people_group',
+			'slug' => 'our-student', 
+			'hide_empty' => true,
+			);
 
+		$terms = get_terms( $categories );
+		?>
+		
+	<?php foreach ( $terms as $term ) :  ?>
+		<h3><?php echo $term->name ?></h3>
+		<p><?php echo $term->description?><p>
+	<?php endforeach; ?>
+
+	<ul class="our-students">
+		<?php
+			$args = array(
+				'post_type' => 'our_people',
+				'numberposts' => -1,
+				'order' => 'ASC',
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'people_group',
+						'field' => 'slug',
+						'terms' => 'our-student',	
+						),
+					),
+				);
+			$about_page_student_posts = get_posts($args);
+			?>
+			
+			<?php foreach($about_page_student_posts as $post) : setup_postdata( $post); ?>
+			<li>
+				<p class="studen-copy"><?php echo CFS()->get('biography')?></p>
+			</li>
+			<?php endforeach; wp_reset_postdata(); ?>
+			<button>
+				Learn More
+			</button>
+	</ul>
 
 </section>
