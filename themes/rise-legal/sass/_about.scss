@@ -92,8 +92,8 @@
 .our-board{
 	@include desktop {
 		//include centering styles here
-		width: 80rem;
-		margin: 0 auto;
+		// width: 80rem;
+		// margin: 0 auto;
 	}
 }
 .indvid-board-member{
@@ -103,14 +103,16 @@
 		font-weight: bold;
 	}
 	@include desktop {
-		flex: 35%;
+		flex: 20%;
 		margin-bottom: $base_spacing_extra_large;
 		p{
 			color: $color_brand_blue;
 		}
-		&:nth-child(1) {
+		&:nth-child(1),
+		&:nth-child(2) {
 			flex: 100%;
 		}
+
 	}
 }
 
