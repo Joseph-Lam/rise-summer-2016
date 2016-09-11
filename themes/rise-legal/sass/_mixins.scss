@@ -31,7 +31,8 @@
 }
 
 @mixin white-button {
-	background-color: white;
+	background-color: $white;
+	padding: $base_spacing_large/2 $base_spacing_large;
 	color: black;
 	height: 5rem;
 	width: 20rem;
