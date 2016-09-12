@@ -35,7 +35,7 @@
 
 	</div>
 	
-	<div class="staff">
+	<div class="staff collapse" id="our-staff">
 		<!-- STAFF HEADING -->
 		<?php 
 			$categories = array(
@@ -54,7 +54,7 @@
 			<?php endforeach; ?>
 		</div>
 		<!-- Staff Listing -->
-		<ul class="our-staff flex-center" id="our-staff">
+		<ul class="our-staff flex-center">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -82,7 +82,7 @@
 							<a href="#close" title="Close" class="close">
 							</a>
 							
-							<h3><?php the_title();?></h3>
+							<h2><?php the_title();?></h2>
 							<?php if ( has_post_thumbnail() ) : ?>
 								<div>
 									<?php the_post_thumbnail( 'original' ); ?>
@@ -108,7 +108,7 @@
 		</ul>
 	</div>
 <!-- BOARD HEADING -->
-	<div class="board">
+	<div class="board collapse" id="our-board">
 		<?php 
 			$categories = array(
 				'taxonomy' => 'people_group',
@@ -128,7 +128,7 @@
 			<?php endforeach; ?>
 		</div>
 	<!-- Board Listing -->
-		<ul class="our-board flex-center" id="our-board">
+		<ul class="our-board flex-center">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -159,7 +159,7 @@
 							<a href="#close" title="Close" class="close">
 							</a>
 							
-							<h3><?php the_title();?></h3>
+							<h2><?php the_title();?></h2>
 
 							<?php if ( has_post_thumbnail() ) : ?>
 								<div>
@@ -179,7 +179,7 @@
 		</ul>
 	</div>
 	<!-- PARTNERS HEADING -->
-	<div class="partners">
+	<div class="partners collapse"  id="our-partners">
 		<?php 
 			$categories = array(
 				'taxonomy' => 'people_group',
@@ -198,7 +198,7 @@
 			<?php endforeach; ?>
 		</div>
 	<!-- Partners listing -->
-		<ul class="our-partners" id="our-partners">
+		<ul class="our-partners">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -231,7 +231,7 @@
 		</ul>
 	</div>
 	<!-- STUDENTS HEADING -->
-	<div class="students">
+	<div class="students collapse" id="our-student">
 		<?php 
 			$categories = array(
 				'taxonomy' => 'people_group',
@@ -250,7 +250,7 @@
 			<?php endforeach; ?>
 		</div>
 		<!-- Students listing -->
-		<ul class="our-students flex-center" id="our-student">
+		<ul class="our-students flex-center">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',

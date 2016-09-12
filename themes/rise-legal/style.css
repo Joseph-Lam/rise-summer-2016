@@ -628,7 +628,7 @@ textarea {
     background-color: #EBF0F3;
     border-radius: 10px;
     text-align: left; }
-    .modalDialog div h3 {
+    .modalDialog div h2 {
       margin: 0; }
     .modalDialog div p {
       margin: 0; }
@@ -1000,6 +1000,12 @@ object {
     border-bottom: 10px solid white;
     margin: 0;
     transition: border 200ms ease-in; }
+
+@media (min-width: 60rem) {
+  .collapse {
+    display: none; }
+    .collapse:target {
+      display: block; } }
 
 .staff,
 .board,

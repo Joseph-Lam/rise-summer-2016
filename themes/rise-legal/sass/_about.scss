@@ -59,9 +59,16 @@
 		margin: 0;
 		transition: border 200ms ease-in;
 	}
+
 }
-
-
+.collapse{
+	@include desktop {
+		display: none;
+		&:target{
+			display: block;
+		}
+	}
+}
 
 //give what space to sections
 .staff,
