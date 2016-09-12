@@ -1,0 +1,88 @@
+.donate-container {
+	flex-direction: column;
+	text-align: center;
+}
+
+.donate-content {
+	p {
+		margin: 10px;
+	}
+}
+
+.donate-legal-stat {
+	background-color: $color_brand_blue;
+	color: white;
+	padding: 3rem 10%;
+	margin: 30px 0;
+	@include desktop {
+		padding: 100px 10%;
+	}
+}	
+
+.donate-criteria {
+
+}
+
+
+.donate-who-title {
+	background-image: url('../../assets/images/mobile/donate-whodohelp-mobile.jpg');
+	background-size: cover;
+	padding: 30px;
+	margin: 30px 0;
+	@include desktop {
+		padding: 10rem;
+	}
+	h2 {
+		text-transform: capitalize;
+		margin: 0;
+		padding: 0;
+		color: white;
+	}
+}
+
+.donate-who-content {
+
+}
+
+.donate-how-title {
+	background-image: url('../../assets/images/mobile/donate-howwehelp-mobile.jpg');
+	background-size: cover;
+	padding: 30px;
+	margin: 30px 0;
+	@include desktop {
+		padding: 10rem;
+	}
+	h2 {
+		text-transform: capitalize;
+		margin: 0;
+		padding: 0;
+		color: white;
+	}
+}
+
+.donate-how-content {
+
+}
+
+.donate-justice-container {
+	display: flex;
+	flex-direction: column;
+	.donate-justice {
+		display: flex;
+		flex-direction: row;
+		margin: 20px 0;
+		@include desktop {
+			flex-direction: column;
+		}
+		.justice-number-container {
+			flex: 20%;
+		}
+		.donate-justice-meta {
+			flex: 80%;
+			text-align: left;
+			@include desktop {
+				text-align: center;
+			}
+		}
+	}
+}
