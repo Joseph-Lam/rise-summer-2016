@@ -853,7 +853,8 @@ object {
   height: 160px;
   width: 100%;
   position: fixed;
-  background-size: cover; }
+  background-size: cover;
+  z-index: 9999; }
 
 .site-branding a img {
   width: 600px;
