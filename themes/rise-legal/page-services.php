@@ -19,11 +19,13 @@ get_header(); ?>
 					<?php the_content(); ?>
 				</section>
 				
-				<div class="title-banner about-banner flex-center">
-				<!-- display logo on mobile -->
-					<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>" class="rise-about-logo">	
-				</div>
 				<section class="who-we-help">
+					<div class="title-banner services-banner flex-center">
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-familyhelp.svg"?>" class="rise-about-logo">	
+						<h2>Who We Help</h2>
+					</div>
+
+
 					
 				</section>
 

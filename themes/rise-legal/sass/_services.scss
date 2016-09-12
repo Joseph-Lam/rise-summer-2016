@@ -2,3 +2,12 @@
 /*--------------------------------------------------------------
 # Services Page Styles
 --------------------------------------------------------------*/
+
+.services-banner {
+	background-image: url(../../assets/images/mobile/service-help-mobile.jpg);
+	background-position: center;
+	background-size: cover;
+	@include desktop {
+		background-image: url(../../assets/images/desktop/service-help-desktop.jpg);
+	}
+}
