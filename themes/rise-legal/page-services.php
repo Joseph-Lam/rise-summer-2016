@@ -22,8 +22,11 @@ get_header(); ?>
 				<div class="title-banner about-banner flex-center">
 				<!-- display logo on mobile -->
 					<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>" class="rise-about-logo">	
-
 				</div>
+				<section class="who-we-help">
+					
+				</section>
+
 				<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
