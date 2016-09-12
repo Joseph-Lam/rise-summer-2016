@@ -104,6 +104,7 @@
 	font-weight: bold;
 }
 
+
 .accordian-item-input{
 	&:checked ~
 	.accordian-item-content {
@@ -138,10 +139,6 @@
 		width: 2rem;
 		height: .3rem;
 		background-color: $color_medium_grey;
-		// &:nth-child(1),
-		// &:nth-child(2){
-		// 	transform: rotate(0deg);
-		// }
 		&:nth-child(2){
 			height: 2rem;
 			width: .3rem;
