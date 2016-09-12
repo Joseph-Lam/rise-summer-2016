@@ -93,9 +93,9 @@ get_header(); ?>
 
 
 				<section>
-					<div>
+					<div class="faq flex-center">
 						<h2>FAQ's</h2>
-						<ul class="faq">
+						<ul class="faq-list">
 							<?php
 								$args = array(
 									'post_type' => 'faq',
@@ -106,11 +106,10 @@ get_header(); ?>
 								?>
 
 								<?php foreach($faq_page_faq_posts as $post) : setup_postdata( $post); ?>
-								<li class="indvid-faq">
+								<li class="faq-list-item">
 									<div class="indvid-faq">
-
-										<h3><?php the_title();?></h3>
-										<p><?php the_content(); ?></p>
+										<h3 class="faq-question"><?php the_title();?></h3>
+										<p class="faq-answer"><?php the_content(); ?></p>
 
 									</div>
 

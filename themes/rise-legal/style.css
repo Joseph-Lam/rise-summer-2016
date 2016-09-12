@@ -1252,6 +1252,10 @@ object {
       .services-step:last-child {
         margin-right: 0; } }
 
+.faq {
+  -ms-flex-flow: column;
+      flex-flow: column; }
+
 .contact-container {
   -ms-flex-direction: column;
       flex-direction: column;
