@@ -1005,7 +1005,9 @@ object {
   .collapse {
     display: none; }
     .collapse:target {
-      display: block; } }
+      display: block; }
+    .collapse:focus {
+      outline: none; } }
 
 .staff,
 .board,
