@@ -14,12 +14,14 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_enqueue_script("jquery"); ?>
+	<?php gravity_form_enqueue_scripts(1, true); ?>
 	<?php wp_head(); ?>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 	<script type="text/javascript"
    src="<?php bloginfo("template_url"); ?>/build/js/hamburger-menu.min.js"></script>
 	
+
 </head>
 
 <body <?php body_class(); ?>>

@@ -1480,3 +1480,63 @@ object {
       @media (min-width: 60rem) {
         .donate-justice-container .donate-justice .donate-justice-meta {
           text-align: center; } }
+
+.student-container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center; }
+
+.student-title {
+  padding: 0;
+  margin: 0; }
+
+.externship-title {
+  background-image: url("../../assets/images/mobile/student-mobile.jpg");
+  background-size: cover;
+  padding: 4rem;
+  margin: 20px 0; }
+  .externship-title img {
+    width: 49px;
+    height: 66px; }
+  @media (min-width: 60rem) {
+    .externship-title {
+      padding: 10rem; } }
+  .externship-title h2 {
+    text-transform: capitalize;
+    color: white;
+    padding: 0;
+    margin: 0; }
+
+.student-externship {
+  margin: 20px 10%;
+  margin-bottom: 80px; }
+
+.student-features {
+  padding: 40px 0;
+  border-bottom: 1px solid #CCCCCC;
+  width: 80%;
+  margin: 0 auto; }
+  @media (min-width: 60rem) {
+    .student-features {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  .student-features .student-features-icon {
+    margin-bottom: 25px; }
+    @media (min-width: 60rem) {
+      .student-features .student-features-icon {
+        -ms-flex: 20%;
+            flex: 20%;
+        margin: 0; } }
+  @media (min-width: 60rem) {
+    .student-features .student-feature-meta {
+      -ms-flex: 80%;
+          flex: 80%;
+      text-align: left; } }
+  .student-features:last-child {
+    border: none; }
