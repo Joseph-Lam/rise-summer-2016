@@ -1285,6 +1285,7 @@ object {
 
 .accordian-item-input:checked ~
 .accordian-item-header .accordian-item-cta {
+  background-color: #A44F52;
   transform: rotate(135deg);
   transition: 1s ease-in-out; }
 
@@ -1298,7 +1299,7 @@ object {
       align-items: center;
   right: -10%;
   top: 1rem;
-  background: #4A4A4A;
+  background: #155E89;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -1308,11 +1309,11 @@ object {
     position: absolute;
     width: 2rem;
     height: .3rem;
-    background-color: #CCCCCC; }
+    background-color: white; }
     .accordian-item-cta span:nth-child(2) {
       height: 2rem;
       width: .3rem;
-      background-color: #CCCCCC; }
+      background-color: white; }
 
 .accordian-item-content {
   max-height: 0;

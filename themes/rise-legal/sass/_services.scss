@@ -117,6 +117,7 @@
 	&:checked ~
 	.accordian-item-header{
 		.accordian-item-cta{
+			background-color: $color_brand_red;
 			transform: rotate(135deg);
 			transition: 1s ease-in-out;
 		}
@@ -127,7 +128,7 @@
 	@include flexify(center,center);
 	right: -10%;
 	top: 1rem;
-	background: $color_dark_grey;
+	background: $color_brand_blue;
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
@@ -137,11 +138,11 @@
 		position: absolute;
 		width: 2rem;
 		height: .3rem;
-		background-color: $color_medium_grey;
+		background-color: $white;
 		&:nth-child(2){
 			height: 2rem;
 			width: .3rem;
-			background-color: $color_medium_grey;
+			background-color: $white;
 		}
 	}
 }
