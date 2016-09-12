@@ -112,7 +112,11 @@ get_header(); ?>
 									<label for="<?php echo "item-".$post->post_name; ?>" class="accordian-item-header">
 									<?php $post->post_name; ?>
 										<?php the_title();?>
-										<!-- Need Icons for the opening and closing, they go here -->
+										<span class="accordian-item-cta">
+											<span></span>
+											<span></span>
+										</span>
+										
 									</label>
 									<div class="accordian-item-content"><?php the_content(); ?></div>
 

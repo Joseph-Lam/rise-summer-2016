@@ -96,26 +96,65 @@
 	display: block;
 	padding: 1.5rem 3rem 1.5rem 0;
 	position: relative;
+	width: 80%;
 	cursor: pointer;
 	font-family: $font_stack_header;
 	font-size: $h3_size;
+	color: $color_brand_blue;
 	font-weight: bold;
 }
 
 .accordian-item-input{
 	&:checked ~
-		.accordian-item-content {
-			max-height: 50rem;
-			padding-top: $base_spacing;
-			transition: max-height 1s ease-in;
+	.accordian-item-content {
+		max-height: 50rem;
+		transition: max-height 1s ease-in;
+	}
+}
+
+.accordian-item-input{
+	&:checked ~
+	.accordian-item-header{
+		.accordian-item-cta{
+			transform: rotate(135deg);
+			transition: 1s ease-in-out;
 		}
-	
+	}
+}
+
+.accordian-item-cta{
+	position: absolute;
+	@include flexify(center,center);
+	right: -22rem;
+	top: 1rem;
+	background: $color_dark_grey;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	transform: rotate(0deg);
+	transition: 1s ease-in-out;
+	span{
+		position: absolute;
+		width: 2rem;
+		height: .3rem;
+		background-color: $color_medium_grey;
+		// &:nth-child(1),
+		// &:nth-child(2){
+		// 	transform: rotate(0deg);
+		// }
+		&:nth-child(2){
+			height: 2rem;
+			width: .3rem;
+			background-color: $color_medium_grey;
+		}
+	}
 }
 .accordian-item-content {
 	max-height: 0;
 	margin-bottom: 0;
 	overflow: hidden;
-	transition: max-height .15s ease-out;
+	transition: max-height 1s ease-out;
+
 }
 
 .accordian-item-input {

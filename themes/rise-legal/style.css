@@ -1270,22 +1270,54 @@ object {
   display: block;
   padding: 1.5rem 3rem 1.5rem 0;
   position: relative;
+  width: 80%;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
+  color: #155E89;
   font-weight: bold; }
 
 .accordian-item-input:checked ~
 .accordian-item-content {
   max-height: 50rem;
-  padding-top: 1rem;
   transition: max-height 1s ease-in; }
+
+.accordian-item-input:checked ~
+.accordian-item-header .accordian-item-cta {
+  transform: rotate(135deg);
+  transition: 1s ease-in-out; }
+
+.accordian-item-cta {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  right: -22rem;
+  top: 1rem;
+  background: #4A4A4A;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s ease-in-out; }
+  .accordian-item-cta span {
+    position: absolute;
+    width: 2rem;
+    height: .3rem;
+    background-color: #CCCCCC; }
+    .accordian-item-cta span:nth-child(2) {
+      height: 2rem;
+      width: .3rem;
+      background-color: #CCCCCC; }
 
 .accordian-item-content {
   max-height: 0;
   margin-bottom: 0;
   overflow: hidden;
-  transition: max-height .15s ease-out; }
+  transition: max-height 1s ease-out; }
 
 .accordian-item-input {
   clip: rect(0 0 0 0);
