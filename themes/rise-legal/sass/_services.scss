@@ -82,3 +82,19 @@
 	flex-flow: column;
 }
 
+.faq-list {
+	width: 90%;
+	height: auto;
+	
+
+}
+.indvid-faq{
+	background-color: $color_light_grey;
+	padding: $base_spacing_large;
+	margin-bottom: $base_spacing_extra_large;
+	box-shadow: 0 2px 3px 2px $color_medium_grey;
+}
+
+
+
+

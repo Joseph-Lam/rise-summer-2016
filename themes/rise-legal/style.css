@@ -1256,6 +1256,16 @@ object {
   -ms-flex-flow: column;
       flex-flow: column; }
 
+.faq-list {
+  width: 90%;
+  height: auto; }
+
+.indvid-faq {
+  background-color: #EEEEEE;
+  padding: 3rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 2px 3px 2px #CCCCCC; }
+
 .contact-container {
   -ms-flex-direction: column;
       flex-direction: column;
