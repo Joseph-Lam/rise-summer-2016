@@ -854,9 +854,6 @@ object {
     .site-branding a img {
       width: 40rem; } }
 
-.hdr-pusher {
-  height: 11rem; }
-
 .main-navigation {
   position: relative;
   background-color: #155E89;
@@ -865,6 +862,9 @@ object {
 
 .hamburger {
   text-transform: uppercase; }
+
+.hdr-pusher {
+  height: 11rem; }
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");
