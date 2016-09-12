@@ -849,16 +849,23 @@ object {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  background-image: url("../../assets/backgrounds/mobile-header.png");
-  height: 160px;
+  background: url("../../assets/backgrounds/mobile-header.png") center;
+  background-size: cover;
+  height: 12rem;
   width: 100%;
   position: fixed;
   background-size: cover;
   z-index: 9999; }
+  @media (min-width: 60rem) {
+    .site-header {
+      background-image: url("../../assets/backgrounds/desktop-header.png"); } }
 
 .site-branding a img {
-  width: 600px;
+  width: 60rem;
   padding: 3rem; }
+  @media (min-width: 60rem) {
+    .site-branding a img {
+      width: 45rem; } }
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");

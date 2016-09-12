@@ -46,19 +46,26 @@
 
 .site-header {
   @include flexify(space-between, center);
-  background-image: url('../../assets/backgrounds/mobile-header.png');
-  height: 160px;
+  background: url('../../assets/backgrounds/mobile-header.png') center;
+  background-size: cover;
+  height: 12rem;
   width: 100%;
   position: fixed;
   background-size: cover;
   z-index: 9999;
+  @include desktop {
+    background-image: url('../../assets/backgrounds/desktop-header.png');
+  }
 }
 
 .site-branding {
   a {
     img{
-      width: 600px;
+      width: 60rem;
       padding: $base_spacing_large;
+      @include desktop {
+        width: 45rem;
       }
     }
+  }
 }
