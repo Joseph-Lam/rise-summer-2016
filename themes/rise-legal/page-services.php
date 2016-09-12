@@ -47,7 +47,7 @@ get_header(); ?>
 									<div>
 										<a href="#close" title="Close" class="close">
 										</a>
-										
+										<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">
 										<h2><?php the_title();?></h2>
 										<?php if ( has_post_thumbnail() ) : ?>
 											<div>
