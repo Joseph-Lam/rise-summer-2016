@@ -36,7 +36,7 @@
 			<div class="student-features-container">
 				<div class="student-orientation student-features">
 					<div class="student-orientation-icon student-features-icon">
-						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-student-orientation.svg"?>">
 					</div>
 					
 					<div class="student-orientation-info student-feature-meta">
