@@ -10,8 +10,7 @@ get_header(); ?>
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<!-- this gets the main about us blurb -->
+		
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<section class="about-content">
