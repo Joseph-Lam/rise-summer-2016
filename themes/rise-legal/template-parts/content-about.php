@@ -21,12 +21,13 @@
 				?>
 				
 				<?php foreach ( $terms as $term ) :  ?>
-					<li class="indvid-people-group"> 
-						<a href="#<?php echo $term->slug; ?>"> 
+					
+					<a href="#<?php echo $term->slug; ?>" class="about-nav-link"> 
+						<li class="indvid-people-group"> 
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$term->slug.".svg"?>">
-							<p><?php echo $term->name ?></p>
-						</a>
-					</li>
+							<h3><?php echo $term->name ?></h3>
+						</li>
+					</a>
 
 				<?php endforeach; ?>
 			</ul>

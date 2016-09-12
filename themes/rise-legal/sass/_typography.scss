@@ -36,9 +36,9 @@ h2 {
 	}
 }
 h3 {
-	font-size: $h2_size;
+	font-size: $h3_size;
 	@include desktop {
-		font-size: $h2_size_desktop;
+		font-size: $h3_size_desktop;
 	}
 }
 

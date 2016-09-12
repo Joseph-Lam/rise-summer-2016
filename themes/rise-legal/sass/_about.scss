@@ -37,29 +37,31 @@
 		@include flexify(space-around, center);
 		flex-flow: row nowrap;
 		text-align: center;
-		a{
-			color: $white;
-		}
 		img {
 			width: 10rem;
 			height: 10rem;
 		}
-		p {
-			font-weight: bold;
+		h3 {
+			font-weight: 500;
+			color: $white;
 			margin: 0;
 		}
 	}
 }
+.about-nav-link {
+	color: $white;
 	//puts the our staff category first in banner
-.indvid-people-group {
 	&:nth-child(3){
 		order: -1;
 	}
 	&:hover {
-		border-bottom: 5px solid $white;
+		border-bottom: 10px solid $white;
 		margin: 0;
+		transition: border 200ms ease-in;
 	}
 }
+
+
 
 //give what space to sections
 .staff,
