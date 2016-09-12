@@ -90,9 +90,36 @@ get_header(); ?>
 					
 					</div>
 				</section>
-				<section class="faq">
-					
+
+
+				<section>
+					<div>
+						<h2>FAQ's</h2>
+						<ul class="faq">
+							<?php
+								$args = array(
+									'post_type' => 'faq',
+									'numberposts' => -1,
+									'order' => 'ASC',
+									);
+								$faq_page_faq_posts = get_posts($args);
+								?>
+
+								<?php foreach($faq_page_faq_posts as $post) : setup_postdata( $post); ?>
+								<li class="indvid-faq">
+									<div class="indvid-faq">
+
+										<h3><?php the_title();?></h3>
+										<p><?php the_content(); ?></p>
+
+									</div>
+
+								</li>
+							<?php endforeach; wp_reset_postdata(); ?>
+						</ul>
+					</div>
 				</section>
+
 
 				<section class="contact-process">
 					<h2 class="flex-center"> Contact Process</h2>
