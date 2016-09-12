@@ -11,3 +11,12 @@
 		background-image: url(../../assets/images/desktop/service-help-desktop.jpg);
 	}
 }
+.school-banner {
+	background-image: url(../../assets/images/mobile/service-school-mobile.jpg);
+	background-position: center;
+	background-size: cover;
+	@include desktop {
+		background-image: url(../../assets/images/desktop/service-school-desktop.jpg);
+	}
+	height: 30rem;
+}

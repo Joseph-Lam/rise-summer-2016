@@ -26,6 +26,7 @@ get_header(); ?>
 					</div>
 					<!-- Services Modal Buttons -->
 					<div>
+						<p><?php echo CFS()->get('who_we_help')?></p>
 						<ul class="services flex-center">
 							<?php
 								$args = array(
@@ -63,6 +64,34 @@ get_header(); ?>
 							<?php endforeach; wp_reset_postdata(); ?>
 						</ul>
 					</div>
+				</section>
+
+				<section class="what-we-do">
+					<h2>What We Do</h2>
+					<p><?php echo CFS()->get('what_we_do')?></p>
+					<div>
+						<div>
+							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-lightbulb.svg"?>">
+							<p><?php echo CFS()->get('service_1')?></p>
+						</div>
+						<div>
+							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-stack.svg"?>">
+							<p><?php echo CFS()->get('service_2')?></p>
+						</div>
+						<div>
+							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-legalrep.svg"?>">
+							<p><?php echo CFS()->get('service_3')?></p>
+						</div>
+						<p><?php echo CFS()->get('legal_services')?></p>
+					</div>
+				</section>
+				<section>
+					<div class="title-banner school-banner flex-center">
+					
+					</div>
+				</section>
+				<section class="faq">
+					
 				</section>
 
 				<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>

@@ -1144,6 +1144,15 @@ object {
     .services-banner {
       background-image: url(../../assets/images/desktop/service-help-desktop.jpg); } }
 
+.school-banner {
+  background-image: url(../../assets/images/mobile/service-school-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30rem; }
+  @media (min-width: 60rem) {
+    .school-banner {
+      background-image: url(../../assets/images/desktop/service-school-desktop.jpg); } }
+
 .contact-container {
   -ms-flex-direction: column;
       flex-direction: column;
