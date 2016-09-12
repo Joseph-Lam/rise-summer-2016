@@ -58,20 +58,29 @@
 }
 
 .main-navigation {
-  position: relative;
+  @include flexify(space-around, center);
+  flex-direction: column;
   background-color: $color_brand_blue;
-  flex-basis: 20%;
+  @include desktop {
+    flex-direction: row;
+  }
+
+}
+.menu{
+  @include flexify(flex-start, space-between);
+  flex-flow: column wrap;
+  @include desktop {
+    flex-flow: row;
+  }
 
 }
 
-.menu {
-  width: 10rem;
+.menu-wrap{
+
+  @include desktop {
+    display: none;
+  }
 }
-
-.menu-wrap {
-
-}
-
 .hamburger {
   text-transform: uppercase;
 }
