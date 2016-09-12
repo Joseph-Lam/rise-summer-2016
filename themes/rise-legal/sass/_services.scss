@@ -20,6 +20,7 @@
 	}
 	height: 30rem;
 }
+//Services modal button layout styles
 .services {
 	@include flexify(center, center);
 	flex-flow: row wrap;
@@ -41,3 +42,40 @@
 	}
 
 }
+
+//What we do section
+.what-we-do {
+	flex-flow: column;
+	text-align: center;
+}
+.services-step-container {
+	@include flexify(space-between, center);
+	flex-flow: column;
+	@include desktop {
+		flex-flow: row;
+	}
+}
+.services-step{
+	@include flexify(center, center);
+	flex-flow: row;
+	img {
+		margin-right: $base_spacing_extra_large;
+		width: 6rem;
+		@include desktop {
+			margin-right: $base_spacing_large;
+		}
+	}
+	p{
+		width: 15rem;
+		height: auto;
+		text-align: left;
+	}	
+	@include desktop {
+		margin-right: $base_spacing_extra_large;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+

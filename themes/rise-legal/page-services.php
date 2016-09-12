@@ -66,24 +66,24 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="what-we-do">
+				<section class="what-we-do flex-center">
 					<h2>What We Do</h2>
 					<p><?php echo CFS()->get('what_we_do')?></p>
-					<div>
-						<div>
+					<div class="services-step-container">
+						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-lightbulb.svg"?>">
 							<p><?php echo CFS()->get('service_1')?></p>
 						</div>
-						<div>
+						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-stack.svg"?>">
 							<p><?php echo CFS()->get('service_2')?></p>
 						</div>
-						<div>
+						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-legalrep.svg"?>">
 							<p><?php echo CFS()->get('service_3')?></p>
 						</div>
-						<p><?php echo CFS()->get('legal_services')?></p>
 					</div>
+					<p><?php echo CFS()->get('legal_services')?></p>
 				</section>
 				<section>
 					<div class="title-banner school-banner flex-center">

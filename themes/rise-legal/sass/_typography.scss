@@ -30,7 +30,6 @@ h1 {
 	}
 }
 h2 {
-	color:$white;
 	font-size: $h2_size;
 	@include desktop {
 		font-size: $h2_size_desktop;
