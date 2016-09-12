@@ -1,0 +1,61 @@
+.student-container {
+	flex-direction: column;
+	text-align: center;
+}
+
+.student-title {
+	padding: 0;
+	margin: 0;
+}
+
+.externship-title {
+	background-image: url('../../assets/images/mobile/student-mobile.jpg');
+	background-size: cover;
+	padding: 4rem;
+	margin: 20px 0;
+	img {
+		width: 49px;
+    	height: 66px;
+	}
+
+	@include desktop {
+		padding: 10rem;
+	}
+	h2 {
+		text-transform: capitalize;
+		color: white;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.student-externship {
+	margin: 20px 10%;
+	margin-bottom: 80px;
+}
+
+.student-features {
+	padding: 40px 0;
+	border-bottom: 1px solid $color_medium_grey;
+	width: 80%;
+	margin: 0 auto;
+
+	@include desktop {
+		@include flexify(center,center);
+		flex-direction: row;
+	}
+	.student-features-icon {
+		@include desktop {
+			flex: 20%;	
+		}
+	}
+	.student-feature-meta {
+		@include desktop {
+			flex: 80%;
+			text-align: left;	
+		}		
+	}
+	&:last-child{
+		border: none;
+	}
+}
