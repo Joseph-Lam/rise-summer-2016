@@ -66,35 +66,81 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="what-we-do">
+				<section class="what-we-do flex-center">
 					<h2>What We Do</h2>
 					<p><?php echo CFS()->get('what_we_do')?></p>
-					<div>
-						<div>
+					<div class="services-step-container">
+						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-lightbulb.svg"?>">
 							<p><?php echo CFS()->get('service_1')?></p>
 						</div>
-						<div>
+						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-stack.svg"?>">
 							<p><?php echo CFS()->get('service_2')?></p>
 						</div>
-						<div>
+						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-legalrep.svg"?>">
 							<p><?php echo CFS()->get('service_3')?></p>
 						</div>
-						<p><?php echo CFS()->get('legal_services')?></p>
 					</div>
+					<p><?php echo CFS()->get('legal_services')?></p>
 				</section>
 				<section>
 					<div class="title-banner school-banner flex-center">
 					
 					</div>
 				</section>
-				<section class="faq">
-					
+
+
+				<section>
+					<div class="faq flex-center">
+						<h2>FAQ's</h2>
+						<ul class="accordian">
+							<?php
+								$args = array(
+									'post_type' => 'faq',
+									'numberposts' => -1,
+									'order' => 'ASC',
+									'post_name' => 'slug',
+									);
+								$faq_page_faq_posts = get_posts($args);
+								?>
+
+								<?php foreach($faq_page_faq_posts as $post) : setup_postdata( $post); ?>
+								<li class="accordian-item">
+									<input class="accordian-item-input" type="checkbox" name="accordian" id="<?php echo "item-".$post->post_name; ?>">
+									<label for="<?php echo "item-".$post->post_name; ?>" class="accordian-item-header">
+									<?php $post->post_name; ?>
+										<?php the_title();?>
+										<span class="accordian-item-cta">
+											<span></span>
+											<span></span>
+										</span>
+										
+									</label>
+									<div class="accordian-item-content"><?php the_content(); ?></div>
+
+								</li>
+							<?php endforeach; wp_reset_postdata(); ?>
+						</ul>
+					</div>
 				</section>
 
-				<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
+
+				<section class="contact-process">
+					<h2 class="flex-center"> Contact Process</h2>
+				<!-- This function gets the contact process icons -->
+					<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
+					<div class="contact-process flex-center">
+						<p> 
+							We are now taking appointments for the month of 
+							<?php echo CFS()->get('now_booking_month') ?> 
+						</p>
+						<button>
+							Legal Contact Form
+						</button>
+					</div>
+				</section>
 
 			<?php endwhile; // End of the loop. ?>
 

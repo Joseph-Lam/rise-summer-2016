@@ -20,10 +20,11 @@
 	}
 	height: 30rem;
 }
+
+//Services modal button layout styles
 .services {
 	@include flexify(center, center);
 	flex-flow: row wrap;
-	
 }
 .indvid-services{
 	flex-basis: 50%;
@@ -40,4 +41,123 @@
 		margin-bottom: $base_spacing_large;
 	}
 
+}
+
+//What we do section
+.what-we-do {
+	flex-flow: column;
+	text-align: center;
+}
+.services-step-container {
+	@include flexify(space-between, center);
+	flex-flow: column;
+	@include desktop {
+		flex-flow: row;
+	}
+}
+.services-step{
+	@include flexify(center, center);
+	flex-flow: row;
+	img {
+		margin-right: $base_spacing_extra_large;
+		width: 6rem;
+		@include desktop {
+			margin-right: $base_spacing_large;
+		}
+	}
+	p{
+		width: 15rem;
+		height: auto;
+		text-align: left;
+	}	
+	@include desktop {
+		margin-right: $base_spacing_extra_large;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+//FAQ Styles
+.faq {
+	flex-flow: column;
+}
+
+.accordian {
+	width: 90%;
+	height: auto;
+}
+.accordian-item {
+	background-color: $color_light_grey;
+	padding: $base_spacing_large;
+	margin-bottom: $base_spacing_extra_large;
+	box-shadow: 0 2px 3px 2px $color_medium_grey;
+}
+.accordian-item-header{
+	display: block;
+	padding: 1.5rem 3rem 1.5rem 0;
+	position: relative;
+	width: 90%;
+	cursor: pointer;
+	font-family: $font_stack_header;
+	font-size: $h3_size;
+	color: $color_brand_blue;
+	font-weight: bold;
+}
+
+
+.accordian-item-input{
+	&:checked ~
+	.accordian-item-content {
+		max-height: 50rem;
+		transition: max-height 1s ease-in;
+	}
+}
+
+.accordian-item-input{
+	&:checked ~
+	.accordian-item-header{
+		.accordian-item-cta{
+			background-color: $color_brand_red;
+			transform: rotate(135deg);
+			transition: 1s ease-in-out;
+		}
+	}
+}
+.accordian-item-cta{
+	position: absolute;
+	@include flexify(center,center);
+	right: -10%;
+	top: 1rem;
+	background: $color_brand_blue;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	transform: rotate(0deg);
+	transition: 1s ease-in-out;
+	span{
+		position: absolute;
+		width: 2rem;
+		height: .3rem;
+		background-color: $white;
+		&:nth-child(2){
+			height: 2rem;
+			width: .3rem;
+			background-color: $white;
+		}
+	}
+}
+.accordian-item-content {
+	max-height: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+	transition: max-height 1s ease-out;
+}
+.accordian-item-input {
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1;
+	overflow: hidden;
+	position: absolute;
+	left: -9999px;
 }
