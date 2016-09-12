@@ -96,7 +96,7 @@
 	display: block;
 	padding: 1.5rem 3rem 1.5rem 0;
 	position: relative;
-	width: 80%;
+	width: 90%;
 	cursor: pointer;
 	font-family: $font_stack_header;
 	font-size: $h3_size;
@@ -122,11 +122,10 @@
 		}
 	}
 }
-
 .accordian-item-cta{
 	position: absolute;
 	@include flexify(center,center);
-	right: -22rem;
+	right: -10%;
 	top: 1rem;
 	background: $color_dark_grey;
 	width: 4rem;
@@ -151,9 +150,7 @@
 	margin-bottom: 0;
 	overflow: hidden;
 	transition: max-height 1s ease-out;
-
 }
-
 .accordian-item-input {
 	clip: rect(0 0 0 0);
 	width: 1px;

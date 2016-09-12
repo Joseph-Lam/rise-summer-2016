@@ -1271,7 +1271,7 @@ object {
   display: block;
   padding: 1.5rem 3rem 1.5rem 0;
   position: relative;
-  width: 80%;
+  width: 90%;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -1296,7 +1296,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  right: -22rem;
+  right: -10%;
   top: 1rem;
   background: #4A4A4A;
   width: 4rem;
