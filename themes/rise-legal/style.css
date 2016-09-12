@@ -1494,10 +1494,13 @@ object {
           align-items: center;
       -ms-flex-direction: row;
           flex-direction: row; } }
-  @media (min-width: 60rem) {
-    .student-features .student-features-icon {
-      -ms-flex: 20%;
-          flex: 20%; } }
+  .student-features .student-features-icon {
+    margin-bottom: 25px; }
+    @media (min-width: 60rem) {
+      .student-features .student-features-icon {
+        -ms-flex: 20%;
+            flex: 20%;
+        margin: 0; } }
   @media (min-width: 60rem) {
     .student-features .student-feature-meta {
       -ms-flex: 80%;
