@@ -1,19 +1,19 @@
 (function($) {
 
-	$(".menu").hide();
-	$( ".cross" ).hide();
+	// $(".menu").hide();
+	// $( ".cross" ).hide();
 
-	$( ".hamburger" ).click(function() {
-		$( ".menu" ).slideToggle( "slow", function() {
-			$( ".hamburger" ).hide();
-			$( ".cross" ).show();
-		});
-	});
+	// $( ".hamburger" ).click(function() {
+	// 	$( ".menu" ).slideToggle( "slow", function() {
+	// 		$( ".hamburger" ).hide();
+	// 		$( ".cross" ).show();
+	// 	});
+	// });
 
-	$( ".cross" ).click(function() {
-		$( ".menu" ).slideToggle( "slow", function() {
-			$( ".cross" ).hide();
-			$( ".hamburger" ).show();
-		});
-	});
+	// $( ".cross" ).click(function() {
+	// 	$( ".menu" ).slideToggle( "slow", function() {
+	// 		$( ".cross" ).hide();
+	// 		$( ".hamburger" ).show();
+	// 	});
+	// });
 })(jQuery);

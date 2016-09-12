@@ -40,7 +40,6 @@
   height: 12rem;
   width: 100%;
   position: fixed;
-  background-size: cover;
   z-index: 9999;
   @include desktop {
     background-image: url('../../assets/backgrounds/desktop-header.png');
@@ -64,9 +63,10 @@
   flex-basis: 20%;
 
 }
-// .menu {
-//   width: 100px;
-// }
+
+.menu {
+  width: 10rem;
+}
 
 .menu-wrap {
 
