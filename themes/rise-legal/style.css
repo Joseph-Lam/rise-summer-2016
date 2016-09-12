@@ -586,9 +586,6 @@ textarea {
   clear: both;
   margin: 0 0 1.5em; }
 
-.site-content {
-  padding-top: 150px; }
-
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -866,6 +863,9 @@ object {
   @media (min-width: 60rem) {
     .site-branding a img {
       width: 45rem; } }
+
+.hdr-pusher {
+  height: 11rem; }
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");

@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-		
+
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
 				<a href="<?php echo home_url()?>"><img src="<?php echo get_template_directory_uri() . '/assets/logos/rise-logo-white.svg' ?>" alt="home-page-icon"></a>
@@ -44,5 +44,5 @@
 
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
-
+		<div class="hdr-pusher"></div>
 		<div id="content" class="site-content">
