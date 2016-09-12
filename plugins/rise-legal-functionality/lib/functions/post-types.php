@@ -204,7 +204,7 @@ function custom_post_type() {
 		'label'                 => 'FAQ',
 		'description'           => 'Frequently Asked Questions',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
