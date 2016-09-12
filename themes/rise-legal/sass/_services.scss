@@ -85,19 +85,45 @@
 .accordian {
 	width: 90%;
 	height: auto;
-	
-
 }
 .accordian-item {
-background-color: $color_light_grey;
+	background-color: $color_light_grey;
 	padding: $base_spacing_large;
 	margin-bottom: $base_spacing_extra_large;
 	box-shadow: 0 2px 3px 2px $color_medium_grey;
 }
-.indvid-faq{
-	
+.accordian-item-header{
+	display: block;
+	padding: 1.5rem 3rem 1.5rem 0;
+	position: relative;
+	cursor: pointer;
+	font-family: $font_stack_header;
+	font-size: $h3_size;
+	font-weight: bold;
 }
 
+.accordian-item-input{
+	&:checked ~
+		.accordian-item-content {
+			max-height: 50rem;
+			padding-top: $base_spacing;
+			transition: max-height 1s ease-in;
+		}
+	
+}
+.accordian-item-content {
+	max-height: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+	transition: max-height .15s ease-out;
+}
 
-
-
+.accordian-item-input {
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1;
+	overflow: hidden;
+	position: absolute;
+	left: -9999px;
+}

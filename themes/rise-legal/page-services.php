@@ -101,14 +101,16 @@ get_header(); ?>
 									'post_type' => 'faq',
 									'numberposts' => -1,
 									'order' => 'ASC',
+									'post_name' => 'slug',
 									);
 								$faq_page_faq_posts = get_posts($args);
 								?>
 
 								<?php foreach($faq_page_faq_posts as $post) : setup_postdata( $post); ?>
 								<li class="accordian-item">
-									<input class="accordian-item-input" type="checkbox" name="accordian" id="<?php $post->post_name ?>">
-									<label for="<?php $post->post_name ?>" class="accordian-item-header">
+									<input class="accordian-item-input" type="checkbox" name="accordian" id="<?php echo "item-".$post->post_name; ?>">
+									<label for="<?php echo "item-".$post->post_name; ?>" class="accordian-item-header">
+									<?php $post->post_name; ?>
 										<?php the_title();?>
 										<!-- Need Icons for the opening and closing, they go here -->
 									</label>
