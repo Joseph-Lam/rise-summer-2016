@@ -663,6 +663,30 @@ textarea {
     .modal-btn:hover {
       background: #104666; } }
 
+.services-modal-btn {
+  background-color: white;
+  padding: 1.5rem 3rem;
+  color: black;
+  height: 5rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 6px black;
+  background: #EBF0F3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%; }
+  @media (min-width: 60rem) {
+    .services-modal-btn:hover {
+      background: black; } }
+  .services-modal-btn img {
+    height: 5rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1152,6 +1176,38 @@ object {
   @media (min-width: 60rem) {
     .school-banner {
       background-image: url(../../assets/images/desktop/service-school-desktop.jpg); } }
+
+.services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+
+.indvid-services {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+  @media (min-width: 60rem) {
+    .indvid-services {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; } }
+
+.indvid-services-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  text-align: center; }
+  .indvid-services-btn p {
+    margin-top: 1rem;
+    margin-bottom: 3rem; }
 
 .contact-container {
   -ms-flex-direction: column;

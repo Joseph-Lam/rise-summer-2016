@@ -53,3 +53,16 @@
 	@include blue-button;
 	color: $white;
 }
+.services-modal-btn{
+	@include white-button;
+	background: $color_light_blue;
+	@include flexify(center,center);
+	img{
+		height: 5rem;
+	}	
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+
+
+}

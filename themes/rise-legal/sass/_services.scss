@@ -20,3 +20,24 @@
 	}
 	height: 30rem;
 }
+.services {
+	@include flexify(center, center);
+	flex-flow: row wrap;
+	
+}
+.indvid-services{
+	flex-basis: 50%;
+	@include desktop {
+		flex-basis: 25%;
+	}
+}
+.indvid-services-btn{
+	@include flexify(center, center);
+	flex-flow: column;
+	text-align: center;
+	p {
+		margin-top: $base_spacing;
+		margin-bottom: $base_spacing_large;
+	}
+
+}

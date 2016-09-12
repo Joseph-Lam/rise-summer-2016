@@ -27,7 +27,7 @@ get_header(); ?>
 					<!-- Services Modal Buttons -->
 					<div>
 						<p><?php echo CFS()->get('who_we_help')?></p>
-						<ul class="services flex-center">
+						<ul class="services">
 							<?php
 								$args = array(
 									'post_type' => 'services',
@@ -39,11 +39,12 @@ get_header(); ?>
 
 								<?php foreach($services_page_services_posts as $post) : setup_postdata( $post); ?>
 								<li class="indvid-services">
-									<a href="#<?php the_title();?>" class="services-modal-btn">
-										<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">
-											
-									</a>
-									<?php the_title();?>
+									<div class="indvid-services-btn">
+										<a href="#<?php the_title();?>" class="services-modal-btn">
+											<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">		
+										</a>
+										<p><?php the_title();?></p>
+									</div>
 									<div id="<?php the_title();?>" class="modalDialog">
 										<div>
 											<a href="#close" title="Close" class="close">
