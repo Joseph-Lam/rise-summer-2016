@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="donate-how-title">
-				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand.svg"?>">
+				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand-white.svg"?>">
 				<h2> how we help </h2>
 			</div>
 
@@ -88,5 +88,5 @@
 			</section>
 
 
-		</div><!-- .entry-content -->
+		</div><!-- .donate-content -->
 	</article><!-- #post-## -->
