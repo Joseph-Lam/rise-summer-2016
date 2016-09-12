@@ -36,7 +36,7 @@
 			<div class="student-features-container">
 				<div class="student-orientation student-features">
 					<div class="student-orientation-icon student-features-icon">
-						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-student-orientation.svg"?>">
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-orientation.svg"?>">
 					</div>
 					
 					<div class="student-orientation-info student-feature-meta">
@@ -46,7 +46,7 @@
 
 				<div class="student-legal-clinic student-features">
 					<div class="student-clinic-icon student-features-icon">
-						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-clinic.svg"?>">
 					</div>
 					
 					<div class="student-clinic-info student-feature-meta">
@@ -56,7 +56,7 @@
 
 				<div class="student-lawyering-course student-features">
 					<div class="student-course-icon student-features-icon">
-						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-course.svg"?>">
 					</div>
 					
 					<div class="student-course-info student-feature-meta">
@@ -66,7 +66,7 @@
 
 				<div class="student-reflection student-features">
 					<div class="student-reflection-icon student-features-icon">
-						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-reflection.svg"?>">
 					</div>
 					
 					<div class="student-reflection-info student-feature-meta">
