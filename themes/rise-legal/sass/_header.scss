@@ -30,18 +30,7 @@
 //   z-index:100;
 // }
 
-.menu {
-  width: 100px;
-}
 
-.menu-wrap {
-  position: fixed;
-  right: 0;
-}
-
-.hamburger {
-  text-transform: uppercase;
-}
 
 
 .site-header {
@@ -57,14 +46,13 @@
     background-image: url('../../assets/backgrounds/desktop-header.png');
   }
 }
-
 .site-branding {
   a {
     img{
-      width: 60rem;
+      width: 50rem;
       padding: $base_spacing_large;
       @include desktop {
-        width: 45rem;
+        width: 40rem;
       }
     }
   }
@@ -73,3 +61,22 @@
 .hdr-pusher{
   height: 11rem;
 }
+.main-navigation {
+  position: relative;
+  background-color: $color_brand_blue;
+  flex-basis: 20%;
+
+}
+// .menu {
+//   width: 100px;
+// }
+
+.menu-wrap {
+
+}
+
+.hamburger {
+  text-transform: uppercase;
+}
+
+

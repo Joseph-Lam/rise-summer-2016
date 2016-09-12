@@ -829,16 +829,6 @@ object {
   margin-bottom: 0;
   padding-bottom: 0; }
 
-.menu {
-  width: 100px; }
-
-.menu-wrap {
-  position: fixed;
-  right: 0; }
-
-.hamburger {
-  text-transform: uppercase; }
-
 .site-header {
   display: -ms-flexbox;
   display: flex;
@@ -858,14 +848,23 @@ object {
       background-image: url("../../assets/backgrounds/desktop-header.png"); } }
 
 .site-branding a img {
-  width: 60rem;
+  width: 50rem;
   padding: 3rem; }
   @media (min-width: 60rem) {
     .site-branding a img {
-      width: 45rem; } }
+      width: 40rem; } }
 
 .hdr-pusher {
   height: 11rem; }
+
+.main-navigation {
+  position: relative;
+  background-color: #155E89;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%; }
+
+.hamburger {
+  text-transform: uppercase; }
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");

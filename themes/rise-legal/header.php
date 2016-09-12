@@ -35,14 +35,15 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="menu-wrap">
-					<button class="hamburger">&#9776;menu</button>
-  					<button class="cross">&#735;</button>
-				</div>
+				
 				
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 			</nav><!-- #site-navigation -->
+			<div class="menu-wrap">
+					<button class="hamburger">&#9776;menu</button>
+  					<button class="cross">&#735;</button>
+				</div>
 		</header><!-- #masthead -->
 		<div class="hdr-pusher"></div>
 		<div id="content" class="site-content">
