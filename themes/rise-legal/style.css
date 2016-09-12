@@ -1256,11 +1256,11 @@ object {
   -ms-flex-flow: column;
       flex-flow: column; }
 
-.faq-list {
+.accordian {
   width: 90%;
   height: auto; }
 
-.indvid-faq {
+.accordian-item {
   background-color: #EEEEEE;
   padding: 3rem;
   margin-bottom: 5rem;

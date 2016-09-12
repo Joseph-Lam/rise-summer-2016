@@ -95,7 +95,7 @@ get_header(); ?>
 				<section>
 					<div class="faq flex-center">
 						<h2>FAQ's</h2>
-						<ul class="faq-list">
+						<ul class="accordian">
 							<?php
 								$args = array(
 									'post_type' => 'faq',
@@ -106,12 +106,13 @@ get_header(); ?>
 								?>
 
 								<?php foreach($faq_page_faq_posts as $post) : setup_postdata( $post); ?>
-								<li class="faq-list-item">
-									<div class="indvid-faq">
-										<h3 class="faq-question"><?php the_title();?></h3>
-										<p class="faq-answer"><?php the_content(); ?></p>
-
-									</div>
+								<li class="accordian-item">
+									<input class="accordian-item-input" type="checkbox" name="accordian" id="<?php $post->post_name ?>">
+									<label for="<?php $post->post_name ?>" class="accordian-item-header">
+										<?php the_title();?>
+										<!-- Need Icons for the opening and closing, they go here -->
+									</label>
+									<div class="accordian-item-content"><?php the_content(); ?></div>
 
 								</li>
 							<?php endforeach; wp_reset_postdata(); ?>
