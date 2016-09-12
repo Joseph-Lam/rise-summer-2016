@@ -52,6 +52,10 @@
 	@include desktop {
 		padding: 10rem;
 	}
+	img {
+		width: 49px;
+    	height: 66px;
+	}
 	h2 {
 		text-transform: capitalize;
 		margin: 0;

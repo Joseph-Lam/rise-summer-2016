@@ -1214,6 +1214,9 @@ object {
   @media (min-width: 60rem) {
     .donate-how-title {
       padding: 10rem; } }
+  .donate-how-title img {
+    width: 49px;
+    height: 66px; }
   .donate-how-title h2 {
     text-transform: capitalize;
     margin: 0;
