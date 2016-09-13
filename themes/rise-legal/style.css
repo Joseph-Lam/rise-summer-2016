@@ -870,9 +870,11 @@ object {
   .main-navigation .close-nav {
     cursor: pointer; }
 
-@media (min-width: 60rem) {
-  .menu-wrap {
-    display: none; } }
+.menu-wrap {
+  width: 15rem; }
+  @media (min-width: 60rem) {
+    .menu-wrap {
+      display: none; } }
 
 .hamburger {
   text-transform: uppercase;
@@ -881,6 +883,8 @@ object {
   box-shadow: none;
   border: none;
   padding: 0; }
+  .hamburger img {
+    width: 100%; }
   .hamburger:hover {
     box-shadow: none; }
 
