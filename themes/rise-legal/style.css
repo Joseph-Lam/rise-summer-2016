@@ -866,7 +866,8 @@ object {
   @media (min-width: 60rem) {
     .main-navigation {
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row;
+      background-color: transparent; } }
 
 .menu {
   display: -ms-flexbox;
@@ -881,6 +882,13 @@ object {
     .menu {
       -ms-flex-flow: row;
           flex-flow: row; } }
+
+.menu-item a {
+  color: white; }
+
+@media (min-width: 60rem) {
+  .menu-item {
+    margin-right: 3rem; } }
 
 @media (min-width: 60rem) {
   .menu-wrap {

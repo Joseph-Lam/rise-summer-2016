@@ -63,6 +63,7 @@
   background-color: $color_brand_blue;
   @include desktop {
     flex-direction: row;
+    background-color: transparent;
   }
 
 }
@@ -74,7 +75,14 @@
   }
 
 }
-
+.menu-item{
+  a{
+    color: $white;
+  }
+  @include desktop {
+    margin-right: $base_spacing_large;
+  }
+}
 .menu-wrap{
 
   @include desktop {
