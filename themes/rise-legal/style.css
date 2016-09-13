@@ -841,33 +841,25 @@ object {
   height: 12rem;
   width: 100%;
   position: fixed;
-  z-index: 9999; }
+  z-index: 10; }
   @media (min-width: 60rem) {
     .site-header {
       background-image: url("../../assets/backgrounds/desktop-header.png"); } }
 
 .site-branding a img {
-  width: 50rem;
   padding: 3rem; }
   @media (min-width: 60rem) {
     .site-branding a img {
       width: 40rem; } }
 
 .main-navigation {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  height: auto;
+  z-index: 11;
   background-color: #155E89; }
-  @media (min-width: 60rem) {
-    .main-navigation {
-      -ms-flex-direction: row;
-          flex-direction: row;
-      background-color: transparent; } }
 
 .menu {
   display: -ms-flexbox;
@@ -879,8 +871,7 @@ object {
   -ms-flex-flow: column;
       flex-flow: column;
   height: 40rem;
-  width: 40%;
-  position: absolute; }
+  width: 40%; }
   @media (min-width: 60rem) {
     .menu {
       -ms-flex-flow: row;
@@ -888,19 +879,41 @@ object {
       height: auto;
       position: relative; } }
 
-.menu-item a {
-  color: white; }
+.menu-item {
+  padding: 15%; }
+  .menu-item a {
+    color: white; }
+  @media (min-width: 60rem) {
+    .menu-item {
+      margin-right: 3rem; } }
 
-@media (min-width: 60rem) {
-  .menu-item {
-    margin-right: 3rem; } }
-
-@media (min-width: 60rem) {
-  .menu-wrap {
-    display: none; } }
+.menu-wrap {
+  padding-right: 3rem; }
+  @media (min-width: 60rem) {
+    .menu-wrap {
+      display: none; } }
 
 .hamburger {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+  border: none; }
+
+.legal-form {
+  background-color: #A44F52;
+  color: white;
+  text-shadow: none;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  padding: 3rem 0; }
+  .legal-form:hover {
+    box-shadow: none;
+    background-color: #884244; }
+  @media (min-width: 60rem) {
+    .legal-form {
+      display: inline-block; } }
 
 .hdr-pusher {
   height: 11rem; }

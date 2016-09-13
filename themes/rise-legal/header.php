@@ -37,31 +37,21 @@
 			</div><!-- .site-branding -->
 			
 			<div class="menu-wrap">
-				<button class="hamburger">&#9776;menu</button>
+				<button class="hamburger">
+				 	<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-menu.svg' ?>">
+				 </button>
 			</div>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				
-				<!-- <input type="checkbox" id="slide-nav" class="slide-nav" role="button">
-				<label for="slide-nav" class="slide-nav-toggle" onclick>
-					<span class="hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</label> -->
-
-				<div class="slide">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</div>
 			
-				
-
-			</nav><!-- #site-navigation -->
-			<button>
-					Legal Contact Form
-				</button>
+			
 
 
 		</header><!-- #masthead -->
+		<nav id="site-navigation" class="main-navigation open" role="navigation">
+
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<button class="legal-form">
+				Legal Contact Form
+			</button>
+		</nav><!-- #site-navigation -->
 		<div class="hdr-pusher"></div>
 		<div id="content" class="site-content">
