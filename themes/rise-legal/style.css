@@ -1674,35 +1674,6 @@ object {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.name_first {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.name_last {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.ginput_container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  .ginput_container span {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-bottom: 15px; }
-    .ginput_container span label {
-      font-size: 1.5rem; }
-
-.gfield_label {
-  font-size: 2.2rem; }
-
 .gform_page_footer .gform_previous_button {
   background-color: white;
   padding: 1.5rem 3rem;
@@ -1726,3 +1697,75 @@ object {
   @media (min-width: 60rem) {
     .gform_page_footer .gform_next_button:hover {
       background: #104666; } }
+
+.name_first {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.name_last {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.gfield_label {
+  font-size: 2.2rem; }
+
+.ginput_container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .ginput_container span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%; }
+    .ginput_container span label {
+      font-size: 1.5rem; }
+  .ginput_container .address_zip {
+    width: 48%;
+    margin: auto; }
+  .ginput_container .address_country {
+    width: 48%;
+    margin: auto; }
+    .ginput_container .address_country select {
+      border: none;
+      border-bottom: 1px solid black;
+      padding: 5px 0; }
+
+.gfield_contains_required {
+  margin: 10px 0; }
+
+.ginput_container_phone input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%; }
+
+.ginput_container_radio .gfield_radio {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%; }
+  .ginput_container_radio .gfield_radio li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .ginput_container_radio .gfield_radio li input {
+      width: 40px;
+      height: 40px;
+      background-color: white; }
+    .ginput_container_radio .gfield_radio li label {
+      font-size: 2rem;
+      padding: 10px;
+      padding-right: 30px; }
