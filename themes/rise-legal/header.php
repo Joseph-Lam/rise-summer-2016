@@ -36,27 +36,30 @@
 				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 			</div><!-- .site-branding -->
 			
+			<div class="menu-wrap">
+				<button class="hamburger">&#9776;menu</button>
+			</div>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				
-				<input type="checkbox" id="slide-nav" class="slide-nav" role="button">
+				<!-- <input type="checkbox" id="slide-nav" class="slide-nav" role="button">
 				<label for="slide-nav" class="slide-nav-toggle" onclick>
-					<span></span>
-					<span></span>
-					<span></span>
-				</label>
+					<span class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</label> -->
+
 				<div class="slide">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</div>
-				<!-- <div class="menu-wrap">
-					<button class="hamburger">&#9776;menu</button>
-					<button class="cross">&#735;</button>
-				</div> -->
-				<button>
-					Legal Contact Form
-				</button>
+			
+				
 
 			</nav><!-- #site-navigation -->
-			
+			<button>
+					Legal Contact Form
+				</button>
 
 
 		</header><!-- #masthead -->
