@@ -49,8 +49,9 @@
 }
 //Header logo settings
 .site-branding {
-  width: 25rem;
+  min-width: 25rem;
   padding-right: $base_spacing_large;
+
 }
 
 // Navigation styles (move to nav sass after done)
@@ -103,9 +104,6 @@
       box-shadow: none;
       background-color: darken($color_brand_red, 8%);
     }
-    @include desktop {
-      display: inline-block;
-    }
   }
   .close-nav{
     cursor: pointer;
@@ -128,17 +126,15 @@
     box-shadow: none;
   }
 }
-
+// Desktop Nav Styles
 .desktop-navigation{
   display: none;
   @include desktop {
     @include flexify(space-between, center);
-    width: 70%;
     .menu {
       margin: 0;
       @include flexify(flex-start, center);
       flex-flow: row;
-      // width: 60%;
       position: relative;
     }
     .menu-item{
@@ -147,6 +143,8 @@
       a{
         color: $white;
         padding-bottom: .5rem;
+        font-size: 1.8rem;
+        
         &:hover{
           border-bottom: 3px solid $color_light_blue;
         }
@@ -155,11 +153,12 @@
         display: none;
       }
     }
+  
     .legal-form{
       background-color: $color_brand_red;
       color: $white;
       height: 5rem;
-      width: 20rem;
+      min-width: 20rem;
       font-size: 1.6rem;
       text-shadow: none;
       box-shadow: none;

@@ -42,11 +42,13 @@
 				 </button>
 			</div>
 			<nav id="desktop-navigation" class="desktop-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<button class="legal-form">
-				Legal Contact Form
-			</button>
-		</nav><!-- #site-navigation -->
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<div class="legal-btn-wrap">
+					<button class="legal-form">
+						Legal Contact Form
+					</button>
+				</div>
+			</nav><!-- #site-navigation -->
 			
 		</header><!-- #masthead -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
