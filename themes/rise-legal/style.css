@@ -876,12 +876,17 @@ object {
       justify-content: flex-start;
   -ms-flex-align: space-between;
       align-items: space-between;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap; }
+  -ms-flex-flow: column;
+      flex-flow: column;
+  height: 40rem;
+  width: 40%;
+  position: absolute; }
   @media (min-width: 60rem) {
     .menu {
       -ms-flex-flow: row;
-          flex-flow: row; } }
+          flex-flow: row;
+      height: auto;
+      position: relative; } }
 
 .menu-item a {
   color: white; }

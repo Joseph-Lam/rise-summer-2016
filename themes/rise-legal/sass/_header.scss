@@ -69,9 +69,14 @@
 }
 .menu{
   @include flexify(flex-start, space-between);
-  flex-flow: column wrap;
+  flex-flow: column;
+  height: 40rem;
+  width: 40%;
+  position: absolute;
   @include desktop {
     flex-flow: row;
+    height: auto;
+    position: relative;
   }
 
 }
