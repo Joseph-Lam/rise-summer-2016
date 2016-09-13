@@ -4,7 +4,7 @@
 </div>
 <div class="donate-content flex-center">
 	<p>
-		<?php echo CFS()->get('how_to_donate') ?>
+		<?php echo CFS()->get('how_to_donate', 46) ?>
 	</p>
 	<button>
 		Donate

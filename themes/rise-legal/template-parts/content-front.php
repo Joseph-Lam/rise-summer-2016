@@ -27,8 +27,7 @@
 			<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
 			<div class="contact-process flex-center">
 				<p> 
-					We are now taking appointments for the month of 
-					<?php echo CFS()->get('now_booking_month') ?> 
+					We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month') ?> 
 				</p>
 				<button>
 					Legal Contact Form
