@@ -34,21 +34,23 @@
 
 //Setting Site background and fixedness
 .site-header {
-  @include flexify(space-between, center);
+  @include flexify(space-between, flex-end);
+  align-content: flex-end;
   background: url('../../assets/backgrounds/mobile-header.png') center;
   background-size: cover;
-  padding: $base_spacing_large;
-  // height: 12rem;
+  padding: $base_spacing $base_spacing_large $base_spacing_large $base_spacing_large;
   width: 100%;
   position: fixed;
   z-index: 10;
   @include desktop {
+    align-items:center;
     background-image: url('../../assets/backgrounds/desktop-header.png');
   }
 }
 //Header logo settings
 .site-branding {
-  width: 25%;
+  width: 25rem;
+  padding-right: $base_spacing_large;
 }
 
 // Navigation styles (move to nav sass after done)
@@ -111,7 +113,6 @@
 }
   //Hamburger Menu Styles
 .menu-wrap{
-  padding-right: $base_spacing_large;
   @include desktop {
     display: none;
   }
@@ -122,6 +123,7 @@
   color: $white;
   box-shadow: none;
   border: none;
+  padding: 0;
   &:hover {
     box-shadow: none;
   }
@@ -141,9 +143,10 @@
     }
     .menu-item{
       padding: 0;
-      margin-right: $base_spacing_large;
+      padding-right: $base_spacing_large;
       a{
         color: $white;
+        padding-bottom: .5rem;
         &:hover{
           border-bottom: 3px solid $color_light_blue;
         }

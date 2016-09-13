@@ -799,20 +799,26 @@ object {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   background: url("../../assets/backgrounds/mobile-header.png") center;
   background-size: cover;
-  padding: 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   width: 100%;
   position: fixed;
   z-index: 10; }
   @media (min-width: 60rem) {
     .site-header {
+      -ms-flex-align: center;
+          -ms-grid-row-align: center;
+          align-items: center;
       background-image: url("../../assets/backgrounds/desktop-header.png"); } }
 
 .site-branding {
-  width: 25%; }
+  width: 25rem;
+  padding-right: 3rem; }
 
 .main-navigation {
   position: fixed;
@@ -867,18 +873,17 @@ object {
   .main-navigation .close-nav {
     cursor: pointer; }
 
-.menu-wrap {
-  padding-right: 3rem; }
-  @media (min-width: 60rem) {
-    .menu-wrap {
-      display: none; } }
+@media (min-width: 60rem) {
+  .menu-wrap {
+    display: none; } }
 
 .hamburger {
   text-transform: uppercase;
   background-color: transparent;
   color: white;
   box-shadow: none;
-  border: none; }
+  border: none;
+  padding: 0; }
   .hamburger:hover {
     box-shadow: none; }
 
@@ -906,9 +911,10 @@ object {
         position: relative; }
       .desktop-navigation .menu-item {
         padding: 0;
-        margin-right: 3rem; }
+        padding-right: 3rem; }
         .desktop-navigation .menu-item a {
-          color: white; }
+          color: white;
+          padding-bottom: .5rem; }
           .desktop-navigation .menu-item a:hover {
             border-bottom: 3px solid #EBF0F3; }
         .desktop-navigation .menu-item:nth-child(1) {
