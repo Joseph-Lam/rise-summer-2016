@@ -9,6 +9,13 @@
 		
 }
 
-.gf_previous_button {
-
+.gform_page_footer {
+	.gform_previous_button {
+	@include white-button;
+	}
+	.gform_next_button {
+	@include blue-button;
+	}
 }
+
+	
