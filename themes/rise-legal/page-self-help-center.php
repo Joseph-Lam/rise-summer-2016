@@ -14,7 +14,14 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				
+				<button>
+					Hours of Operation
+				</button>
 
+
+				<h3>External Help</h3>
+				<?php echo CFS()->get('external_help')?>
 
 <!-- Create the nav for glossary buttons here -->
 				<ul>
