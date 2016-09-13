@@ -1655,11 +1655,18 @@ object {
       align-items: inherit; }
 
 .gf_progressbar {
-  padding: 15px;
+  border-radius: 10px;
   background-color: #EEEEEE;
   box-shadow: 0px 3px 6px #CCCCCC; }
   .gf_progressbar .gf_progressbar_percentage {
-    background-color: #7EB266; }
+    background-color: #7EB266;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px; }
+    .gf_progressbar .gf_progressbar_percentage span {
+      color: white;
+      font-weight: 500;
+      font-size: 2rem; }
 
 .gform_page_fields {
   display: -ms-flexbox;
@@ -1688,7 +1695,10 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column; }
+        flex-direction: column;
+    margin-bottom: 15px; }
+    .ginput_container span label {
+      font-size: 1.5rem; }
 
 .gfield_label {
   font-size: 2.2rem; }

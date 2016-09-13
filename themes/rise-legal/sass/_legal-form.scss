@@ -9,12 +9,20 @@
 }
 
 .gf_progressbar {
-	padding: 15px;
+	border-radius: 10px;
 	background-color: $color_light_grey;
 	box-shadow: 0px 3px 6px $color_medium_grey;
 
 	.gf_progressbar_percentage {
 		background-color: $color_brand_green;
+		border-radius: 10px;
+		text-align: center;
+		padding: 15px;
+		span {
+			color: white;
+			font-weight: 500;
+			font-size: 2rem;
+		}
 	}
 
 }
@@ -34,12 +42,18 @@
 	flex-direction: column;
 }
 
+//page 2
+
 .ginput_container {
 	display: flex;
 	flex-direction: column;
 	span {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 15px;
+		label {
+			font-size: 1.5rem;
+		}
 	}
 }
 
