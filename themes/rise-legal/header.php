@@ -38,13 +38,19 @@
 			
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				
-				
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
-				<div class="menu-wrap">
+				<input type="checkbox" id="slide-nav" class="slide-nav" role="button">
+				<label for="slide-nav" class="slide-nav-toggle" onclick>
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<div class="slide">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</div>
+				<!-- <div class="menu-wrap">
 					<button class="hamburger">&#9776;menu</button>
 					<button class="cross">&#735;</button>
-				</div>
+				</div> -->
 				<button>
 					Legal Contact Form
 				</button>

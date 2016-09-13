@@ -110,7 +110,6 @@ get_header(); ?>
 								<li class="accordian-item">
 									<input class="accordian-item-input" type="checkbox" name="accordian" id="<?php echo "item-".$post->post_name; ?>">
 									<label for="<?php echo "item-".$post->post_name; ?>" class="accordian-item-header">
-									<?php $post->post_name; ?>
 										<?php the_title();?>
 										<span class="accordian-item-cta">
 											<span></span>
