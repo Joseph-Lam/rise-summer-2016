@@ -47,7 +47,7 @@
 
 		</header><!-- #masthead -->
 		<nav id="site-navigation" class="main-navigation open" role="navigation">
-			<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-exit-white.svg'?>">
+			<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-exit-white.svg'?>" class="close-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			<button class="legal-form">
 				Legal Contact Form

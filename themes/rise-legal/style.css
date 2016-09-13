@@ -857,10 +857,15 @@ object {
   top: 0;
   right: 0;
   width: 30rem;
-  height: auto;
+  max-height: 100%;
   z-index: 11;
   background-color: #155E89;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  overflow-y: scroll;
+  transition: transform 0.3s ease;
+  transform: translateX(30rem); }
+  .main-navigation.open {
+    transform: translateX(0); }
   .main-navigation img {
     position: absolute;
     right: 10%;
@@ -907,6 +912,9 @@ object {
   color: white;
   box-shadow: none;
   border: none; }
+
+.close-nav {
+  cursor: pointer; }
 
 .legal-form {
   background-color: #A44F52;

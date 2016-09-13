@@ -63,10 +63,16 @@
   top: 0;
   right: 0;
   width: 30rem;
-  height: auto;
+  max-height: 100%;
   z-index: 11;
   background-color: $color_brand_blue;
   padding-top: $base_spacing_large;
+  overflow-y: scroll;
+  transition: transform 0.3s ease;
+  transform: translateX(30rem);
+  &.open{
+    transform: translateX(0);
+  }
   img {
     position: absolute;
     right: 10%;
@@ -111,7 +117,9 @@
   color: $white;
   box-shadow: none;
   border: none;
- 
+}
+.close-nav{
+  cursor: pointer;
 }
 .legal-form{
   // display: none;
