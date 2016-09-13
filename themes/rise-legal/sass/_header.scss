@@ -32,7 +32,7 @@
 
 
 
-
+//Setting Site background and fixedness
 .site-header {
   @include flexify(space-between, center);
   background: url('../../assets/backgrounds/mobile-header.png') center;
@@ -45,6 +45,7 @@
     background-image: url('../../assets/backgrounds/desktop-header.png');
   }
 }
+//Header logo settings
 .site-branding {
   a {
     img{
@@ -57,6 +58,7 @@
   }
 }
 
+// Navigation styles (move to nav sass after done)
 .main-navigation {
   @include flexify(space-around, center);
   flex-direction: column;
