@@ -43,3 +43,18 @@ function rise_legal_register_people_group_taxonomy() {
 
 }
 add_action( 'init', 'rise_legal_register_people_group_taxonomy', 0 );
+
+
+function resources_alpha_tax() {
+	$args = array( 	'hierarchical' => false,
+					'label' => 'Alpha',
+					//turn the below three to false once it's all working
+					'show_ui' => true,
+					'show_in_nav_menus' => true,
+					'show_admin_column' => true,
+					'query_var' => true,
+
+		);
+	register_taxonomy('alpha', array('resources'), $args );
+}
+add_action('init', 'resources_alpha_tax');
