@@ -43,7 +43,7 @@
 			</div>
 			<nav id="desktop-navigation" class="desktop-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<button class="desktop-legal-form">
+			<button class="legal-form">
 				Legal Contact Form
 			</button>
 		</nav><!-- #site-navigation -->
