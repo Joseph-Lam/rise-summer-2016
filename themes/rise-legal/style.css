@@ -400,8 +400,11 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
+  background-color: white;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid black; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -1638,14 +1641,57 @@ object {
   .student-features:last-child {
     border: none; }
 
+.legal-form-content {
+  width: 80%;
+  margin: 0 auto; }
+
 .gform_wrapper {
   display: -ms-flexbox !important;
   display: flex !important;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  -ms-flex-align: inherit;
+      align-items: inherit; }
+
+.gf_progressbar {
+  padding: 15px;
+  background-color: #EEEEEE;
+  box-shadow: 0px 3px 6px #CCCCCC; }
+  .gf_progressbar .gf_progressbar_percentage {
+    background-color: #7EB266; }
+
+.gform_page_fields {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.name_first {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.name_last {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.ginput_container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .ginput_container span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+.gfield_label {
+  font-size: 2.2rem; }
 
 .gform_page_footer .gform_previous_button {
   background-color: white;
