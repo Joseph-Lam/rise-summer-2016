@@ -1698,6 +1698,35 @@ object {
     .gform_page_footer .gform_next_button:hover {
       background: #104666; } }
 
+.ginput_container_radio .gfield_radio {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%; }
+  .ginput_container_radio .gfield_radio li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .ginput_container_radio .gfield_radio li input {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer; }
+      .ginput_container_radio .gfield_radio li input:hover {
+        cursor: pointer; }
+    .ginput_container_radio .gfield_radio li label {
+      font-size: 2rem;
+      padding: 10px;
+      padding-right: 30px; }
+
 .name_first {
   display: -ms-flexbox;
   display: flex;
@@ -1745,27 +1774,3 @@ object {
   border: none;
   border-bottom: 1px solid black;
   width: 100%; }
-
-.ginput_container_radio .gfield_radio {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100%; }
-  .ginput_container_radio .gfield_radio li {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-    .ginput_container_radio .gfield_radio li input {
-      width: 40px;
-      height: 40px;
-      background-color: white; }
-    .ginput_container_radio .gfield_radio li label {
-      font-size: 2rem;
-      padding: 10px;
-      padding-right: 30px; }
