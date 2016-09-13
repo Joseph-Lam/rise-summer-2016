@@ -41,12 +41,15 @@
 				 	<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-menu.svg' ?>">
 				 </button>
 			</div>
+			<nav id="desktop-navigation" class="desktop-navigation" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<button class="desktop-legal-form">
+				Legal Contact Form
+			</button>
+		</nav><!-- #site-navigation -->
 			
-			
-
-
 		</header><!-- #masthead -->
-		<nav id="site-navigation" class="main-navigation open" role="navigation">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-exit-white.svg'?>" class="close-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			<button class="legal-form">

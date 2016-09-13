@@ -37,7 +37,8 @@
   @include flexify(space-between, center);
   background: url('../../assets/backgrounds/mobile-header.png') center;
   background-size: cover;
-  height: 12rem;
+  padding: $base_spacing_large;
+  // height: 12rem;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -47,14 +48,7 @@
 }
 //Header logo settings
 .site-branding {
-  a {
-    img{
-      padding: $base_spacing_large;
-      @include desktop {
-        width: 40rem;
-      }
-    }
-  }
+  width: 25%;
 }
 
 // Navigation styles (move to nav sass after done)
@@ -64,7 +58,7 @@
   right: 0;
   width: 30rem;
   max-height: 100%;
-  z-index: 11;
+  z-index: 15;
   background-color: $color_brand_blue;
   padding-top: $base_spacing_large;
   overflow-y: scroll;
@@ -78,66 +72,93 @@
     right: 10%;
     top: 4rem;
   }
-}
-.menu{
-  @include flexify(flex-start, space-between);
-  flex-flow: column;
-  height: 40rem;
-  width: 40%;
-  
-  @include desktop {
-    flex-flow: row;
-    height: auto;
-    position: relative;
+  .menu{
+    @include flexify(flex-start, space-between);
+    flex-flow: column;
+    height: 40rem;
+    width: 40%;
   }
 
-}
-.menu-item{
-  padding: 15%;
-  padding-left: $base_spacing_large;
-  a{
+  // Each Menu heading
+  .menu-item{
+    padding: 15%;
+    padding-left: $base_spacing_large;
+    a{
+      color: $white;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  .legal-form{
+    background-color: $color_brand_red;
     color: $white;
-    font-weight: bold;
-    letter-spacing: 1px;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    padding: $base_spacing_large 0;
+    &:hover {
+      box-shadow: none;
+      background-color: darken($color_brand_red, 8%);
+    }
+    @include desktop {
+      display: inline-block;
+    }
   }
-  @include desktop {
-    margin-right: $base_spacing_large;
+  .close-nav{
+    cursor: pointer;
   }
 }
+  //Hamburger Menu Styles
 .menu-wrap{
   padding-right: $base_spacing_large;
   @include desktop {
     display: none;
   }
 }
-
 .hamburger {
   text-transform: uppercase;
   background-color: transparent;
   color: $white;
   box-shadow: none;
   border: none;
+  &:hover {
+    box-shadow: none;
+  }
 }
-.close-nav{
-  cursor: pointer;
+
+
+.desktop-navigation{
+  display: none;
+  @include desktop {
+    @include flexify(space-between, center);
+    width: 75%;
+    .menu {
+      margin: 0;
+      @include flexify(flex-start, center);
+      flex-flow: row;
+      width: 60%;
+      position: relative;
+    }
+    .menu-item{
+      padding: 0;
+      // margin-right: 10%;
+      &:nth-child(1){
+        display: none;
+      }
+    }
+  }
 }
-.legal-form{
-  // display: none;
+.desktop-legal-form{
+  @include white-button;
   background-color: $color_brand_red;
   color: $white;
+  font-size: 1.6rem;
   text-shadow: none;
   box-shadow: none;
   border: none;
-  width: 100%;
-  padding: $base_spacing_large 0;
-   &:hover {
-    box-shadow: none;
-    background-color: darken($color_brand_red, 8%);
-  }
-  @include desktop {
-    display: inline-block;
-  }
-}
+  padding: 0;
+}    
 .hdr-pusher{
   height: 11rem;
 }
