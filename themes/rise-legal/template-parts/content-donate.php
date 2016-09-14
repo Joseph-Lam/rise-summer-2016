@@ -81,10 +81,8 @@
 			<section class="donate">
 				<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
 				<div class="donate-content flex-center">
-					<button>
-						Why Donate?
-					</button>
-					</div>
+					<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Why Donate?' )->ID ); ?>">why donate?</a>
+				</div>
 			</section>
 
 
