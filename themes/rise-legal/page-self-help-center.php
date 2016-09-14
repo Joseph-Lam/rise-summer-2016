@@ -28,20 +28,22 @@ get_header(); ?>
 			<!-- Create the nav for glossary buttons here -->
 			<?php 
 			$alphas = array(
-				'a-b' => array('a','b'),
-				'c-d' => array('c','d')
+				'a-b' => array('a', 'b'),
+				'c-d' => array('c', 'd'),
+				'e-j' => array('e', 'f', 'g', 'h', 'i', 'j'),
+				'k-m' => array('k', 'l', 'm'),
+				'n-p' => array('n', 'o', 'p'),
+				'q-t' => array('q', 'r', 's', 't'),
+				'u-z' => array('u', 'v', 'w', 'x', 'y', 'y')
 				);
 			?>
 			<div class="title-banner resource-banner flex-center">
 				<ul>
-					<?php 
-						foreach ($alphas as $name => $value) { ?>
+					<?php foreach ($alphas as $name => $value) { ?>
 							<li class="<?php echo 'menu-'.$name ?>"><?php echo $name ?></li>
-						<?php }
-					?>
+					<?php } ?>
 				</ul>
 			</div>
-
 
 			<?php foreach($alphas as $name => $alpha) {
 				?>
@@ -61,12 +63,11 @@ get_header(); ?>
 							)
 						);
 					$resources_page_ab_posts = get_posts($args);
-
-					foreach($resources_page_ab_posts as $post) : setup_postdata( $post ); ?>
+					?>
+					<?php foreach($resources_page_ab_posts as $post) : setup_postdata( $post ); ?>
 						<li class="resource-post">
 							<?php the_content();?>
 						</li>
-					
 					<?php endforeach; wp_reset_postdata(); ?>
 					</ul>
 				</section>
