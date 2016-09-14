@@ -33,6 +33,7 @@
 }
 
 .gform_page_footer {
+	@include flexify(center,center);
 	.gform_previous_button {
 		@include white-button;
 	}
@@ -48,6 +49,7 @@
 		width: 100%;
 		li {
 			@include flexify(center,center);
+			margin: 15px 25px;
 			input{
 				width: 40px;
 				height: 40px;
@@ -62,14 +64,26 @@
 			label {
 				font-size: $h3_size;
 				padding: 10px;
-				padding-right: 30px;
 			}
 		}
 	}
 }
 
+//date calendar styling
+.ui-datepicker {
+	background-color: white;
 
+}
+
+
+//////////////////////////////
 //page 1
+.ginput_container_email {
+	input {
+		width: 100%;
+	}
+}
+
 .name_first {
 	display: flex;
 	flex-direction: column;
@@ -80,15 +94,20 @@
 	flex-direction: column;
 }
 
+
 //page 2
 
 .gfield_label {
 	font-size: $h2_size;
+	span {
+		color: $color_light_red;
+	}
 }
 
 .ginput_container {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
 	span {
 		display: flex;
 		flex-direction: column;
@@ -111,6 +130,7 @@
 			padding: 5px 0;
 		}
 	}
+
 }
 
 .gfield_contains_required {
@@ -125,11 +145,29 @@
 	}
 }
 
+//page 4
+.ginput_container_text {
+	input {
+		width: 100%;
+	}
+}
 
+//page 6
+.gsection_description {
+	height: 200px;
+    overflow-y: scroll;
+}
 
+.privacy-icon {
+	text-align: center;
+	margin: 20px 0;
+}
 
+.ginput_container_checkbox {
+	@include flexify(center,center);
+}
 
-
-
-
-
+//page 7
+.gform_validation_container {
+	display: none;
+}

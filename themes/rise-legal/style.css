@@ -1674,29 +1674,35 @@ object {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.gform_page_footer .gform_previous_button {
-  background-color: white;
-  padding: 1.5rem 3rem;
-  color: black;
-  height: 5rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 3px 6px black; }
-  @media (min-width: 60rem) {
-    .gform_page_footer .gform_previous_button:hover {
-      background: black; } }
-
-.gform_page_footer .gform_next_button {
-  background-color: #155E89;
-  padding: 1.5rem 3rem;
-  color: white;
-  height: 5rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4); }
-  @media (min-width: 60rem) {
-    .gform_page_footer .gform_next_button:hover {
-      background: #104666; } }
+.gform_page_footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .gform_page_footer .gform_previous_button {
+    background-color: white;
+    padding: 1.5rem 3rem;
+    color: black;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 6px black; }
+    @media (min-width: 60rem) {
+      .gform_page_footer .gform_previous_button:hover {
+        background: black; } }
+  .gform_page_footer .gform_next_button {
+    background-color: #155E89;
+    padding: 1.5rem 3rem;
+    color: white;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4); }
+    @media (min-width: 60rem) {
+      .gform_page_footer .gform_next_button:hover {
+        background: #104666; } }
 
 .ginput_container_radio .gfield_radio {
   display: -ms-flexbox;
@@ -1712,7 +1718,8 @@ object {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    margin: 15px 25px; }
     .ginput_container_radio .gfield_radio li input {
       width: 40px;
       height: 40px;
@@ -1724,8 +1731,13 @@ object {
         cursor: pointer; }
     .ginput_container_radio .gfield_radio li label {
       font-size: 2rem;
-      padding: 10px;
-      padding-right: 30px; }
+      padding: 10px; }
+
+.ui-datepicker {
+  background-color: white; }
+
+.ginput_container_email input {
+  width: 100%; }
 
 .name_first {
   display: -ms-flexbox;
@@ -1741,12 +1753,15 @@ object {
 
 .gfield_label {
   font-size: 2.2rem; }
+  .gfield_label span {
+    color: #E0A5A7; }
 
 .ginput_container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  width: 100%; }
   .ginput_container span {
     display: -ms-flexbox;
     display: flex;
@@ -1774,3 +1789,25 @@ object {
   border: none;
   border-bottom: 1px solid black;
   width: 100%; }
+
+.ginput_container_text input {
+  width: 100%; }
+
+.gsection_description {
+  height: 200px;
+  overflow-y: scroll; }
+
+.privacy-icon {
+  text-align: center;
+  margin: 20px 0; }
+
+.ginput_container_checkbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.gform_validation_container {
+  display: none; }
