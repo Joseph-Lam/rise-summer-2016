@@ -52,6 +52,23 @@
 	}
 }
 
+//error validation styling
+.validation_error {
+	color: $color_light_red;
+	padding: 20px;
+}
+
+.validation_message {
+	color: $color_light_red;
+}
+
+body .gform_wrapper .gfield_error input  {
+    border-bottom: 3px solid $color_light_red;
+}
+
+
+
+
 //radio checkbox styling
 .ginput_container_radio {
 	.gfield_radio {
@@ -132,6 +149,7 @@
 //////////////////////////////
 //page 1
 .ginput_container_email {
+	margin-bottom: 10px;
 	input {
 		width: 100%;
 	}

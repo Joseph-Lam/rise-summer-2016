@@ -1709,6 +1709,16 @@ object {
       .gform_page_footer .gform_next_button:hover {
         background: #104666; } }
 
+.validation_error {
+  color: #E0A5A7;
+  padding: 20px; }
+
+.validation_message {
+  color: #E0A5A7; }
+
+body .gform_wrapper .gfield_error input {
+  border-bottom: 3px solid #E0A5A7; }
+
 .ginput_container_radio .gfield_radio {
   display: -ms-flexbox;
   display: flex;
@@ -1768,8 +1778,10 @@ object {
     color: black;
     text-decoration: none; }
 
-.ginput_container_email input {
-  width: 100%; }
+.ginput_container_email {
+  margin-bottom: 10px; }
+  .ginput_container_email input {
+    width: 100%; }
 
 .name_first {
   display: -ms-flexbox;
