@@ -1531,37 +1531,37 @@ object {
   margin: 0 auto; }
 
 .resource-banner {
-  background-color: #155E89; }
-  .resource-banner ul {
+  background-color: #155E89;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  .resource-banner button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-    width: 80%; }
-    .resource-banner ul li {
-      margin: 3rem;
-      color: white;
-      border: 3px solid white;
-      cursor: pointer;
-      padding: 1rem 3rem;
-      font-weight: bold;
-      letter-spacing: 3px; }
-      .resource-banner ul li:hover {
-        color: #155E89;
-        background-color: #EBF0F3; }
+    margin: 3rem;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    letter-spacing: 3px; }
+    .resource-banner button:hover {
+      color: #155E89;
+      background-color: #EBF0F3; }
 
 .resources {
   width: 80%;
   margin: 0 auto;
-  opacity: 0;
-  transition: opacity 500ms ease-in; }
+  max-height: 100%;
+  position: relative; }
+  .resources article {
+    display: none; }
 
 .show {
-  opacity: 1; }
+  display: block; }
 
 .resource-post h3 {
   padding: 0;

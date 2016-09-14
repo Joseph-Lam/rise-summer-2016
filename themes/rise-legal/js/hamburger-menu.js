@@ -3,7 +3,16 @@
 		$('.main-navigation').toggleClass('open');
 	});
 
-	$('.menu-a-b, .menu-c-d, .menu-e-j, .menu-k-m, .menu-n-p, .menu-q-t, .menu-u-z').click(function(e){
-		$('.resources').toggleClass('show');
-	})
+	$('.resource-button').click(function(){
+		var rangeToOpen = $(this).data('alpha');
+		console.log(rangeToOpen);
+
+		$('article').hide();
+
+		$('.'+rangeToOpen).show();
+
+	});
+
+
+
 })(jQuery);

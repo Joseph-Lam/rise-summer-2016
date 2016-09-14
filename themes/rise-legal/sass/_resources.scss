@@ -6,38 +6,37 @@
 }
 .resource-banner{
 	background-color: $color_brand_blue;
-	ul{
+	flex-flow: row wrap;
+	button{
 		@include flexify(space-between, center);
-		flex-flow: wrap;
-		width: 80%;
-		li{
-			// width: 5rem;
-			// height: 3rem;
-			margin: $base_spacing_large;
-			color: $white;
-			border: 3px solid $white;
-			cursor: pointer;
-			padding: $base_spacing $base_spacing_large;
-			font-weight: bold;
-			letter-spacing: 3px;
-			&:hover {
-				color: $color_brand_blue;
-				background-color: $color_light_blue;
-			}
+		margin: $base_spacing_large;
+		color: $white;
+		border: 3px solid $white;
+		cursor: pointer;
+		padding: $base_spacing $base_spacing_large;
+		font-weight: bold;
+		letter-spacing: 3px;
+		&:hover {
+			color: $color_brand_blue;
+			background-color: $color_light_blue;
 		}
 	}
 }
 .resources{
 	width: 80%;
 	margin: 0 auto;
-	opacity: 0;
-	transition: opacity 500ms ease-in;
+	max-height: 100%;
+	position: relative;
+	article {
+		display: none;
+	}
 }
+
 .resource-list {
 	
 }
 .show{
-	opacity: 1;
+	display: block;
 }
 .resource-post{
 	h3{
