@@ -279,9 +279,7 @@
 						<?php echo CFS()->get('biography')?>
 					</li>
 				<?php endforeach; wp_reset_postdata(); ?>
-				<button>
-					Learn More
-				</button>
+				<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'The Law Students' )->ID ); ?>">learn more</a>
 		</ul>
 	</div>
 </section>
