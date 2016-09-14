@@ -10,13 +10,15 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(255,255,255, 0.6);
+	background: $color_light_blue;
 	z-index: 99999;
 	opacity: 0;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 	div{
 		width: 65rem;
+		max-height: 100%;
+		overflow-y: scroll;
 		position: relative;
 		padding: $base_spacing_large;
 		background-color: $color_light_blue;
@@ -32,6 +34,9 @@
 	&:target{
 		opacity: 1;
 		pointer-events: auto;
+	}
+	@include desktop {
+		background: rgba(255,255,255, 0.6);
 	}
 
 }

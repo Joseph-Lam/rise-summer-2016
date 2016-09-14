@@ -598,13 +598,15 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: #EBF0F3;
   z-index: 99999;
   opacity: 0;
   transition: opacity 400ms ease-in;
   pointer-events: none; }
   .modalDialog div {
     width: 65rem;
+    max-height: 100%;
+    overflow-y: scroll;
     position: relative;
     padding: 3rem;
     background-color: #EBF0F3;
@@ -617,6 +619,9 @@ textarea {
   .modalDialog:target {
     opacity: 1;
     pointer-events: auto; }
+  @media (min-width: 60rem) {
+    .modalDialog {
+      background: rgba(255, 255, 255, 0.6); } }
 
 .close {
   width: 6rem;
