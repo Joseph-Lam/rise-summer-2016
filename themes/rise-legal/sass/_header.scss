@@ -36,7 +36,8 @@
 .site-header {
   @include flexify(space-between, flex-end);
   align-content: flex-end;
-  background: url('../../assets/backgrounds/mobile-header.png') center;
+  // background: url('../../assets/backgrounds/mobile-header.png') center;
+  background-image: url('../../assets/backgrounds/header.jpg');
   background-size: cover;
   padding: $base_spacing $base_spacing_large $base_spacing_large $base_spacing_large;
   width: 100%;
@@ -44,7 +45,7 @@
   z-index: 10;
   @include desktop {
     align-items:center;
-    background-image: url('../../assets/backgrounds/desktop-header.png');
+    // background-image: url('../../assets/backgrounds/desktop-header.jpg');
   }
 }
 //Header logo settings
@@ -172,5 +173,5 @@
   }
 }
 .hdr-pusher{
-  height: 9rem;
+  height: 10rem;
 }

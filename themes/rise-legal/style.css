@@ -803,7 +803,7 @@ object {
       align-items: flex-end;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  background: url("../../assets/backgrounds/mobile-header.png") center;
+  background-image: url("../../assets/backgrounds/header.jpg");
   background-size: cover;
   padding: 1rem 3rem 3rem 3rem;
   width: 100%;
@@ -813,8 +813,7 @@ object {
     .site-header {
       -ms-flex-align: center;
           -ms-grid-row-align: center;
-          align-items: center;
-      background-image: url("../../assets/backgrounds/desktop-header.png"); } }
+          align-items: center; } }
 
 .site-branding {
   min-width: 25rem;
@@ -932,7 +931,7 @@ object {
         padding: 0; } }
 
 .hdr-pusher {
-  height: 9rem; }
+  height: 10rem; }
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");
