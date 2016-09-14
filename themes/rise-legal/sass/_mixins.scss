@@ -17,15 +17,12 @@
 	align-items: $align-items;
 }
 
-@mixin button($bg, $font-color) {
+@mixin button-color($bg, $font-color) {
 	background-color: $bg;
 	color: $font-color;
-	height: 5rem;
-	width: 20rem;
-	border-radius: 1rem;
 	@include desktop {
 		&:hover {
-			background: darken($bg,8%);
+			background: darken($bg, 8%);
 		}
 	}
 }
