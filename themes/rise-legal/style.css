@@ -1646,13 +1646,14 @@ object {
   margin: 0 auto; }
 
 .gform_wrapper {
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: inherit;
       align-items: inherit; }
+  .gform_wrapper form {
+    width: 100%; }
 
 .gf_progressbar {
   border-radius: 10px;
@@ -1667,6 +1668,10 @@ object {
       color: white;
       font-weight: 500;
       font-size: 2rem; }
+  .gf_progressbar .percentbar_0 {
+    background-color: #EEEEEE; }
+    .gf_progressbar .percentbar_0 span {
+      color: #155E89; }
 
 .gform_page_fields {
   display: -ms-flexbox;
@@ -1823,6 +1828,18 @@ object {
 .gsection_description {
   height: 200px;
   overflow-y: scroll; }
+
+.read-and-agree {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .read-and-agree .gfield_label {
+    padding-right: 10px; }
+  .read-and-agree .ginput_container {
+    width: auto; }
 
 .privacy-icon {
   text-align: center;

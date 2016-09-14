@@ -5,8 +5,10 @@
 }
 
 .gform_wrapper {
-	display: flex !important; 
 	@include flexify(center, inherit);
+	form {
+		width: 100%;
+	}
 }
 
 .gf_progressbar {
@@ -23,6 +25,12 @@
 			color: white;
 			font-weight: 500;
 			font-size: $h3_size;
+		}
+	}
+	.percentbar_0 {
+		background-color: $color_light_grey;
+		span {
+			color: $color_brand_blue;
 		}
 	}
 }
@@ -200,6 +208,17 @@
 	height: 200px;
     overflow-y: scroll;
 }
+
+.read-and-agree {
+	@include flexify(center,center);
+	.gfield_label{
+		padding-right: 10px;
+	}
+	.ginput_container {
+		width: auto;
+	}
+}
+
 
 .privacy-icon {
 	text-align: center;
