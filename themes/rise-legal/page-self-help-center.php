@@ -46,7 +46,7 @@ get_header(); ?>
 					?>
 					<div class="title-banner resource-banner flex-center">
 						<?php foreach ($alphas as $name => $value) { ?>
-							<button class="resource-button" data-alpha="<?php echo $name ?>"><?php echo $name ?></li>
+							<button class="resource-button btn blue-btn" data-alpha="<?php echo $name ?>"><?php echo $name ?></li>
 								<?php } ?>
 
 							</div>

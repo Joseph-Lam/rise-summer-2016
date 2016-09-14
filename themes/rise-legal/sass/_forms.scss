@@ -21,9 +21,7 @@ input[type="submit"],
 	overflow: none;
 	&:hover {
 		background-color: darken($white, 8%);
-
 	}
-
 	&:active,
 	&:focus {
 		border: none;

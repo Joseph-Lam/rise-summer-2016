@@ -1527,10 +1527,8 @@ object {
     -ms-flex-align: center;
         align-items: center;
     margin: 3rem;
-    color: white;
     border: 3px solid white;
-    cursor: pointer;
-    padding: 1rem 3rem;
+    border-radius: 0;
     font-weight: bold;
     letter-spacing: 3px; }
     .resource-banner button:hover {
@@ -1538,8 +1536,8 @@ object {
       background-color: #EBF0F3; }
 
 .active {
-  color: white;
-  background-color: #155E89; }
+  color: #155E89;
+  background-color: white; }
 
 .resources {
   width: 80%;

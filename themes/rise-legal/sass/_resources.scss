@@ -10,10 +10,8 @@
 	button{
 		@include flexify(space-between, center);
 		margin: $base_spacing_large;
-		color: $white;
 		border: 3px solid $white;
-		cursor: pointer;
-		padding: $base_spacing $base_spacing_large;
+		border-radius: 0;
 		font-weight: bold;
 		letter-spacing: 3px;
 		&:hover {
@@ -23,8 +21,8 @@
 	}
 }
 .active{
-	color: $white;
-	background-color: $color_brand_blue;
+	color: $color_brand_blue;
+	background-color: $white;
 }
 .resources{
 	width: 80%;
