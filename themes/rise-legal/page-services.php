@@ -140,9 +140,7 @@ get_header(); ?>
 						<p> 
 							We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month', 46) ?> 
 						</p>
-						<button>
-							Legal Contact Form
-						</button>
+						<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
 					</div>
 				</section>
 
