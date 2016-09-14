@@ -1523,6 +1523,17 @@ object {
         .donate-justice-container .donate-justice .donate-justice-meta {
           text-align: center; } }
 
+.resource-banner {
+  background-color: #155E89; }
+  .resource-banner ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 80%; }
+
 .student-container {
   -ms-flex-direction: column;
       flex-direction: column;

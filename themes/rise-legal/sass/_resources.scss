@@ -1,0 +1,8 @@
+.resource-banner{
+	background-color: $color_brand_blue;
+	
+	ul{
+		@include flexify(space-between, center);
+		width: 80%;
+	}
+}

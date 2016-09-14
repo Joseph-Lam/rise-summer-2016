@@ -24,13 +24,14 @@ get_header(); ?>
 				<?php echo CFS()->get('external_help')?>
 
 <!-- Create the nav for glossary buttons here -->
-				<ul>
-					<?php wp_list_categories( array(
-						'taxonomy' => 'alpha',
-						'title_li' => ''
-					) ); ?>
-				</ul>
-
+				<div class="title-banner resource-banner flex-center">
+					<ul>
+						<?php wp_list_categories( array(
+							'taxonomy' => 'alpha',
+							'title_li' => ''
+						) ); ?>
+					</ul>
+				</div>
 		<!-- Do the GET POSTS stuff for the resources here -->
 
 		<!-- I will need to create a php variable which is an array holding all of my letter ranges -->
