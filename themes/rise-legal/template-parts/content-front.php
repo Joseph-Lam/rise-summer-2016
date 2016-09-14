@@ -13,9 +13,7 @@
 		<div class="banner-content container">
 			<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
 			<?php the_content(); ?>
-			<button>
-				Learn More
-			</button>
+			<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'About Us' )->ID ); ?>">learn more</a>
 		</div>
 	</header><!-- .entry-header -->
 
@@ -29,22 +27,15 @@
 				<p> 
 					We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month') ?> 
 				</p>
-				<button>
-					Legal Contact Form
-				</button>
-				<button>
-					Who We Can Help
-				</button>
+				<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
+				<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Services' )->ID ); ?>">who can we help</a>
 			</div>
 		</section>
 
 		<section class="donate">
 			<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
 			<div class="donate-content flex-center">
-				<button>
-					Why Donate?
-				
-				</button>
+			<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Why Donate?' )->ID ); ?>">why donate?</a>
 			</div>
 		</section>
 		
