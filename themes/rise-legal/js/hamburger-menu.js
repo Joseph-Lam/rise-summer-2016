@@ -5,9 +5,11 @@
 
 	$('.resource-button').click(function(){
 		var rangeToOpen = $(this).data('alpha');
-		console.log(rangeToOpen);
+		
+		$('button').removeClass('active');
+		$(this).addClass('active').data('alpha');
 
-		$('article').hide();
+		$('ul').hide();
 
 		$('.'+rangeToOpen).show();
 

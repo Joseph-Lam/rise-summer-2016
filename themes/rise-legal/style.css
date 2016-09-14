@@ -1552,16 +1552,20 @@ object {
       color: #155E89;
       background-color: #EBF0F3; }
 
+.active {
+  color: white;
+  background-color: #155E89; }
+
 .resources {
   width: 80%;
   margin: 0 auto;
   max-height: 100%;
   position: relative; }
-  .resources article {
-    display: none; }
 
-.show {
-  display: block; }
+.resource-list {
+  display: none; }
+  .resource-list:nth-child(1) {
+    display: block; }
 
 .resource-post h3 {
   padding: 0;

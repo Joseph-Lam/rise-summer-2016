@@ -23,15 +23,14 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-## -->
 
-					<button>
-						Hours of Operation
-					</button>
+				<button>
+					Hours of Operation
+				</button>
 
+				<h3>External Help</h3>
+				<?php echo CFS()->get('external_help')?>
 
-					<h3>External Help</h3>
-					<?php echo CFS()->get('external_help')?>
-
-				</section>
+			</section>
 
 				<!-- Create the nav for glossary buttons here -->
 				<?php 
@@ -55,9 +54,9 @@ get_header(); ?>
 							<section class="resources">
 								<?php foreach($alphas as $name => $alpha) {
 									?>
-									<article class="<?php echo $name; ?>">
+								
 
-										<ul class="resource-list">
+										<ul class="resource-list <?php echo $name; ?>">
 											<?php
 											$args = array(
 												'post_type' => 'resources',
@@ -80,7 +79,7 @@ get_header(); ?>
 										<?php endforeach; wp_reset_postdata(); ?>
 									</ul>
 
-								</article>
+					
 								<?php }?>
 							</section>
 
