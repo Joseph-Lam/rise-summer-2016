@@ -28,13 +28,13 @@
 							<h3><?php echo $term->name ?></h3>
 						</li>
 					</a>
-
 				<?php endforeach; ?>
 			</ul>
 		</nav>
 
 	</div>
 	
+	<div class="our-people-content">
 	<div class="staff collapse" id="our-staff">
 		<!-- STAFF HEADING -->
 		<?php 
@@ -276,5 +276,6 @@
 					Learn More
 				</button>
 		</ul>
+	</div>
 	</div>
 </section>

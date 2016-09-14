@@ -10,7 +10,8 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(255,255,255, 0.6);
+	background: rgba($color_light_blue, 0.8);
+	// background: $color_light_blue;
 	z-index: 99999;
 	opacity: 0;
 	transition: opacity 400ms ease-in;
@@ -22,6 +23,8 @@
 		background-color: $color_light_blue;
 		border-radius: 10px;
 		text-align: left;
+		max-height: 100vh;
+		overflow-y:scroll;
 		h2{
 			margin: 0;
 		}
@@ -50,8 +53,8 @@
 	}
 }
 .modal-btn{
-	@include blue-button;
-	color: $white;
+	@include white-button;
+	color: $color_brand_blue;
 }
 .services-modal-btn{
 	@include white-button;

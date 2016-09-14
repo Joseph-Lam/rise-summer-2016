@@ -578,7 +578,7 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(235, 240, 243, 0.8);
   z-index: 99999;
   opacity: 0;
   transition: opacity 400ms ease-in;
@@ -589,7 +589,9 @@ textarea {
     padding: 3rem;
     background-color: #EBF0F3;
     border-radius: 10px;
-    text-align: left; }
+    text-align: left;
+    max-height: 100vh;
+    overflow-y: scroll; }
     .modalDialog div h2 {
       margin: 0; }
     .modalDialog div p {
@@ -612,17 +614,17 @@ textarea {
     background-position: center; }
 
 .modal-btn {
-  background-color: #155E89;
+  background-color: white;
   padding: 1.5rem 3rem;
-  color: white;
+  color: black;
   height: 5rem;
   width: 20rem;
   border-radius: 0.5rem;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
-  color: white; }
+  box-shadow: 0px 3px 6px black;
+  color: #155E89; }
   @media (min-width: 60rem) {
     .modal-btn:hover {
-      background: #104666; } }
+      background: black; } }
 
 .services-modal-btn {
   background-color: white;
@@ -1098,15 +1100,15 @@ object {
   .about-nav-link:hover {
     border-bottom: 10px solid white;
     margin: 0;
-    transition: border 200ms ease-in; }
+    transition: border 300ms ease-in; }
 
 @media (min-width: 60rem) {
   .collapse {
-    display: none; }
-    .collapse:target {
-      display: block; }
-    .collapse:focus {
-      outline: none; } }
+    opacity: 1;
+    transition: opacity 500ms ease; } }
+
+.our-people-content {
+  position: relative; }
 
 .staff,
 .board,

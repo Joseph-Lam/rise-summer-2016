@@ -57,22 +57,27 @@
 	&:hover {
 		border-bottom: 10px solid $white;
 		margin: 0;
-		transition: border 200ms ease-in;
+		transition: border 300ms ease-in;
 	}
 
 }
 .collapse{
 	@include desktop {
-		display: none;
-		&:target{
-			display: block;
-		}
-		&:focus {
-			outline: none;
-		}
+		opacity: 1;
+		// position: absolute;
+		transition: opacity 500ms ease;
+		// &:target{
+		// 	opacity: 1;
+		// }
+		// &:focus {
+		// 	outline: none;
+		// }
 	}
 }
-
+.our-people-content{
+	position: relative;
+	// height: 60rem;
+}
 //give what space to sections
 .staff,
 .board,
