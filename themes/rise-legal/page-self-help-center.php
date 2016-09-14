@@ -23,7 +23,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-## -->
 
-				<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Contact Us' )->ID ); ?>">hours of operation</a>
+				<a class="btn " href="<?php echo get_page_link( get_page_by_title( 'Contact Us' )->ID ); ?>">hours of operation</a>
 
 				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand.svg"?>" class="rise-about-logo">	
 				
