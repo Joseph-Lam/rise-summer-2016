@@ -48,9 +48,17 @@
 	flex-flow: column;
 	color: $white;
 	padding: $base_spacing_extra_large;
+	h2{
+		color: $white;
+	}
 }
-.donate-banner{
-	background-color: $color_brand_blue;
+.donate-banner {
+	background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
+	background-position: center;
+	color: white;
+	@include desktop {
+		background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg);
+	}
 }
 .donate-content{
 	flex-flow: column;
@@ -59,7 +67,7 @@
 
 //Somthing joseph changed, not sure what it styles yet
 .entry-header {
-	padding-top: 75px;
+	padding-top: 7.5rem;
 }
 
 .entry-title {

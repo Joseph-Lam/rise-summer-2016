@@ -779,9 +779,16 @@ object {
       flex-flow: column;
   color: white;
   padding: 5rem; }
+  .title-banner h2 {
+    color: white; }
 
 .donate-banner {
-  background-color: #155E89; }
+  background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
+  background-position: center;
+  color: white; }
+  @media (min-width: 60rem) {
+    .donate-banner {
+      background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg); } }
 
 .donate-content {
   -ms-flex-flow: column;
@@ -789,7 +796,7 @@ object {
   text-align: center; }
 
 .entry-header {
-  padding-top: 75px; }
+  padding-top: 7.5rem; }
 
 .entry-title {
   margin-bottom: 0;
