@@ -40,15 +40,15 @@ get_header(); ?>
 			<div class="title-banner resource-banner flex-center">
 				<ul>
 					<?php foreach ($alphas as $name => $value) { ?>
-							<li class="<?php echo 'menu-'.$name ?>"><?php echo $name ?></li>
+						<li class="<?php echo 'menu-'.$name ?>"><?php echo $name ?></li>
 					<?php } ?>
 				</ul>
 			</div>
 
 			<?php foreach($alphas as $name => $alpha) {
 				?>
-				<section class="resources">
-					<ul class="resource-list <?php echo $name; ?>">
+				<section class="resources resources-<?php echo $name; ?>">
+					<ul class="resource-list">
 					<?php
 					$args = array(
 						'post_type' => 'resources',

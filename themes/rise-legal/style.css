@@ -1543,21 +1543,25 @@ object {
         flex-flow: wrap;
     width: 80%; }
     .resource-banner ul li {
-      width: 5rem;
-      height: 3rem;
-      margin: 3rem; }
-      .resource-banner ul li a {
-        color: white;
-        border: 2px white solid;
-        cursor: pointer;
-        padding: 1rem 3rem; }
-        .resource-banner ul li a:hover {
-          color: #155E89;
-          background-color: #EBF0F3; }
+      margin: 3rem;
+      color: white;
+      border: 3px solid white;
+      cursor: pointer;
+      padding: 1rem 3rem;
+      font-weight: bold;
+      letter-spacing: 3px; }
+      .resource-banner ul li:hover {
+        color: #155E89;
+        background-color: #EBF0F3; }
 
 .resources {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 500ms ease-in; }
+
+.show {
+  opacity: 1; }
 
 .resource-post h3 {
   padding: 0;
