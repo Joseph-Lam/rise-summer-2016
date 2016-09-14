@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			<section class="resources-content flex-center">
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				
 				<button>
@@ -23,7 +23,9 @@ get_header(); ?>
 				<h3>External Help</h3>
 				<?php echo CFS()->get('external_help')?>
 
-<!-- Create the nav for glossary buttons here -->
+			</section>
+			
+			<!-- Create the nav for glossary buttons here -->
 				<div class="title-banner resource-banner flex-center">
 					<ul>
 						<?php wp_list_categories( array(
@@ -32,12 +34,15 @@ get_header(); ?>
 						) ); ?>
 					</ul>
 				</div>
+
+
 		<!-- Do the GET POSTS stuff for the resources here -->
 
 		<!-- I will need to create a php variable which is an array holding all of my letter ranges -->
 
 		<!-- Then I will need to create a foreach loop of those letter ranges, to then grab the posts associated with them -->
-				<ul>
+			<section class="resources">	
+				<ul class="resource-list">
 				<?php 
 					$args = array(
 						'post_type' => 'resources',
@@ -56,15 +61,17 @@ get_header(); ?>
 				?>
 				<?php foreach($resources_page_ab_posts as $post) : setup_postdata( $post ); ?>
 					
-					<li>
+					<li class="resource-post">
 						<?php the_content();?>
 					</li>	
 					
 				<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
+			</section>
+
 
 			<?php endwhile; // End of the loop. ?>
-
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

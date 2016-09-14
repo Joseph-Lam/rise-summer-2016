@@ -1,8 +1,41 @@
+.resources-content{
+	flex-flow: column;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
 .resource-banner{
 	background-color: $color_brand_blue;
 	
 	ul{
 		@include flexify(space-between, center);
 		width: 80%;
+		li{
+			a{
+				color: $white;
+			}
+		}
+	}
+
+}
+.resources{
+	width: 80%;
+	margin: 0 auto;
+}
+.resource-post{
+	h3{
+		padding: 0;
+		margin: 0;
+		a{
+			color: $color_brand_red;
+			&:hover {
+				color: darken($color_brand_red, 8%);
+
+			}
+		}
+	}
+	p {
+		margin: $base_spacing 0 $base_spacing_extra_large 0;
+		padding: 0;
 	}
 }

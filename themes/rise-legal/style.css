@@ -1523,6 +1523,13 @@ object {
         .donate-justice-container .donate-justice .donate-justice-meta {
           text-align: center; } }
 
+.resources-content {
+  -ms-flex-flow: column;
+      flex-flow: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
+
 .resource-banner {
   background-color: #155E89; }
   .resource-banner ul {
@@ -1533,6 +1540,24 @@ object {
     -ms-flex-align: center;
         align-items: center;
     width: 80%; }
+    .resource-banner ul li a {
+      color: white; }
+
+.resources {
+  width: 80%;
+  margin: 0 auto; }
+
+.resource-post h3 {
+  padding: 0;
+  margin: 0; }
+  .resource-post h3 a {
+    color: #A44F52; }
+    .resource-post h3 a:hover {
+      color: #884244; }
+
+.resource-post p {
+  margin: 1rem 0 5rem 0;
+  padding: 0; }
 
 .student-container {
   -ms-flex-direction: column;
