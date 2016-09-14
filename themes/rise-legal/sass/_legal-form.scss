@@ -45,11 +45,9 @@
 
 .gform_page_footer {
 	@include flexify(center,center);
-	.gform_previous_button {
-		@include white-button;
-	}
+
 	.gform_next_button {
-		@include blue-button;
+		@include button-color($color_brand_blue, $white);
 	}
 }
 
@@ -257,6 +255,9 @@ body .gform_wrapper .gfield_error input  {
 }
 
 //thank you page
+#gform_submit_button_1{
+	@include button-color($color_brand_red, $white);
+}
 .gform_confirmation_message_1 {
 	@include flexify(center,center);
 	font-size: $h2_size;

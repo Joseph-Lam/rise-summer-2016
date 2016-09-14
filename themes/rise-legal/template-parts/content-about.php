@@ -80,7 +80,7 @@
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li class="indvid-staff-member">
-					<a href="#<?php the_title();?>" class="modal-btn">
+					<a href="#<?php the_title();?>" class="modal-btn btn">
 						<?php the_title();?>	
 					</a>
 					
@@ -157,7 +157,7 @@
 
 					<p class="position"><?php echo CFS()->get('position_title')?></p>
 
-					<a href="#<?php the_title();?>" class="modal-btn">
+					<a href="#<?php the_title();?>" class="modal-btn btn">
 						<?php the_title();?>	
 					</a>
 					

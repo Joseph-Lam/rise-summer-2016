@@ -50,12 +50,9 @@
 	}
 }
 .modal-btn{
-	@include blue-button;
-	color: $white;
+	@include button-color($color_brand_blue, $white);
 }
 .services-modal-btn{
-	@include white-button;
-	background: $color_light_blue;
 	@include flexify(center,center);
 	img{
 		height: 5rem;

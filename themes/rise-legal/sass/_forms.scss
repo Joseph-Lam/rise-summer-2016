@@ -20,8 +20,8 @@ input[type="submit"],
 	text-transform: capitalize;
 	overflow: none;
 	&:hover {
-		background-color: $color_brand_blue;
-		color: $white;
+		background-color: darken($white, 8%);
+
 	}
 
 	&:active,

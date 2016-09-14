@@ -383,8 +383,7 @@ input[type="submit"],
   input[type="reset"]:hover,
   input[type="submit"]:hover,
   .btn:hover {
-    background-color: #155E89;
-    color: white; }
+    background-color: #ebebeb; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -634,26 +633,12 @@ textarea {
 
 .modal-btn {
   background-color: #155E89;
-  padding: 1.5rem 3rem;
-  color: white;
-  height: 5rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
   color: white; }
   @media (min-width: 60rem) {
     .modal-btn:hover {
       background: #104666; } }
 
 .services-modal-btn {
-  background-color: white;
-  padding: 1.5rem 3rem;
-  color: black;
-  height: 5rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 3px 6px black;
-  background: #EBF0F3;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -663,9 +648,6 @@ textarea {
   height: 10rem;
   width: 10rem;
   border-radius: 50%; }
-  @media (min-width: 60rem) {
-    .services-modal-btn:hover {
-      background: black; } }
   .services-modal-btn img {
     height: 5rem; }
 
@@ -1434,18 +1416,6 @@ object {
       .responsive-map iframe {
         width: 80%; } }
 
-.get-directions {
-  background-color: white;
-  padding: 1.5rem 3rem;
-  color: black;
-  height: 5rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 3px 6px black; }
-  @media (min-width: 60rem) {
-    .get-directions:hover {
-      background: black; } }
-
 .contact-notes {
   display: -ms-flexbox;
   display: flex;
@@ -1696,25 +1666,9 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  .gform_page_footer .gform_previous_button {
-    background-color: white;
-    padding: 1.5rem 3rem;
-    color: black;
-    height: 5rem;
-    width: 20rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 3px 6px black; }
-    @media (min-width: 60rem) {
-      .gform_page_footer .gform_previous_button:hover {
-        background: black; } }
   .gform_page_footer .gform_next_button {
     background-color: #155E89;
-    padding: 1.5rem 3rem;
-    color: white;
-    height: 5rem;
-    width: 20rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4); }
+    color: white; }
     @media (min-width: 60rem) {
       .gform_page_footer .gform_next_button:hover {
         background: #104666; } }
@@ -1879,6 +1833,13 @@ body .gform_wrapper .gfield_error input {
 
 .ui-datepicker-trigger {
   cursor: pointer; }
+
+#gform_submit_button_1 {
+  background-color: #A44F52;
+  color: white; }
+  @media (min-width: 60rem) {
+    #gform_submit_button_1:hover {
+      background: #884244; } }
 
 .gform_confirmation_message_1 {
   display: -ms-flexbox;

@@ -44,7 +44,7 @@ get_header(); ?>
 								<?php foreach($services_page_services_posts as $post) : setup_postdata( $post); ?>
 								<li class="indvid-services">
 									<div class="indvid-services-btn">
-										<a href="#<?php the_title();?>" class="services-modal-btn">
+										<a href="#<?php the_title();?>" class="services-modal-btn btn">
 											<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">		
 										</a>
 										<p><?php the_title();?></p>
