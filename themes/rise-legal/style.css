@@ -1879,4 +1879,8 @@ body .gform_wrapper .gfield_error input {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  padding: 40px; }

@@ -260,4 +260,7 @@ body .gform_wrapper .gfield_error input  {
 .gform_confirmation_message_1 {
 	@include flexify(center,center);
 	font-size: $h2_size;
+	flex-direction: column;
+    text-align: center;
+    padding: 40px;
 }
