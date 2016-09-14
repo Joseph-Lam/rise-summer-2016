@@ -1,4 +1,5 @@
 //form styling across all pages
+//page layout
 .legal-form-content {
 	width: 80%;
 	margin: 0 auto;
@@ -11,6 +12,12 @@
 	}
 }
 
+.gform_page_fields {
+	display: flex;
+	flex-direction: column;
+}
+
+//progress bar styling
 .gf_progressbar {
 	border-radius: 10px;
 	background-color: $color_light_grey;
@@ -33,11 +40,6 @@
 			color: $color_brand_blue;
 		}
 	}
-}
-
-.gform_page_fields {
-	display: flex;
-	flex-direction: column;
 }
 
 .gform_page_footer {
@@ -181,7 +183,6 @@
 			padding: 5px 0;
 		}
 	}
-
 }
 
 .gfield_contains_required {
@@ -218,7 +219,6 @@
 		width: auto;
 	}
 }
-
 
 .privacy-icon {
 	text-align: center;

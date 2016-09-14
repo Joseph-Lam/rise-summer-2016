@@ -1655,6 +1655,12 @@ object {
   .gform_wrapper form {
     width: 100%; }
 
+.gform_page_fields {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .gf_progressbar {
   border-radius: 10px;
   background-color: #EEEEEE;
@@ -1672,12 +1678,6 @@ object {
     background-color: #EEEEEE; }
     .gf_progressbar .percentbar_0 span {
       color: #155E89; }
-
-.gform_page_fields {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
 
 .gform_page_footer {
   display: -ms-flexbox;
