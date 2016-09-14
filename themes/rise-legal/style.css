@@ -1734,7 +1734,34 @@ object {
       padding: 10px; }
 
 .ui-datepicker {
-  background-color: white; }
+  background-color: white;
+  border: 1px solid black;
+  padding: 25px 40px; }
+
+.ui-datepicker-header {
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 15px; }
+  .ui-datepicker-header a span {
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer; }
+  .ui-datepicker-header .ui-datepicker-title {
+    margin: 10px; }
+
+.ui-datepicker-calendar thead tr th {
+  border: 1px solid black; }
+
+.ui-datepicker-calendar tbody tr td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer; }
+  .ui-datepicker-calendar tbody tr td:hover {
+    background-color: #EEEEEE; }
+  .ui-datepicker-calendar tbody tr td a {
+    color: black;
+    text-decoration: none; }
 
 .ginput_container_email input {
   width: 100%; }
