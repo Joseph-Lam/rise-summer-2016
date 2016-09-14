@@ -9,10 +9,22 @@
 	
 	ul{
 		@include flexify(space-between, center);
+		flex-flow: wrap;
 		width: 80%;
 		li{
+			width: 5rem;
+			height: 3rem;
+			margin: $base_spacing_large;
 			a{
 				color: $white;
+				border: 2px white solid;
+				cursor: pointer;
+				padding: $base_spacing $base_spacing_large;
+				
+				&:hover {
+					color: $color_brand_blue;
+					background-color: $color_light_blue;
+				}
 			}
 		}
 	}

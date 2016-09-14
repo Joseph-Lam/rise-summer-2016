@@ -1539,9 +1539,21 @@ object {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
     width: 80%; }
-    .resource-banner ul li a {
-      color: white; }
+    .resource-banner ul li {
+      width: 5rem;
+      height: 3rem;
+      margin: 3rem; }
+      .resource-banner ul li a {
+        color: white;
+        border: 2px white solid;
+        cursor: pointer;
+        padding: 1rem 3rem; }
+        .resource-banner ul li a:hover {
+          color: #155E89;
+          background-color: #EBF0F3; }
 
 .resources {
   width: 80%;

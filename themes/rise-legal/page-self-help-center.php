@@ -42,6 +42,8 @@ get_header(); ?>
 
 		<!-- Then I will need to create a foreach loop of those letter ranges, to then grab the posts associated with them -->
 			<section class="resources">	
+
+			<!-- I will need to make sure the class of the ul is the same as the slug name so I can taget it with the link -->
 				<ul class="resource-list">
 				<?php 
 					$args = array(
