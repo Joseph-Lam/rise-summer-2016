@@ -8,10 +8,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 			<section class="resources-content flex-center">
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				
@@ -26,26 +26,28 @@ get_header(); ?>
 			</section>
 			
 			<!-- Create the nav for glossary buttons here -->
-				<div class="title-banner resource-banner flex-center">
-					<ul>
-						<?php wp_list_categories( array(
-							'taxonomy' => 'alpha',
-							'title_li' => ''
-						) ); ?>
-					</ul>
-				</div>
+			<?php 
+			$alphas = array(
+				'a-b' => array('a','b'),
+				'c-d' => array('c','d')
+				);
+			?>
+			<div class="title-banner resource-banner flex-center">
+				<ul>
+					<?php 
+						foreach ($alphas as $name => $value) { ?>
+							<li class="<?php echo 'menu-'.$name ?>"><?php echo $name ?></li>
+						<?php }
+					?>
+				</ul>
+			</div>
 
 
-		<!-- Do the GET POSTS stuff for the resources here -->
-
-		<!-- I will need to create a php variable which is an array holding all of my letter ranges -->
-
-		<!-- Then I will need to create a foreach loop of those letter ranges, to then grab the posts associated with them -->
-			<section class="resources">	
-
-			<!-- I will need to make sure the class of the ul is the same as the slug name so I can taget it with the link -->
-				<ul class="resource-list">
-				<?php 
+			<?php foreach($alphas as $name => $alpha) {
+				?>
+				<section class="resources">
+					<ul class="resource-list <?php echo $name; ?>">
+					<?php
 					$args = array(
 						'post_type' => 'resources',
 						'numberposts' => -1,
@@ -54,28 +56,29 @@ get_header(); ?>
 							array(
 								'taxonomy' => 'alpha',
 								'field' => 'slug',
-						//I assume I will replace the below term array with a variable that will hold the letter range.
-								'terms' => array('a','b'),
+								'terms' => $alpha
 								)
 							)
 						);
 					$resources_page_ab_posts = get_posts($args);
-				?>
-				<?php foreach($resources_page_ab_posts as $post) : setup_postdata( $post ); ?>
+
+					foreach($resources_page_ab_posts as $post) : setup_postdata( $post ); ?>
+						<li class="resource-post">
+							<?php the_content();?>
+						</li>
 					
-					<li class="resource-post">
-						<?php the_content();?>
-					</li>	
-					
-				<?php endforeach; wp_reset_postdata(); ?>
-				</ul>
-			</section>
+					<?php endforeach; wp_reset_postdata(); ?>
+					</ul>
+				</section>
+			<?php }?>
+
+	
 
 
-			<?php endwhile; // End of the loop. ?>
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<?php endwhile; // End of the loop. ?>
+
+</main><!-- #main -->
+</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
