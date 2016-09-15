@@ -5,7 +5,7 @@
 
 .donate-content {
 	p {
-		margin: 10px;
+		margin-bottom: $base_spacing_large;
 	}
 }
 
@@ -88,5 +88,21 @@
 				text-align: center;
 			}
 		}
+	}
+}
+.donate-banner {
+	background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
+	background-position: center;
+	color: white;
+	@include desktop {
+		background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg);
+	}
+}
+.donate-content{
+	flex-flow: column;
+	text-align: center;
+	padding: $base_spacing_large 0;
+	a{
+		margin-bottom: 0;
 	}
 }

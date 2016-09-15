@@ -5,7 +5,7 @@
 /* Front page */
 .container{
 	margin: 0 auto;
-	width: 80%;
+	width: 75%;
 }
 .flex-center{
 	@include flexify(center, center);
@@ -47,31 +47,14 @@
 .title-banner{
 	flex-flow: column;
 	color: $white;
-	padding: $base_spacing_extra_large;
+	padding: 10%;
+	box-shadow: inset 0 3px 5px rgba($color_dark_grey, 0.8), inset 0 -3px 5px rgba($color_dark_grey, 0.6);
 	h2{
 		color: $white;
+		margin: 0;
 	}
-}
-.donate-banner {
-	background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
-	background-position: center;
-	color: white;
-	@include desktop {
-		background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg);
-	}
-}
-.donate-content{
-	flex-flow: column;
-	text-align: center;
 }
 
-//Somthing joseph changed, not sure what it styles yet
 .entry-header {
 	padding-top: 7.5rem;
 }
-
-.entry-title {
-	margin-bottom: 0;
-    padding-bottom: 0;
-}
-
