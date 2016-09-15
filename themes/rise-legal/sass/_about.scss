@@ -57,22 +57,20 @@
 	&:hover {
 		border-bottom: 10px solid $white;
 		margin: 0;
-		transition: border 200ms ease-in;
-	}
-
-}
-.collapse{
-	@include desktop {
-		display: none;
-		&:target{
-			display: block;
-		}
-		&:focus {
-			outline: none;
-		}
+		transition: border 300ms ease-in;
 	}
 }
+.show{
+	border-bottom: 10px solid $white;
+}
 
+.people-list {
+	display: none;
+	&:nth-child(1){
+		display: block;
+	}
+	
+}
 //give what space to sections
 .staff,
 .board,
@@ -114,7 +112,6 @@
 .our-staff{
 	width: 80%;
 	margin: 0 auto;	
-
 }
 .indvid-staff-member {
 	margin-top: $base_spacing_large;
