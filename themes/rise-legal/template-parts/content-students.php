@@ -23,7 +23,7 @@
 			) );
 			?>
 
-			<div class="externship-title">
+			<div class="title-banner externship-title">
 				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-externship-white.svg"?>">
 				<h2> the externship </h2>
 			</div>

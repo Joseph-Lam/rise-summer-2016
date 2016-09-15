@@ -1586,13 +1586,9 @@ object {
   background-image: url("../../assets/images/mobile/student-mobile.jpg");
   background-size: cover;
   padding: 4rem;
-  margin: 20px 0; }
+  padding: 7% 0; }
   .externship-title img {
-    width: 49px;
-    height: 66px; }
-  @media (min-width: 60rem) {
-    .externship-title {
-      padding: 10rem; } }
+    width: 4rem; }
   .externship-title h2 {
     text-transform: capitalize;
     color: white;
@@ -1600,11 +1596,9 @@ object {
     margin: 0; }
 
 .student-externship {
-  margin: 20px 10%;
-  margin-bottom: 80px; }
+  margin: 5rem; }
 
 .student-features {
-  padding: 40px 0;
   border-bottom: 1px solid #CCCCCC;
   width: 80%;
   margin: 0 auto; }

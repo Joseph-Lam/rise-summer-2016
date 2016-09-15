@@ -22,7 +22,7 @@
 			'after'  => '</div>',
 			) );
 			?>
-			<div class="donate-legal-stat">
+			<div class="title-banner donate-legal-stat">
 				<?php echo CFS()->get( 'legal_stat' ); ?>
 			</div>
 
@@ -30,7 +30,7 @@
 				<?php echo CFS()->get( 'criteria' ); ?>
 			</div>
 
-			<div class="donate-who-title">
+			<div class="title-banner donate-who-title">
 				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-familyhelp.svg"?>">
 				<h2> who do we help </h2>
 			</div>
@@ -39,7 +39,7 @@
 				<?php echo CFS()->get( 'who_do_we_help' ); ?>
 			</div>
 
-			<div class="donate-how-title">
+			<div class="title-banner donate-how-title">
 				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand-white.svg"?>">
 				<h2> how we help </h2>
 			</div>

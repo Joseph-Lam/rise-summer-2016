@@ -12,14 +12,9 @@
 	background-image: url('../../assets/images/mobile/student-mobile.jpg');
 	background-size: cover;
 	padding: 4rem;
-	margin: 20px 0;
+	padding: 7% 0;
 	img {
-		width: 49px;
-    	height: 66px;
-	}
-
-	@include desktop {
-		padding: 10rem;
+		width: 4rem;
 	}
 	h2 {
 		text-transform: capitalize;
@@ -30,12 +25,11 @@
 }
 
 .student-externship {
-	margin: 20px 10%;
-	margin-bottom: 80px;
+	margin: $base_spacing_extra_large;
 }
 
 .student-features {
-	padding: 40px 0;
+	// padding: 40px 0;
 	border-bottom: 1px solid $color_medium_grey;
 	width: 80%;
 	margin: 0 auto;
