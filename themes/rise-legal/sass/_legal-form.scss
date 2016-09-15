@@ -226,9 +226,38 @@ body .gform_wrapper .gfield_error input  {
 	width: 162px;
 }
 
-#input_1_25_3 {
-	height: 34px;
+#input_1_24 {
+	width: 40%;
+	border-bottom: 2px solid $color_medium_grey; 
+    border-right: 2px solid $color_medium_grey;
+    margin-right: 10px
 }
+
+#field_1_24 {
+	@include flexify(center,center);
+	flex-direction: column;
+}
+
+.ginput_container_date{
+	@include flexify(center,center);
+}
+
+.gfield_time_hour {
+	input {
+		height: 6rem;	
+	}
+}
+
+.gfield_time_minute {
+	input {
+		height: 6rem;	
+	}
+}
+
+.gfield_time_ampm {
+	height: 6rem;
+}
+
 
 //page 6
 .gsection_description {

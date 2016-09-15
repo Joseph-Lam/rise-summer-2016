@@ -1808,8 +1808,38 @@ body .gform_wrapper .gfield_error input {
   display: flex;
   width: 162px; }
 
-#input_1_25_3 {
-  height: 34px; }
+#input_1_24 {
+  width: 40%;
+  border-bottom: 2px solid #CCCCCC;
+  border-right: 2px solid #CCCCCC;
+  margin-right: 10px; }
+
+#field_1_24 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.ginput_container_date {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.gfield_time_hour input {
+  height: 6rem; }
+
+.gfield_time_minute input {
+  height: 6rem; }
+
+.gfield_time_ampm {
+  height: 6rem; }
 
 .gsection_description {
   height: 200px;
