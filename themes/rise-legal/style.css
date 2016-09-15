@@ -1095,15 +1095,18 @@ object {
   .about-nav-link:hover {
     border-bottom: 10px solid white;
     margin: 0;
-    transition: border 200ms ease-in; }
+    transition: border 300ms ease-in; }
 
-@media (min-width: 60rem) {
-  .collapse {
-    display: none; }
-    .collapse:target {
-      display: block; }
-    .collapse:focus {
-      outline: none; } }
+.show {
+  border-bottom: 10px solid white; }
+
+.our-people-content {
+  position: relative; }
+
+.people-list {
+  display: none; }
+  .people-list:nth-child(3) {
+    display: block; }
 
 .staff,
 .board,

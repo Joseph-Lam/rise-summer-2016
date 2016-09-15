@@ -59,24 +59,20 @@
 		margin: 0;
 		transition: border 300ms ease-in;
 	}
-
 }
-.collapse{
-	@include desktop {
-		opacity: 1;
-		// position: absolute;
-		transition: opacity 500ms ease;
-		// &:target{
-		// 	opacity: 1;
-		// }
-		// &:focus {
-		// 	outline: none;
-		// }
-	}
+.show{
+	border-bottom: 10px solid $white;
 }
 .our-people-content{
 	position: relative;
 	// height: 60rem;
+}
+.people-list {
+	display: none;
+	&:nth-child(3){
+		display: block;
+	}
+	
 }
 //give what space to sections
 .staff,
@@ -84,6 +80,12 @@
 .partners,
 .students {
 	margin: $base_spacing_extra_large 0;
+	// @include desktop {
+	// 	display: none;
+	// 	&:nth-child(1){
+	// 		display: block;
+	// 	}
+	// }
 }
 
 // style the section titles for mobile

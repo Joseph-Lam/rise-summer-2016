@@ -17,7 +17,7 @@
 		<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>" class="rise-about-logo">	
 	<!-- display this nav on desktop -->
 		<nav class="about-people">
-			<ul class="about-people-nav">
+			<div class="about-people-nav">
 				<?php 
 				$categories = array(
 					'taxonomy' => 'people_group', 
@@ -28,21 +28,20 @@
 				?>
 				
 				<?php foreach ( $terms as $term ) :  ?>
-					
-					<a href="#<?php echo $term->slug; ?>" class="about-nav-link"> 
-						<li class="indvid-people-group"> 
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$term->slug.".svg"?>">
-							<h3><?php echo $term->name ?></h3>
-						</li>
-					</a>
+				
+					<div class="about-nav-link" data-about-nav="<?php echo $term->slug;?> "> 
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$term->slug.".svg"?>">
+						<h3><?php echo $term->name ?></h3>
+					</div>
+			
 				<?php endforeach; ?>
-			</ul>
+			</div>
 		</nav>
 
 	</div>
 	
 	<div class="our-people-content">
-	<div class="staff collapse" id="our-staff">
+	<div class="staff">
 		<!-- STAFF HEADING -->
 		<?php 
 			$categories = array(
@@ -61,7 +60,7 @@
 			<?php endforeach; ?>
 		</div>
 		<!-- Staff Listing -->
-		<ul class="our-staff flex-center">
+		<ul class="people-list our-staff flex-center">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -115,7 +114,7 @@
 		</ul>
 	</div>
 <!-- BOARD HEADING -->
-	<div class="board collapse" id="our-board">
+	<div class="board">
 		<?php 
 			$categories = array(
 				'taxonomy' => 'people_group',
@@ -135,7 +134,7 @@
 			<?php endforeach; ?>
 		</div>
 	<!-- Board Listing -->
-		<ul class="our-board flex-center">
+		<ul class="people-list our-board flex-center">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -186,7 +185,7 @@
 		</ul>
 	</div>
 	<!-- PARTNERS HEADING -->
-	<div class="partners collapse"  id="our-partners">
+	<div class="partners">
 		<?php 
 			$categories = array(
 				'taxonomy' => 'people_group',
@@ -205,7 +204,7 @@
 			<?php endforeach; ?>
 		</div>
 	<!-- Partners listing -->
-		<ul class="our-partners">
+		<ul class="people-list our-partners">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -238,7 +237,7 @@
 		</ul>
 	</div>
 	<!-- STUDENTS HEADING -->
-	<div class="students collapse" id="our-student">
+	<div class="students">
 		<?php 
 			$categories = array(
 				'taxonomy' => 'people_group',
@@ -257,7 +256,7 @@
 			<?php endforeach; ?>
 		</div>
 		<!-- Students listing -->
-		<ul class="our-students flex-center">
+		<ul class="people-list our-student flex-center">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
