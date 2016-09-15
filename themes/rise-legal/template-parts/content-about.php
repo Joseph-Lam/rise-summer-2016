@@ -1,5 +1,5 @@
 
-<section class="about-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section class="about-content container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
@@ -59,7 +59,7 @@
 			<?php endforeach; ?>
 		</div>
 		<!-- Staff Listing -->
-		<ul class="people-list our-staff flex-center">
+		<ul class="flex-center people-list our-staff container ">
 			<?php
 				$args = array(
 					'post_type' => 'our_people',
@@ -236,7 +236,7 @@
 		</ul>
 	</div>
 	<!-- STUDENTS HEADING -->
-	<div class="students">
+	<div class="students container">
 		<?php 
 			$categories = array(
 				'taxonomy' => 'people_group',

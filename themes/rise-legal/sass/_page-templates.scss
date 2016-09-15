@@ -4,8 +4,8 @@
 
 /* Front page */
 .container{
-	margin: 0 auto;
 	width: 75%;
+	margin: 0 auto;
 }
 .flex-center{
 	@include flexify(center, center);
@@ -56,5 +56,9 @@
 }
 
 .entry-header {
-	padding-top: 7.5rem;
+	padding-top: 4rem;
+}
+.entry-content {
+	margin: 0;
+	padding: 0;
 }

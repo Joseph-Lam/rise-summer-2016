@@ -715,8 +715,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .container {
-  margin: 0 auto;
-  width: 75%; }
+  width: 75%;
+  margin: 0 auto; }
 
 .flex-center {
   display: -ms-flexbox;
@@ -783,7 +783,11 @@ object {
     margin: 0; }
 
 .entry-header {
-  padding-top: 7.5rem; }
+  padding-top: 4rem; }
+
+.entry-content {
+  margin: 0;
+  padding: 0; }
 
 .site-header {
   display: -ms-flexbox;
@@ -1028,7 +1032,8 @@ object {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  padding: 2% 0; }
   .about-content h1 {
     margin: 0; }
   @media (min-width: 60rem) {
@@ -1051,7 +1056,7 @@ object {
   display: none; }
   @media (min-width: 60rem) {
     .about-people-nav {
-      height: 25rem;
+      height: 15rem;
       width: 100vw;
       display: -ms-flexbox;
       display: flex;
@@ -1071,7 +1076,8 @@ object {
         margin: 0; } }
 
 .about-nav-link {
-  color: white; }
+  color: white;
+  cursor: pointer; }
   .about-nav-link:nth-child(3) {
     -ms-flex-order: -1;
         order: -1; }
@@ -1083,16 +1089,9 @@ object {
 .show {
   border-bottom: 10px solid white; }
 
-.people-list {
-  display: none; }
-  .people-list:nth-child(1) {
-    display: block; }
-
-.staff,
-.board,
-.partners,
-.students {
-  margin: 5rem 0; }
+@media (min-width: 60rem) {
+  .people-list {
+    display: none; } }
 
 .group-title {
   -ms-flex-direction: column;
@@ -1111,20 +1110,23 @@ object {
 
 .our-staff,
 .our-board,
-.our-students {
+.our-student {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 5rem 0 3rem 0;
   -ms-flex-direction: column;
       flex-direction: column;
   text-align: center; }
   @media (min-width: 60rem) {
     .our-staff,
     .our-board,
-    .our-students {
+    .our-student {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; } }
-
-.our-staff {
-  width: 80%;
-  margin: 0 auto; }
 
 .indvid-staff-member {
   margin-top: 3rem; }
@@ -1173,7 +1175,8 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: start;
-      align-items: flex-start; }
+      align-items: flex-start;
+  padding: 5rem 0 3rem 0; }
 
 .indvid-partner {
   display: -ms-flexbox;

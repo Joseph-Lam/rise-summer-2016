@@ -5,6 +5,7 @@
 	@include flexify (center, center);
 	flex-direction: column;
 	text-align: center;
+	padding: 2% 0;
 	h1 {
 		margin: 0;
 	}
@@ -32,7 +33,7 @@
 .about-people-nav {
 	display: none;
 	@include desktop {
-		height: 25rem;
+		height: 15rem;
 		width: 100vw;
 		@include flexify(space-around, center);
 		flex-flow: row nowrap;
@@ -50,6 +51,7 @@
 }
 .about-nav-link {
 	color: $white;
+	cursor: pointer;
 	//puts the our staff category first in banner
 	&:nth-child(3){
 		order: -1;
@@ -64,20 +66,13 @@
 	border-bottom: 10px solid $white;
 }
 
+//displays the lists of people as none
 .people-list {
-	display: none;
-	&:nth-child(1){
-		display: block;
+	@include desktop {
+		display: none;	
 	}
-	
 }
-//give what space to sections
-.staff,
-.board,
-.partners,
-.students {
-	margin: $base_spacing_extra_large 0;
-}
+
 
 // style the section titles for mobile
 .group-title{
@@ -100,7 +95,9 @@
 //sets flex direction for the sections
 .our-staff,
 .our-board,
-.our-students{
+.our-student{
+	@include flexify(center, center);
+	padding: $base_spacing_extra_large 0 $base_spacing_large 0;
 	flex-direction: column;
 	text-align: center;
 	@include desktop {
@@ -108,11 +105,8 @@
 	}
 }
 
+
 //STAFF section styles
-.our-staff{
-	width: 80%;
-	margin: 0 auto;	
-}
 .indvid-staff-member {
 	margin-top: $base_spacing_large;
 	@include desktop {
@@ -143,13 +137,6 @@
 }
 
 //BOARD section styles
-.our-board{
-	@include desktop {
-		//include centering styles here
-		// width: 80rem;
-		// margin: 0 auto;
-	}
-}
 .indvid-board-member{
 	margin-bottom: $base_spacing_large;
 	p{
@@ -161,7 +148,6 @@
 	@include desktop {
 		flex: 20%;
 		margin-bottom: $base_spacing_extra_large;
-
 		&:nth-child(1),
 		&:nth-child(2) {
 			flex: 100%;
@@ -173,7 +159,7 @@
 //PARTNERS section styles
 .our-partners{
 	@include flexify(center, flex-start);
-
+	padding: $base_spacing_extra_large 0 $base_spacing_large 0;
 }
 .indvid-partner {
 	@include flexify(center,center);
