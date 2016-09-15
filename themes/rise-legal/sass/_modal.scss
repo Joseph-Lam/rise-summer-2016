@@ -10,21 +10,20 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba($color_light_blue, 0.8);
-	// background: $color_light_blue;
+	background: $color_light_blue;
 	z-index: 99999;
 	opacity: 0;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 	div{
 		width: 65rem;
+		max-height: 100%;
+		overflow-y: scroll;
 		position: relative;
 		padding: $base_spacing_large;
 		background-color: $color_light_blue;
 		border-radius: 10px;
 		text-align: left;
-		max-height: 100vh;
-		overflow-y:scroll;
 		h2{
 			margin: 0;
 		}
@@ -35,6 +34,9 @@
 	&:target{
 		opacity: 1;
 		pointer-events: auto;
+	}
+	@include desktop {
+		background: rgba(255,255,255, 0.6);
 	}
 
 }
@@ -53,12 +55,9 @@
 	}
 }
 .modal-btn{
-	@include white-button;
-	color: $color_brand_blue;
+	// @include button-color($color_brand_blue, $white);
 }
 .services-modal-btn{
-	@include white-button;
-	background: $color_light_blue;
 	@include flexify(center,center);
 	img{
 		height: 5rem;

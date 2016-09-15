@@ -111,3 +111,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+//for gravity forms when clicking previous/next/submit button, page view goes back to the top
+add_filter( 'gform_confirmation_anchor', '__return_true' );

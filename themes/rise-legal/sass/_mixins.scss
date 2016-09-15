@@ -17,46 +17,12 @@
 	align-items: $align-items;
 }
 
-@mixin button($bg, $font-color) {
+@mixin button-color($bg, $font-color) {
 	background-color: $bg;
 	color: $font-color;
-	height: 5rem;
-	width: 20rem;
-	border-radius: 1rem;
 	@include desktop {
 		&:hover {
-			background: darken($bg,8%);
-		}
-	}
-}
-
-@mixin white-button {
-	background-color: $white;
-	padding: $base_spacing_large/2 $base_spacing_large;
-	color: black;
-	height: 5rem;
-	width: 20rem;
-	border-radius: 0.5rem;
-	box-shadow: 0px 3px 6px black;
-
-	@include desktop {
-		&:hover {
-			background: darken(black,8%);
-		}
-	}
-}
-@mixin blue-button {
-	background-color: $color_brand_blue;
-	padding: $base_spacing_large/2 $base_spacing_large;
-	color: $white;
-	height: 5rem;
-	width: 20rem;
-	border-radius: 0.5rem;
-	box-shadow: 0px 3px 6px rgba(0,0,0, 0.4);
-
-	@include desktop {
-		&:hover {
-			background: darken($color_brand_blue,8%);
+			background: darken($bg, 8%);
 		}
 	}
 }

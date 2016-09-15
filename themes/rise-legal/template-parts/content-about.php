@@ -1,7 +1,14 @@
-<section class="about-content">
-	<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
-	<?php the_content(); ?>
-</section>
+
+<section class="about-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+	</div><!-- .entry-content -->
+</section><!-- #post-## -->
+
 
 <section class="our-people">
 
@@ -73,7 +80,7 @@
 
 				<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
 				<li class="indvid-staff-member">
-					<a href="#<?php the_title();?>" class="modal-btn">
+					<a href="#<?php the_title();?>" class="modal-btn btn">
 						<?php the_title();?>	
 					</a>
 					
@@ -150,7 +157,7 @@
 
 					<p class="position"><?php echo CFS()->get('position_title')?></p>
 
-					<a href="#<?php the_title();?>" class="modal-btn">
+					<a href="#<?php the_title();?>" class="modal-btn btn">
 						<?php the_title();?>	
 					</a>
 					
@@ -272,9 +279,7 @@
 						<?php echo CFS()->get('biography')?>
 					</li>
 				<?php endforeach; wp_reset_postdata(); ?>
-				<button>
-					Learn More
-				</button>
+				<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'The Law Students' )->ID ); ?>">learn more</a>
 		</ul>
 	</div>
 	</div>

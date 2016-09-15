@@ -1,0 +1,57 @@
+.resources-content{
+	flex-flow: column;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+.resource-banner{
+	background-color: $color_brand_blue;
+	flex-flow: row wrap;
+	button{
+		@include flexify(space-between, center);
+		margin: $base_spacing_large;
+		border: 3px solid $white;
+		border-radius: 0;
+		font-weight: bold;
+		letter-spacing: 3px;
+		&:hover {
+			color: $color_brand_blue;
+			background-color: $color_light_blue;
+		}
+	}
+}
+.active{
+	color: $color_brand_blue;
+	background-color: $white;
+}
+.resources{
+	width: 80%;
+	margin: 0 auto;
+	max-height: 100%;
+	position: relative;
+}
+
+.resource-list {
+	display: none;
+	&:nth-child(1){
+		display: block;
+	}
+	
+}
+.resource-post{
+	h3{
+		padding: 0;
+		margin: 0;
+		a{
+			color: $color_brand_red;
+			&:hover {
+				color: darken($color_brand_red, 8%);
+
+			}
+		}
+	}
+	p {
+		margin: $base_spacing 0 $base_spacing_extra_large 0;
+		padding: 0;
+	}
+}

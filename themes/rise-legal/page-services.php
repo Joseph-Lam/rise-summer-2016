@@ -13,10 +13,15 @@ get_header(); ?>
 		
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="about-content">
-					<?php the_title( '<h1 class="front-title">', '</h1>' ); ?>
-					<?php the_content(); ?>
-				</section>
+				<section class="about-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div><!-- .entry-content -->
+				</section><!-- #post-## -->
 				
 				<section class="who-we-help">
 					<div class="title-banner services-banner flex-center">
@@ -39,7 +44,7 @@ get_header(); ?>
 								<?php foreach($services_page_services_posts as $post) : setup_postdata( $post); ?>
 								<li class="indvid-services">
 									<div class="indvid-services-btn">
-										<a href="#<?php the_title();?>" class="services-modal-btn">
+										<a href="#<?php the_title();?>" class="services-modal-btn btn">
 											<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">		
 										</a>
 										<p><?php the_title();?></p>
@@ -135,9 +140,7 @@ get_header(); ?>
 						<p> 
 							We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month', 46) ?> 
 						</p>
-						<button>
-							Legal Contact Form
-						</button>
+						<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
 					</div>
 				</section>
 
