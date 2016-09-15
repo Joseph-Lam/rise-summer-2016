@@ -1822,7 +1822,8 @@ body .gform_wrapper .gfield_error input {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  padding-top: 20px; }
 
 .ginput_container_date {
   display: -ms-flexbox;
@@ -1832,14 +1833,31 @@ body .gform_wrapper .gfield_error input {
   -ms-flex-align: center;
       align-items: center; }
 
+#field_1_25 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 30px; }
+
 .gfield_time_hour input {
-  height: 6rem; }
+  height: 5rem; }
+
+.gfield_time_hour i {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .gfield_time_minute input {
-  height: 6rem; }
+  height: 5rem; }
 
 .gfield_time_ampm {
-  height: 6rem; }
+  height: 5rem; }
 
 .gsection_description {
   height: 200px;
