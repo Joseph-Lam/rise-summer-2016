@@ -1803,6 +1803,14 @@ body .gform_wrapper .gfield_error input {
 .ginput_container_text input {
   width: 100%; }
 
+.clear-multi {
+  display: -ms-flexbox;
+  display: flex;
+  width: 162px; }
+
+#input_1_25_3 {
+  height: 34px; }
+
 .gsection_description {
   height: 200px;
   overflow-y: scroll; }
