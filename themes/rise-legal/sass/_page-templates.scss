@@ -16,7 +16,8 @@
 	
 }
 .banner-content{
-	width: 80rem;
+	// width: 80rem;
+	padding: 15%;
 	text-align: center;
 	@include flexify(center, center);
 	flex-flow: column;
