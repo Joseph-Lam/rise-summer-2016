@@ -230,13 +230,13 @@ body .gform_wrapper .gfield_error input  {
 	height: 34px;
 }
 
-
-
-
 //page 6
 .gsection_description {
 	height: 200px;
     overflow-y: scroll;
+	padding: 15px;
+	border: 1px solid $color_medium_grey;
+	text-align: justify;
 }
 
 .read-and-agree {

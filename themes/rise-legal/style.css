@@ -1813,7 +1813,10 @@ body .gform_wrapper .gfield_error input {
 
 .gsection_description {
   height: 200px;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding: 15px;
+  border: 1px solid #CCCCCC;
+  text-align: justify; }
 
 .read-and-agree {
   display: -ms-flexbox;
