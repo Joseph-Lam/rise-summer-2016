@@ -5,6 +5,7 @@
 /* Front page */
 .container{
 	margin: 0 auto;
+	width: 80%;
 }
 .flex-center{
 	@include flexify(center, center);
@@ -13,36 +14,34 @@
 .front-banner{
 	color: $color_brand_blue;
 	@include flexify(center, center);
-	
 }
 .banner-content{
-	// width: 80rem;
-	padding: 15%;
+	padding: 10% 5%;
 	text-align: center;
 	@include flexify(center, center);
 	flex-flow: column;
+	a{
+		margin: $base_spacing_large 0;
+	}
 }
-
 
 //Contact Process Section Styles
 .contact-process{
 	@include flexify(center, center);
 	flex-flow: column;
-}
-.contact-process-content{
-	width: 60rem;
-	@include flexify(space-between, center);
-	p{
-		text-align: center;
-		padding: $base_spacing;
-	}
+	padding-bottom: $base_spacing_extra_large;
 }
 .contact-process-image{
-	padding: $base_spacing_large;
+	margin-left: 10%;
 }
-
-.contact-process{
+.contact-process-content {
 	flex-flow: column;
+	.btn {
+		margin-bottom: $base_spacing_large;
+	}
+}
+.month{
+	font-weight: bold;
 }
 //Title Banner Styles
 .title-banner{

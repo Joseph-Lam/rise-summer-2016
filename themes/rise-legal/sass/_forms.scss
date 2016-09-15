@@ -12,7 +12,8 @@ input[type="submit"],
 	background: $white;
 	border: 0;
 	border-radius: 0.7rem;
-	box-shadow: 0px 3px 6px $color_dark_grey;
+	// box-shadow: 0px 3px 6px $color_dark_grey;
+	box-shadow: 0 2px 4px rgba($color_dark_grey, 0.75);
 	padding: 1.5rem $base_spacing_large;
 	color: $color_dark_grey;
 	line-height: 1;
