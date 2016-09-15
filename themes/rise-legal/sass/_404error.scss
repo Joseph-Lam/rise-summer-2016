@@ -1,0 +1,4 @@
+.error-404 {
+	@include flexify(center, center);
+	flex-direction: column;
+}
