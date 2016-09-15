@@ -1100,12 +1100,9 @@ object {
 .show {
   border-bottom: 10px solid white; }
 
-.our-people-content {
-  position: relative; }
-
 .people-list {
   display: none; }
-  .people-list:nth-child(3) {
+  .people-list:nth-child(1) {
     display: block; }
 
 .staff,

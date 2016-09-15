@@ -11,7 +11,7 @@
 		$('div').removeClass('show');
 		$(this).addClass('show').data('about-nav');
 
-		$('ul').hide();
+		$('.people-list').hide();
 
 		$('.'+ contentToOpen).show();
 	})
@@ -23,7 +23,7 @@
 		$('button').removeClass('active');
 		$(this).addClass('active').data('alpha');
 
-		$('ul').hide();
+		$('.resource-list').hide();
 
 		$('.'+ rangeToOpen).show();
 

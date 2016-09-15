@@ -39,8 +39,7 @@
 		</nav>
 
 	</div>
-	
-	<div class="our-people-content">
+
 	<div class="staff">
 		<!-- STAFF HEADING -->
 		<?php 
@@ -280,6 +279,5 @@
 				<?php endforeach; wp_reset_postdata(); ?>
 				<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'The Law Students' )->ID ); ?>">learn more</a>
 		</ul>
-	</div>
 	</div>
 </section>
