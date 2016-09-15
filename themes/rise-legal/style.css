@@ -1524,8 +1524,9 @@ object {
   -ms-flex-flow: column;
       flex-flow: column;
   text-align: center;
-  width: 80%;
-  margin: 0 auto; }
+  padding-bottom: 5rem; }
+  .resources-content img {
+    margin-top: 5rem; }
 
 .resource-banner {
   background-color: #155E89;
@@ -1542,7 +1543,8 @@ object {
     border: 3px solid white;
     border-radius: 0;
     font-weight: bold;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    min-width: 2rem; }
     .resource-banner button:hover {
       color: #155E89;
       background-color: #EBF0F3; }
@@ -1552,10 +1554,7 @@ object {
   background-color: white; }
 
 .resources {
-  width: 80%;
-  margin: 0 auto;
-  max-height: 100%;
-  position: relative; }
+  padding: 5rem 0; }
 
 .resource-list {
   display: none; }

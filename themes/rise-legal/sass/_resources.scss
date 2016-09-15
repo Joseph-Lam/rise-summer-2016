@@ -1,8 +1,10 @@
 .resources-content{
 	flex-flow: column;
 	text-align: center;
-	width: 80%;
-	margin: 0 auto;
+	img {
+		margin-top: $base_spacing_extra_large;
+	}
+	padding-bottom: $base_spacing_extra_large;
 }
 .resource-banner{
 	background-color: $color_brand_blue;
@@ -14,6 +16,7 @@
 		border-radius: 0;
 		font-weight: bold;
 		letter-spacing: 3px;
+		min-width: 2rem;
 		&:hover {
 			color: $color_brand_blue;
 			background-color: $color_light_blue;
@@ -25,10 +28,7 @@
 	background-color: $white;
 }
 .resources{
-	width: 80%;
-	margin: 0 auto;
-	max-height: 100%;
-	position: relative;
+	padding: $base_spacing_extra_large 0;
 }
 
 .resource-list {

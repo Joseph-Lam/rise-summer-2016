@@ -12,7 +12,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-			<section class="resources-content flex-center">
+			<section class="container resources-content flex-center">
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -25,7 +25,7 @@ get_header(); ?>
 
 				<a class="btn " href="<?php echo get_page_link( get_page_by_title( 'Contact Us' )->ID ); ?>">hours of operation</a>
 
-				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand.svg"?>" class="rise-about-logo">	
+				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand.svg"?>">	
 				
 				<h3>External Help</h3>
 				<?php echo CFS()->get('external_help')?>
@@ -46,16 +46,14 @@ get_header(); ?>
 					?>
 					<div class="title-banner resource-banner flex-center">
 						<?php foreach ($alphas as $name => $value) { ?>
-							<button class="resource-button btn blue-btn" data-alpha="<?php echo $name ?>"><?php echo $name ?></li>
-								<?php } ?>
+						<button class="resource-button btn blue-btn" data-alpha="<?php echo $name ?>"><?php echo $name ?>
+							<?php } ?>
+					</div>
 
-							</div>
-
-							<section class="resources">
+							<section class="resources container">
 								<?php foreach($alphas as $name => $alpha) {
 									?>
-								
-
+				
 										<ul class="resource-list <?php echo $name; ?>">
 											<?php
 											$args = array(
@@ -83,13 +81,10 @@ get_header(); ?>
 								<?php }?>
 							</section>
 
-
-
-
 						<?php endwhile; // End of the loop. ?>
 
-					</main><!-- #main -->
-				</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 
-				<?php get_footer(); ?>
+<?php get_footer(); ?>
