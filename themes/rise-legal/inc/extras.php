@@ -36,9 +36,9 @@ function rise_legal_banner_image_styles() {
             $custom_css = "
                     .front-banner{
                         width: 100vw;
-                        height: 100vh;
+                        height:  auto;
                         background: 
-                            linear-gradient( to bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)),
+                            linear-gradient( to bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 1)),
                             url({$banner_image});
                         background-size: cover;
                     }";

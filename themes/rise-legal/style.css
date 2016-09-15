@@ -734,7 +734,7 @@ object {
       align-items: center; }
 
 .banner-content {
-  width: 80rem;
+  padding: 15%;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
