@@ -59,12 +59,11 @@
 }
 .services-modal-btn{
 	@include flexify(center,center);
-	img{
-		height: 5rem;
-	}	
+	box-shadow: 0 2px 4px rgba($color_dark_grey, 0.75);	
 	height: 10rem;
 	width: 10rem;
 	border-radius: 50%;
-
-
+	img{
+		height: 5rem;
+	}
 }

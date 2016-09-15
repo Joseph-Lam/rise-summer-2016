@@ -644,6 +644,7 @@ textarea {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  box-shadow: 0 2px 4px rgba(74, 74, 74, 0.75);
   height: 10rem;
   width: 10rem;
   border-radius: 50%; }
@@ -1234,6 +1235,10 @@ object {
     .school-banner {
       background-image: url(../../assets/images/desktop/service-school-desktop.jpg); } }
 
+.services-info {
+  text-align: center;
+  margin: 5rem 0; }
+
 .services {
   display: -ms-flexbox;
   display: flex;
@@ -1242,7 +1247,8 @@ object {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+      flex-flow: row wrap;
+  margin: 5rem 0; }
 
 .indvid-services {
   -ms-flex-preferred-size: 50%;
@@ -1265,11 +1271,15 @@ object {
   .indvid-services-btn p {
     margin-top: 1rem;
     margin-bottom: 3rem; }
+  .indvid-services-btn a img {
+    width: 5rem; }
 
 .what-we-do {
   -ms-flex-flow: column;
       flex-flow: column;
   text-align: center; }
+  .what-we-do h2 {
+    margin: 0; }
 
 .services-step-container {
   display: -ms-flexbox;
@@ -1344,7 +1354,7 @@ object {
 .accordian-item-header .accordian-item-cta {
   background-color: #A44F52;
   transform: rotate(135deg);
-  transition: 1s ease-in-out; }
+  transition: 0.7s ease-in-out; }
 
 .accordian-item-cta {
   position: absolute;

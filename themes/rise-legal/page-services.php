@@ -13,7 +13,7 @@ get_header(); ?>
 		
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="about-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<section class="about-content container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					</header><!-- .entry-header -->
@@ -29,8 +29,8 @@ get_header(); ?>
 						<h2>Who We Help</h2>
 					</div>
 					<!-- Services Modal Buttons -->
-					<div>
-						<p><?php echo CFS()->get('who_we_help')?></p>
+					<div class="services-info">
+						<p class="container"><?php echo CFS()->get('who_we_help')?></p>
 						<ul class="services">
 							<?php
 								$args = array(
@@ -44,7 +44,7 @@ get_header(); ?>
 								<?php foreach($services_page_services_posts as $post) : setup_postdata( $post); ?>
 								<li class="indvid-services">
 									<div class="indvid-services-btn">
-										<a href="#<?php the_title();?>" class="services-modal-btn btn">
+										<a href="#<?php the_title();?>" class="services-modal-btn">
 											<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">		
 										</a>
 										<p><?php the_title();?></p>
@@ -71,7 +71,7 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="what-we-do flex-center">
+				<section class="what-we-do container flex-center">
 					<h2>What We Do</h2>
 					<p><?php echo CFS()->get('what_we_do')?></p>
 					<div class="services-step-container">
@@ -98,7 +98,7 @@ get_header(); ?>
 
 
 				<section>
-					<div class="faq flex-center">
+					<div class="faq container flex-center">
 						<h2>FAQ's</h2>
 						<ul class="accordian">
 							<?php

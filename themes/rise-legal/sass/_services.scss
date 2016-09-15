@@ -22,9 +22,14 @@
 }
 
 //Services modal button layout styles
+.services-info{
+	text-align: center;
+	margin: $base_spacing_extra_large 0;
+}
 .services {
 	@include flexify(center, center);
 	flex-flow: row wrap;
+	margin: $base_spacing_extra_large 0;
 }
 .indvid-services{
 	flex-basis: 50%;
@@ -40,6 +45,11 @@
 		margin-top: $base_spacing;
 		margin-bottom: $base_spacing_large;
 	}
+	a{
+		img{
+			width: 5rem;
+		}
+	}
 
 }
 
@@ -47,6 +57,9 @@
 .what-we-do {
 	flex-flow: column;
 	text-align: center;
+	h2{
+		margin: 0;
+	}
 }
 .services-step-container {
 	@include flexify(space-between, center);
@@ -119,7 +132,7 @@
 		.accordian-item-cta{
 			background-color: $color_brand_red;
 			transform: rotate(135deg);
-			transition: 1s ease-in-out;
+			transition: 0.7s ease-in-out;
 		}
 	}
 }
