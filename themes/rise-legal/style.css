@@ -375,9 +375,10 @@ input[type="submit"],
   padding: 1.5rem 3rem;
   color: #4A4A4A;
   line-height: 1;
+  min-width: 20rem;
+  height: 5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-transform: capitalize;
-  overflow: none; }
+  text-transform: capitalize; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -813,10 +814,11 @@ object {
       align-content: flex-end;
   background-image: url("../../assets/backgrounds/header.jpg");
   background-size: cover;
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   width: 100%;
   position: fixed;
-  z-index: 10; }
+  z-index: 10;
+  box-shadow: 0 2px 3px rgba(74, 74, 74, 0.4); }
   @media (min-width: 60rem) {
     .site-header {
       -ms-flex-align: center;
@@ -877,21 +879,20 @@ object {
     cursor: pointer; }
 
 .menu-wrap {
-  width: 15rem; }
-  @media (min-width: 60rem) {
-    .menu-wrap {
-      display: none; } }
-
-.hamburger {
-  text-transform: uppercase;
+  width: 15rem;
+  cursor: pointer;
   background-color: transparent;
   box-shadow: none;
   border: none;
-  padding: 0; }
-  .hamburger img {
+  padding: 0;
+  margin-bottom: 1rem; }
+  .menu-wrap img {
     width: 100%; }
-  .hamburger:hover {
+  .menu-wrap:hover {
     background-color: transparent; }
+  @media (min-width: 60rem) {
+    .menu-wrap {
+      display: none; } }
 
 .desktop-navigation {
   display: none; }
@@ -929,7 +930,7 @@ object {
         font-size: 1.6rem; } }
 
 .hdr-pusher {
-  height: 10rem; }
+  height: 9.5rem; }
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");

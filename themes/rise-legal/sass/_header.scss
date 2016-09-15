@@ -5,10 +5,11 @@
   // background: url('../../assets/backgrounds/mobile-header.png') center;
   background-image: url('../../assets/backgrounds/header.jpg');
   background-size: cover;
-  padding: $base_spacing $base_spacing_large $base_spacing_large $base_spacing_large;
+  padding: $base_spacing $base_spacing_large $base_spacing $base_spacing_large;
   width: 100%;
   position: fixed;
   z-index: 10;
+  box-shadow: 0 2px 3px rgba($color_dark_grey, 0.4);
   @include desktop {
     align-items:center;
     // background-image: url('../../assets/backgrounds/desktop-header.jpg');
@@ -79,23 +80,23 @@
   //Hamburger Menu Styles
 .menu-wrap{
   width: 15rem;
-  @include desktop {
-    display: none;
-  }
-}
-.hamburger {
-  text-transform: uppercase;
+  cursor: pointer;
   background-color: transparent;
   box-shadow: none;
   border: none;
   padding: 0;
+  margin-bottom: $base_spacing;
   img{
     width: 100%;
   }
   &:hover {
     background-color: transparent;
   }
+  @include desktop {
+    display: none;
+  }
 }
+
 // Desktop Nav Styles
 .desktop-navigation{
   display: none;
@@ -130,5 +131,5 @@
 }
 
 .hdr-pusher{
-  height: 10rem;
+  height: 9.5rem;
 }

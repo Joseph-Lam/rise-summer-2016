@@ -36,10 +36,8 @@
 				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 			</div><!-- .site-branding -->
 			
-			<div class="menu-wrap">
-				<button class="hamburger">
+			<div class="menu-wrap hamburger">
 				 	<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-menu.svg' ?>">
-				 </button>
 			</div>
 			<nav id="desktop-navigation" class="desktop-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
