@@ -1843,7 +1843,10 @@ body .gform_wrapper .gfield_error input {
   padding: 30px; }
 
 .gfield_time_hour input {
-  height: 5rem; }
+  height: 5rem;
+  border: none;
+  border-right: 2px solid #CCCCCC;
+  border-bottom: 2px solid #CCCCCC; }
 
 .gfield_time_hour i {
   display: -ms-flexbox;
@@ -1854,10 +1857,16 @@ body .gform_wrapper .gfield_error input {
       align-items: center; }
 
 .gfield_time_minute input {
-  height: 5rem; }
+  height: 5rem;
+  border: none;
+  border-right: 2px solid #CCCCCC;
+  border-bottom: 2px solid #CCCCCC; }
 
-.gfield_time_ampm {
-  height: 5rem; }
+.gfield_time_ampm select {
+  height: 5rem;
+  border: none;
+  border-right: 2px solid #CCCCCC;
+  border-bottom: 2px solid #CCCCCC; }
 
 .gsection_description {
   height: 200px;

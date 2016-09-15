@@ -62,7 +62,7 @@
 }
 
 body .gform_wrapper .gfield_error input  {
-    border-bottom: 3px solid $color_light_red;
+	border-bottom: 3px solid $color_light_red;
 }
 
 
@@ -86,7 +86,7 @@ body .gform_wrapper .gfield_error input  {
 				&:hover {
 					cursor: pointer;
 				}	
-				}	
+			}	
 			label {
 				font-size: $h3_size;
 				padding: 10px;
@@ -229,8 +229,8 @@ body .gform_wrapper .gfield_error input  {
 #input_1_24 {
 	width: 40%;
 	border-bottom: 2px solid $color_medium_grey; 
-    border-right: 2px solid $color_medium_grey;
-    margin-right: 10px
+	border-right: 2px solid $color_medium_grey;
+	margin-right: 10px
 }
 
 #field_1_24 {
@@ -246,14 +246,17 @@ body .gform_wrapper .gfield_error input  {
 //styling time field
 #field_1_25 {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
 }
 
 .gfield_time_hour {
 	input {
 		height: 5rem;	
+		border: none;
+		border-right: 2px solid $color_medium_grey;
+		border-bottom: 2px solid $color_medium_grey;
 	}
 	i {
 		@include flexify(center,center);
@@ -262,19 +265,27 @@ body .gform_wrapper .gfield_error input  {
 
 .gfield_time_minute {
 	input {
-		height: 5rem;	
+		height: 5rem;
+		border: none;
+		border-right: 2px solid $color_medium_grey;
+		border-bottom: 2px solid $color_medium_grey;	
 	}
 }
 
 .gfield_time_ampm {
-	height: 5rem;
+	select {
+		height: 5rem;
+		border: none;
+		border-right: 2px solid $color_medium_grey;
+		border-bottom: 2px solid $color_medium_grey;	
+	}
 }
 
 
 //page 6
 .gsection_description {
 	height: 200px;
-    overflow-y: scroll;
+	overflow-y: scroll;
 	padding: 15px;
 	border: 1px solid $color_medium_grey;
 	text-align: justify;
@@ -316,6 +327,6 @@ body .gform_wrapper .gfield_error input  {
 	@include flexify(center,center);
 	font-size: $h2_size;
 	flex-direction: column;
-    text-align: center;
-    padding: 40px;
+	text-align: center;
+	padding: 40px;
 }
