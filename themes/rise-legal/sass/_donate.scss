@@ -3,32 +3,24 @@
 	text-align: center;
 }
 
-.donate-content {
-	p {
-		margin-bottom: $base_spacing_large;
-	}
+.donate-header {
+	@include flexify(center,center);
+	flex-direction: column;
 }
 
 .donate-legal-stat {
 	background-color: $color_brand_blue;
 	color: white;
-	padding: 3rem 10%;
-	margin: 30px 0;
-	@include desktop {
-		padding: 100px 10%;
-	}
 }	
 
 .donate-criteria {
-
+	padding: $base_spacing_large;
 }
 
 
 .donate-who-title {
 	background-image: url('../../assets/images/mobile/donate-whodohelp-mobile.jpg');
 	background-size: cover;
-	padding: 30px;
-	margin: 30px 0;
 	@include desktop {
 		padding: 10rem;
 	}
