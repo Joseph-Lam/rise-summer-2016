@@ -53,7 +53,7 @@ get_header(); ?>
 						<h2> how we help </h2>
 					</div>
 
-					<div class="donate-how-content">
+					<div class="donate-how-content container">
 						<?php echo CFS()->get( 'how_we_help_main_content' ); ?>
 					</div>
 				</section>

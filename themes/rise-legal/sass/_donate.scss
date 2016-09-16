@@ -35,11 +35,6 @@
 .donate-how-title {
 	background-image: url('../../assets/images/mobile/donate-howwehelp-mobile.jpg');
 	background-size: cover;
-	padding: 30px;
-	margin: 30px 0;
-	@include desktop {
-		padding: 10rem;
-	}
 	img {
 		width: 49px;
     	height: 66px;
@@ -53,7 +48,8 @@
 }
 
 .donate-how-content {
-
+	padding: $base_spacing_large;
+	padding-bottom: 0;
 }
 
 .donate-justice-container {
