@@ -37,7 +37,7 @@
 	background-size: cover;
 	img {
 		width: 49px;
-    	height: 66px;
+		height: 66px;
 	}
 	h2 {
 		text-transform: capitalize;
@@ -53,27 +53,25 @@
 }
 
 .donate-justice-container {
+		
+
+}
+
+.donate-justice {
 	display: flex;
-	flex-direction: column;
-	.donate-justice {
-		display: flex;
-		flex-direction: row;
-		margin: 20px 0;
-		@include desktop {
-			flex-direction: column;
-		}
-		.justice-number-container {
-			flex: 20%;
-		}
-		.donate-justice-meta {
-			flex: 80%;
-			text-align: left;
-			@include desktop {
-				text-align: center;
-			}
-		}
+	flex-direction: row;
+	margin: $base_spacing_large;
+	img {
+		margin-right: $base_spacing_large;
+
 	}
 }
+
+.donate-justice-meta {
+	text-align: left;
+
+}
+
 .donate-banner {
 	background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
 	background-position: center;

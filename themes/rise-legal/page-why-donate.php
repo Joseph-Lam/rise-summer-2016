@@ -56,13 +56,10 @@ get_header(); ?>
 					<div class="donate-how-content container">
 						<?php echo CFS()->get( 'how_we_help_main_content' ); ?>
 					</div>
-				</section>
 
-				<ul class="donate-justice-container">
+				<ul class="donate-justice-container container">
 					<li class="donate-justice">
-						<div class="justice-number-container">
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
-						</div>
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
 
 						<div class="donate-justice-meta">
 							<?php echo CFS()->get( 'how_we_help_justice_1' ); ?>
@@ -70,24 +67,22 @@ get_header(); ?>
 					</li>
 
 					<li class="donate-justice">
-						<div class="justice-number-container">
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-2.svg"?>">
-						</div>
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-2.svg"?>">
+
 						<div class="donate-justice-meta">
 							<?php echo CFS()->get( 'how_we_help_justice_2' ); ?>
 						</div>
 					</li>
 
 					<li class="donate-justice">
-						<div class="justice-number-container">
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-3.svg"?>">
-						</div>
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-3.svg"?>">
 						<div class="donate-justice-meta">
 							<?php echo CFS()->get( 'how_we_help_justice_3' ); ?>
 						</div>
 					</li>
 				</ul>
-
+				</section>
+				
 				<section class="donate">
 					<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
 				</section>
