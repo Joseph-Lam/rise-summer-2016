@@ -42,7 +42,7 @@ get_header(); ?>
 						<h2> who do we help </h2>
 					</div>
 
-					<div class="donate-who-content">
+					<div class="donate-who-content container">
 						<?php echo CFS()->get( 'who_do_we_help' ); ?>
 					</div>
 				</section>

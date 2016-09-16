@@ -17,13 +17,9 @@
 	padding: $base_spacing_large;
 }
 
-
 .donate-who-title {
 	background-image: url('../../assets/images/mobile/donate-whodohelp-mobile.jpg');
 	background-size: cover;
-	@include desktop {
-		padding: 10rem;
-	}
 	h2 {
 		text-transform: capitalize;
 		margin: 0;
@@ -33,7 +29,7 @@
 }
 
 .donate-who-content {
-
+	padding: $base_spacing_large;
 }
 
 .donate-how-title {
