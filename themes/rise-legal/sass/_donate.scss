@@ -14,7 +14,7 @@
 }	
 
 .donate-criteria {
-	padding: $base_spacing_large;
+	padding: $base_spacing_extra_large 0;
 }
 
 .donate-who-title {
@@ -29,7 +29,7 @@
 }
 
 .donate-who-content {
-	padding: $base_spacing_large;
+	padding: $base_spacing_extra_large 0;
 }
 
 .donate-how-title {
@@ -48,13 +48,11 @@
 }
 
 .donate-how-content {
-	padding: $base_spacing_large;
-	padding-bottom: 0;
+	padding-top: $base_spacing_extra_large;
 }
 
 .donate-justice-container {
-		
-
+	padding-bottom: $base_spacing_extra_large;
 }
 
 .donate-justice {
