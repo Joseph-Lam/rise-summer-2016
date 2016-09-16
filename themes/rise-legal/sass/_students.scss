@@ -30,22 +30,20 @@
 }
 
 .student-features {
-	// padding: 40px 0;
 	border-bottom: 1px solid $color_medium_grey;
-	width: 80%;
-	margin: 0 auto;
-
+	margin-bottom: $base_spacing_large;
+	padding-bottom: $base_spacing_large;
+	img {
+		margin-bottom: $base_spacing_large;
+	}
 	@include desktop {
 		@include flexify(center,center);
 		flex-direction: row;
-	}
-	.student-features-icon {
-		margin-bottom: 25px;
-		@include desktop {
-			flex: 20%;	
-			margin: 0;
+		img {
+			margin: 0 $base_spacing_extra_large;
 		}
 	}
+	
 	.student-feature-meta {
 		@include desktop {
 			flex: 80%;

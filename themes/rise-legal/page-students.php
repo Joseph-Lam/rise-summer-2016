@@ -40,18 +40,15 @@ get_header(); ?>
 
 					<ul class="container">
 						<li class="student-features">
-							<div class="student-features-icon">
-								<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-orientation.svg"?>">
-							</div>
+							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-orientation.svg"?>">
+							
 							<div class="student-feature-meta">
 								<?php echo CFS()->get( 'student_orientation' ); ?>
 							</div>
 						</li>
 
 						<li class="student-features">
-							<div class="student-features-icon">
-								<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-clinic.svg"?>">
-							</div>
+							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-clinic.svg"?>">
 
 							<div class="student-feature-meta">
 								<?php echo CFS()->get( 'legal_clinic' ); ?>
@@ -59,17 +56,15 @@ get_header(); ?>
 						</li>
 
 						<li class="student-features">
-							<div class="student-course-icon student-features-icon">
-								<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-course.svg"?>">
-							</div>
+							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-course.svg"?>">
+							
 							<div class="student-course-info student-feature-meta">
 								<?php echo CFS()->get( 'community_lawyering_course' ); ?>
 							</div>
 						</li>
 						
-						<li class="student-features">					<div class="student-reflection-icon student-features-icon">
-								<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-reflection.svg"?>">
-							</div>
+						<li class="student-features">					<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-students-reflection.svg"?>">
+						
 							<div class="student-reflection-info student-feature-meta">
 								<?php echo CFS()->get( 'reflection_and_rounds' ); ?>
 							</div>
