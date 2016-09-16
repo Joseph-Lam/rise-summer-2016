@@ -8,7 +8,8 @@
 	margin: 0;
 }
 
-.externship-title {
+.externship-banner {
+	
 	background-image: url('../../assets/images/mobile/student-mobile.jpg');
 	background-size: cover;
 	padding: 4rem;
@@ -25,7 +26,7 @@
 }
 
 .student-externship {
-	margin: $base_spacing_extra_large;
+	padding: $base_spacing_extra_large 0;
 }
 
 .student-features {

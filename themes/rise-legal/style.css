@@ -1582,21 +1582,21 @@ object {
   padding: 0;
   margin: 0; }
 
-.externship-title {
+.externship-banner {
   background-image: url("../../assets/images/mobile/student-mobile.jpg");
   background-size: cover;
   padding: 4rem;
   padding: 7% 0; }
-  .externship-title img {
+  .externship-banner img {
     width: 4rem; }
-  .externship-title h2 {
+  .externship-banner h2 {
     text-transform: capitalize;
     color: white;
     padding: 0;
     margin: 0; }
 
 .student-externship {
-  margin: 5rem; }
+  padding: 5rem 0; }
 
 .student-features {
   border-bottom: 1px solid #CCCCCC;
