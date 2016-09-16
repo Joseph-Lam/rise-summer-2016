@@ -1,6 +1,7 @@
 (function($) {
-	$(document).ready(function(){
 
+
+ $(function () { 
 	//Script to open nav menu on mobile
 		$('.hamburger, .close-nav').click( function(e){
 			$('.main-navigation').toggleClass('open');
@@ -15,7 +16,7 @@
 			$('.people-list').hide();
 
 			$('.'+ contentToOpen).show();
-		})
+		});
 
 	//Script to show/hide resources
 		$('.resource-button').click(function(){
