@@ -637,6 +637,13 @@ textarea {
     background: url(../../assets/icons/icon-exit.svg) no-repeat;
     background-position: center; }
 
+.modal-btn {
+  background-color: #155E89;
+  color: white; }
+  @media (min-width: 60rem) {
+    .modal-btn:hover {
+      background: #104666; } }
+
 .services-modal-btn {
   display: -ms-flexbox;
   display: flex;

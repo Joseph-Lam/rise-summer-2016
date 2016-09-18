@@ -55,7 +55,7 @@
 	}
 }
 .modal-btn{
-	// @include button-color($color_brand_blue, $white);
+	@include button-color($color_brand_blue, $white);
 }
 .services-modal-btn{
 	@include flexify(center,center);
