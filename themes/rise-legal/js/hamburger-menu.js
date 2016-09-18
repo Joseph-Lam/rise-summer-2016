@@ -1,6 +1,6 @@
 (function($) {
 	
-	// $(document).ready(function(){
+	$(document).ready(function(){
 	//Script to open nav menu on mobile
 		$('.hamburger, .close-nav').click( function(e){
 			$('.main-navigation').toggleClass('open');
@@ -30,6 +30,6 @@
 
 		});
 
-	// });
+	});
 
 })(jQuery);

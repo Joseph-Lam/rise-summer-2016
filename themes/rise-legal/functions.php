@@ -84,16 +84,15 @@ add_filter( 'stylesheet_uri', 'rise_legal_minified_css', 10, 2 );
  */
 function rise_legal_scripts() {
 	wp_enqueue_style( 'rise-legal-style', get_stylesheet_uri() );
+
+	wp_enqueue_script('jquery');
+	
+	wp_enqueue_script('hamburger-menu', get_template_directory_uri() . '/build/js/hamburger-menu.min.js', array('jquery'), false, true);
+	
 	wp_enqueue_script( 'rise-legal-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	
 	wp_enqueue_script('rise-legal-font-awesome', 'https://use.fontawesome.com/d51ac7c865.js', array(), '4.6.3', false);
 
-	wp_enqueue_script('jquery');
-    wp_deregister_script('jquery');
-     wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js", false, null);
-    wp_enqueue_script('jquery');
-	
-	wp_enqueue_script('hamburger-menu', get_template_directory_uri() . '/build/js/hamburger-menu.min.js', array('jquery'), false, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
