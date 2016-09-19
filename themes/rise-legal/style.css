@@ -1011,10 +1011,10 @@ object {
       margin: 0 10px; } }
 
 .footer-media {
-  color: white;
   text-align: center; }
   .footer-media h3 {
-    padding: 0; }
+    padding: 0;
+    color: white; }
     @media (min-width: 60rem) {
       .footer-media h3 {
         font-size: 2rem;
@@ -1418,10 +1418,10 @@ object {
   padding: 0; }
 
 .contact-meta {
-  margin: 40px 0; }
+  margin: 3rem 0; }
 
 .responsive-map {
-  margin-bottom: 40px; }
+  margin-bottom: 4rem; }
   .responsive-map iframe {
     width: 100%; }
     @media (min-width: 60rem) {
@@ -1437,7 +1437,7 @@ object {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 40px 10%; }
+  margin: 4rem 15%; }
   .contact-notes img {
     margin-bottom: 30px; }
 
@@ -1458,14 +1458,20 @@ object {
 
 .donate-legal-stat {
   background-color: #155E89;
-  color: white; }
+  color: white;
+  padding: 8%; }
+  @media (min-width: 60rem) {
+    .donate-legal-stat {
+      font-size: 2.8rem;
+      padding: 7% ""; } }
 
 .donate-criteria {
   padding: 5rem 0; }
 
 .donate-who-title {
   background-image: url("../../assets/images/mobile/donate-whodohelp-mobile.jpg");
-  background-size: cover; }
+  background-size: cover;
+  text-align: center; }
   .donate-who-title h2 {
     text-transform: capitalize;
     margin: 0;
@@ -1477,7 +1483,8 @@ object {
 
 .donate-how-title {
   background-image: url("../../assets/images/mobile/donate-howwehelp-mobile.jpg");
-  background-size: cover; }
+  background-size: cover;
+  text-align: center; }
   .donate-how-title img {
     width: 49px;
     height: 66px; }
@@ -1508,7 +1515,8 @@ object {
 .donate-banner {
   background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
   background-position: center;
-  color: white; }
+  color: white;
+  width: 100%; }
   @media (min-width: 60rem) {
     .donate-banner {
       background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg); } }
@@ -1625,9 +1633,11 @@ object {
   .student-features:last-child {
     border: none; }
 
-.legal-form-content {
-  width: 80%;
-  margin: 0 auto; }
+.legal-form-header {
+  margin-left: 13%; }
+
+.legal-form-intro {
+  text-align: center; }
 
 .gform_wrapper {
   display: -ms-flexbox;
@@ -1672,6 +1682,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+  .gform_page_footer input {
+    margin: 0 2rem; }
   .gform_page_footer .gform_next_button {
     background-color: #155E89;
     color: white; }
@@ -1747,6 +1759,13 @@ body .gform_wrapper .gfield_error input {
     color: black;
     text-decoration: none; }
 
+.disappear {
+  display: none; }
+
+.page-one-button-spacing {
+  text-align: center;
+  padding: 5rem 0; }
+
 .ginput_container_email {
   margin-bottom: 10px; }
   .ginput_container_email input {
@@ -1796,12 +1815,15 @@ body .gform_wrapper .gfield_error input {
       padding: 5px 0; }
 
 .gfield_contains_required {
-  margin: 10px 0; }
+  margin: 1rem 0; }
 
 .ginput_container_phone input {
   border: none;
   border-bottom: 1px solid black;
   width: 100%; }
+
+#field_1_7 {
+  margin-top: 3rem; }
 
 .ginput_container_text input {
   width: 100%; }

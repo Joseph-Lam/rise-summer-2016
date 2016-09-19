@@ -11,12 +11,11 @@
 }
 
 .contact-meta {
-	margin: 40px 0;
+	margin: 3rem 0;
 }
 
-
 .responsive-map {
-	margin-bottom: 40px;
+	margin-bottom: 4rem;
 	iframe {
 		width: 100%;
 		@include desktop {
@@ -27,7 +26,7 @@
 .contact-notes {
 	@include flexify(center, center);
 	flex-direction: column;
-	margin: 40px 10%;
+	margin: 4rem 15%;
 	img {
 		margin-bottom: 30px;
 	}

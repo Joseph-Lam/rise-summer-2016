@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 
-			<article id="post-<?php the_ID(); ?>" class="flex-center donate-container"<?php post_class(); ?>>
+			<article id="post-<?php the_ID(); ?>" class=""<?php post_class(); ?>>
 
 				<section class="about-content container">
 					<header class="entry-header donate-header">

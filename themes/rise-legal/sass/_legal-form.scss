@@ -1,8 +1,11 @@
 //form styling across all pages
 //page layout
-.legal-form-content {
-	width: 80%;
-	margin: 0 auto;
+.legal-form-header {
+	margin-left: 13%;
+}
+
+.legal-form-intro {
+	text-align: center;
 }
 
 .gform_wrapper {
@@ -45,6 +48,10 @@
 
 .gform_page_footer {
 	@include flexify(center,center);
+	
+	input {
+		margin: 0 2rem;
+	}
 
 	.gform_next_button {
 		@include button-color($color_brand_blue, $white);
@@ -64,9 +71,6 @@
 body .gform_wrapper .gfield_error input  {
 	border-bottom: 3px solid $color_light_red;
 }
-
-
-
 
 //radio checkbox styling
 .ginput_container_radio {
@@ -146,6 +150,16 @@ body .gform_wrapper .gfield_error input  {
 
 //////////////////////////////
 //page 1
+
+.disappear {
+	display: none;
+}
+
+.page-one-button-spacing {
+	text-align: center;
+	padding: 5rem 0;
+}
+
 .ginput_container_email {
 	margin-bottom: 10px;
 	input {
@@ -202,7 +216,7 @@ body .gform_wrapper .gfield_error input  {
 }
 
 .gfield_contains_required {
-	margin: 10px 0;
+	margin: 1rem 0;
 }
 
 .ginput_container_phone {
@@ -211,6 +225,10 @@ body .gform_wrapper .gfield_error input  {
 		border-bottom: 1px solid black;
 		width: 100%;
 	}
+}
+
+#field_1_7 {
+	margin-top: 3rem;
 }
 
 //page 4

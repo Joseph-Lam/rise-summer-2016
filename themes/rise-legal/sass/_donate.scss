@@ -11,6 +11,11 @@
 .donate-legal-stat {
 	background-color: $color_brand_blue;
 	color: white;
+	padding: 8%;
+	@include desktop {
+		font-size: $h1_size;
+		padding: 7%''
+	}
 }	
 
 .donate-criteria {
@@ -20,6 +25,7 @@
 .donate-who-title {
 	background-image: url('../../assets/images/mobile/donate-whodohelp-mobile.jpg');
 	background-size: cover;
+	text-align: center;
 	h2 {
 		text-transform: capitalize;
 		margin: 0;
@@ -35,6 +41,7 @@
 .donate-how-title {
 	background-image: url('../../assets/images/mobile/donate-howwehelp-mobile.jpg');
 	background-size: cover;
+	text-align: center;
 	img {
 		width: 49px;
 		height: 66px;
@@ -73,6 +80,7 @@
 	background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
 	background-position: center;
 	color: white;
+	width: 100%;
 	@include desktop {
 		background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg);
 	}
