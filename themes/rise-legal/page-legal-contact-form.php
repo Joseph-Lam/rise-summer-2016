@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
+				<header class="entry-header legal-form-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 				
@@ -23,8 +23,8 @@ get_header(); ?>
 
 				<section id="page-one-content" class ="container">
 					
-					<div>
-					<?php echo CFS()->get( 'page_one_content' ); ?>	
+					<div class="legal-form-intro">
+						<?php echo CFS()->get( 'page_one_content' ); ?>	
 					</div>
 
 					<div class ="page-one-button-spacing">
@@ -36,7 +36,7 @@ get_header(); ?>
 
 				</section>
 
-				<div class="legal-form-content">
+				<div class="container">
 					<?php the_content(); ?>
 					<?php
 					wp_link_pages( array(

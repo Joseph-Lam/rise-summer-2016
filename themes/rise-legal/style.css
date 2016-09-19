@@ -1629,9 +1629,11 @@ object {
   .student-features:last-child {
     border: none; }
 
-.legal-form-content {
-  width: 80%;
-  margin: 0 auto; }
+.legal-form-header {
+  margin-left: 13%; }
+
+.legal-form-intro {
+  text-align: center; }
 
 .gform_wrapper {
   display: -ms-flexbox;
@@ -1676,6 +1678,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+  .gform_page_footer input {
+    margin: 0 2rem; }
   .gform_page_footer .gform_next_button {
     background-color: #155E89;
     color: white; }

@@ -1,8 +1,11 @@
 //form styling across all pages
 //page layout
-.legal-form-content {
-	width: 80%;
-	margin: 0 auto;
+.legal-form-header {
+	margin-left: 13%;
+}
+
+.legal-form-intro {
+	text-align: center;
 }
 
 .gform_wrapper {
@@ -45,6 +48,10 @@
 
 .gform_page_footer {
 	@include flexify(center,center);
+	
+	input {
+		margin: 0 2rem;
+	}
 
 	.gform_next_button {
 		@include button-color($color_brand_blue, $white);
