@@ -16,18 +16,22 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 
-				<section class="page-one-content">
+				<section class="page-one-content container">
 					
-				<?php echo CFS()->get( 'page_one_content' ); ?>				
-				
-				<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
+					<div>
+					<?php echo CFS()->get( 'page_one_content' ); ?>	
+					</div>
 
-				<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Services' )->ID ); ?>">who can we help</a>
+					<div class ="page-one-button-spacing">
+						<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Services' )->ID ); ?>">who can we help</a>
 
+					</div>
 
+					<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
 
 				</section>
-
+				
+				
 
 
 
