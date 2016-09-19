@@ -1222,6 +1222,10 @@ object {
       display: flex;
       margin-bottom: 5rem; } }
 
+.people-icon {
+  width: 5rem;
+  background: #4A4A4A; }
+
 /*--------------------------------------------------------------
 # Services Page Styles
 --------------------------------------------------------------*/
