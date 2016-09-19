@@ -11,6 +11,11 @@
 .donate-legal-stat {
 	background-color: $color_brand_blue;
 	color: white;
+	padding: 8%;
+	@include desktop {
+		font-size: $h1_size;
+		padding: 7%''
+	}
 }	
 
 .donate-criteria {
