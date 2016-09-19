@@ -7,180 +7,98 @@
  */
 
 get_header(); ?>
-	
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
 		<!-- this gets the main about us blurb -->
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="about-content container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					</header><!-- .entry-header -->
+			<section class="about-content container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</header><!-- .entry-header -->
 
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div><!-- .entry-content -->
-				</section><!-- #post-## -->
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div><!-- .entry-content -->
+			</section><!-- #post-## -->
 
+			<section class="our-people">
 
-				<section class="our-people">
-
-					<div class="title-banner about-banner flex-center">
+				<div class="title-banner about-banner flex-center">
 					<!-- display logo on mobile -->
-						<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>" class="rise-about-logo">	
+					<img src="<?php echo get_template_directory_uri() ."/assets/logos/rise-logo-white.svg"?>" class="rise-about-logo">	
 					<!-- display this nav on desktop -->
-						<nav class="about-people">
-							<div class="about-people-nav">
-								<?php 
-								$categories = array(
-									'taxonomy' => 'people_group', 
-									'hide_empty' => true,
-									);
-
-								$terms = get_terms( $categories );
-								?>
-								
-								<?php foreach ( $terms as $term ) :  ?>
-								
-									<div class="about-nav-link" data-about-nav="<?php echo $term->slug;?> "> 
-										<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$term->slug.".svg"?>">
-										<h3><?php echo $term->name ?></h3>
-									</div>
-							
-								<?php endforeach; ?>
-							</div>
-						</nav>
-
-					</div>
-
-
-			<?php get_template_part( 'template-parts/content', 'about' ); ?>
-					<div class="staff container">
-						<!-- STAFF HEADING -->
-						<?php 
+					<nav class="about-people">
+						<div class="about-people-nav">
+							<?php 
 							$categories = array(
-								'taxonomy' => 'people_group',
-								'slug' => 'our-staff', 
+								'taxonomy' => 'people_group', 
 								'hide_empty' => true,
 								);
 
 							$terms = get_terms( $categories );
 							?>
-						<div class="group-title flex-center" >	
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-staff.svg"?>">
+
 							<?php foreach ( $terms as $term ) :  ?>
-								<h3><?php echo $term->name ?></h3>
-								<?php echo $term->description?>
+								
+								<div class="about-nav-link" data-about-nav="<?php echo $term->slug;?> "> 
+									<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$term->slug.".svg"?>">
+									<h3><?php echo $term->name ?></h3>
+								</div>
+
 							<?php endforeach; ?>
 						</div>
-						<!-- Staff Listing -->
+					</nav>
+				</div>
+
+				<?php 
+				$categories = array(
+					'taxonomy' => 'people_group',
+					'hide_empty' => true,
+					);
+
+				$groups = get_terms( $categories );
+				?>
+				<div class="about-content flex-center" >	
+					<?php foreach ( $groups as $group ) :  ?>
+
+						<!-- GROUP HEADING -->
+						<div class="group-title">
+							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$group->slug."-dark.svg"?>" class="people-icon">
+							<h3><?php echo $group->name ?></h3>
+							<?php echo $group->description?>
+						</div>
+
 						<ul class="flex-center people-list our-staff container ">
 							<?php
-								$args = array(
-									'post_type' => 'our_people',
-									'numberposts' => -1,
-									'order' => 'ASC',
-									'tax_query' => array(
-										array(
-											'taxonomy' => 'people_group',
-											'field' => 'slug',
-											'terms' => 'our-staff',	
-											),
+							$args = array(
+								'post_type' => 'our_people',
+								'numberposts' => -1,
+								'order' => 'ASC',
+								'tax_query' => array(
+									array(
+										'taxonomy' => 'people_group',
+										'field' => 'slug',
+										'terms' => $group->slug,	
 										),
-									);
-								$about_page_staff_posts = get_posts($args);
-								?>
-
-								<?php foreach($about_page_staff_posts as $post) : setup_postdata( $post); ?>
-								<li class="indvid-staff-member">
-									<a href="#<?php the_title();?>" class="modal-btn btn">
-										<?php the_title();?>	
-									</a>
-									
-									<div id="<?php the_title();?>" class="modalDialog">
-										<div>
-											<a href="#close" title="Close" class="close">
-											</a>
-											
-											<h2><?php the_title();?></h2>
-											<?php if ( has_post_thumbnail() ) : ?>
-												<div>
-													<?php the_post_thumbnail( 'original' ); ?>
-												</div>
-											<?php endif; ?>
-							
-											<p class="position"><?php echo CFS()->get('position_title')?></p>
-					
-											<p class="employed"><?php echo CFS()->get('employed_at')?></p>
-								
-											<p class="biography"><?php echo CFS()->get('biography')?></p>
-					
-										</div>
-									</div>
-									<div class="staff-info">
-										<p><?php echo CFS()->get('position_title')?></p>
-						
-										<p><?php echo CFS()->get('employed_at')?></p>
-									</div>
-								</li>
-							<?php endforeach; wp_reset_postdata(); ?>
-
-						</ul>
-					</div>
-				<!-- BOARD HEADING -->
-					<div class="board container">
-						<?php 
-							$categories = array(
-								'taxonomy' => 'people_group',
-								'slug' => 'our-board', 
-								'hide_empty' => true,
+									),
 								);
-
-							$terms = get_terms( $categories );
+							$about_page_people_posts = get_posts($args);
 							?>
-							
-						<div class="group-title flex-center" >	
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-boardmembers.svg"?>">
-							
-							<?php foreach ( $terms as $term ) :  ?>
-								<h3><?php echo $term->name ?></h3>
-								<?php echo $term->description?>
-							<?php endforeach; ?>
-						</div>
-					<!-- Board Listing -->
-						<ul class="people-list our-board flex-center">
-							<?php
-								$args = array(
-									'post_type' => 'our_people',
-									'numberposts' => -1,
-									'order' => 'ASC',
-									'tax_query' => array(
-										array(
-											'taxonomy' => 'people_group',
-											'field' => 'slug',
-											'terms' => 'our-board',	
-											),
-										),
-									);
-								$about_page_board_posts = get_posts($args);
-								?>
 
-								<?php foreach($about_page_board_posts as $post) : setup_postdata( $post); ?>
-								<li class="indvid-board-member">
-
-									<p class="position"><?php echo CFS()->get('position_title')?></p>
-
-									<a href="#<?php the_title();?>" class="modal-btn btn">
+							<?php foreach($about_page_people_posts as $post) : setup_postdata( $post); ?>
+								<li class="">
+									<a href="#<?php the_title();?>" class="btn modal-btn">
 										<?php the_title();?>	
 									</a>
-									
+
 									<div id="<?php the_title();?>" class="modalDialog">
 										<div>
 											<a href="#close" title="Close" class="close">
 											</a>
-											
+
 											<h2><?php the_title();?></h2>
 
 											<?php if ( has_post_thumbnail() ) : ?>
@@ -188,121 +106,70 @@ get_header(); ?>
 													<?php the_post_thumbnail( 'original' ); ?>
 												</div>
 											<?php endif; ?>
-							
-											<p class="position"><?php echo CFS()->get('position_title')?></p>
-								
-											<p><?php echo CFS()->get('biography')?></p>
 
-										</div>
-									</div>
+											<?php 
+											$position_title = CFS()->get('position_title');
 
-								</li>
-							<?php endforeach; wp_reset_postdata(); ?>
-						</ul>
-					</div>
-					<!-- PARTNERS HEADING -->
-					<div class="partners">
-						<?php 
-							$categories = array(
-								'taxonomy' => 'people_group',
-								'slug' => 'our-partners', 
-								'hide_empty' => true,
-								);
+											if (!empty($position_title)) : ?>
+											<div class="position"><?php echo $position_title?></div>
+										<?php endif; ?>
 
-							$terms = get_terms( $categories );
-							?>
-							
-						<div class="group-title flex-center">	
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-partners.svg"?>">
-							<?php foreach ( $terms as $term ) :  ?>
-								<h3><?php echo $term->name ?></h3>
-								<?php echo $term->description?>
-							<?php endforeach; ?>
-						</div>
-					<!-- Partners listing -->
-						<ul class="people-list our-partners">
-							<?php
-								$args = array(
-									'post_type' => 'our_people',
-									'numberposts' => -1,
-									'order' => 'ASC',
-									'tax_query' => array(
-										array(
-											'taxonomy' => 'people_group',
-											'field' => 'slug',
-											'terms' => 'our-partners',	
-											),
-										),
-									);
-								$about_page_partner_posts = get_posts($args);
-								?>
-
-								<?php foreach($about_page_partner_posts as $post) : setup_postdata( $post); ?>
-								<li class="indvid-partner">
-
-									<?php if ( has_post_thumbnail() ) : ?>
-										<div class="partner-logo">
-											<?php the_post_thumbnail( 'original' ); ?>
-										</div>
+										<?php 
+										$employed_at = CFS()->get('employed_at'); 
+										if (!empty( $employed_at )) : ?>
+										<div class="employed"><?php echo CFS()->get('employed_at')?></div>
 									<?php endif; ?>
 
-									<?php echo CFS()->get('biography')?>
+									<?php 
+									$biography = CFS()->get('biography');
+									if (!empty($biography)) : ?>
+									<div class="biography"><?php echo $biography?></div>
+								<?php endif; ?>
 
-								</li>
-							<?php endforeach; wp_reset_postdata(); ?>
-						</ul>
-					</div>
-					<!-- STUDENTS HEADING -->
-					<div class="students container">
-						<?php 
-							$categories = array(
-								'taxonomy' => 'people_group',
-								'slug' => 'our-student', 
-								'hide_empty' => true,
-								);
-
-							$terms = get_terms( $categories );
-							?>
-							
-						<div class="group-title flex-center" >	
-							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-studentbuilding.svg"?>">
-							<?php foreach ( $terms as $term ) :  ?>
-								<h3><?php echo $term->name ?></h3>
-								<?php echo $term->description?>
-							<?php endforeach; ?>
+							</div>
 						</div>
-						<!-- Students listing -->
-						<ul class="people-list our-student flex-center">
-							<?php
-								$args = array(
-									'post_type' => 'our_people',
-									'numberposts' => -1,
-									'order' => 'ASC',
-									'tax_query' => array(
-										array(
-											'taxonomy' => 'people_group',
-											'field' => 'slug',
-											'terms' => 'our-student',	
-											),
-										),
-									);
-								$about_page_student_posts = get_posts($args);
-								?>
-								
-								<?php foreach($about_page_student_posts as $post) : setup_postdata( $post); ?>
-									<li class="student-copy">
-										<?php echo CFS()->get('biography')?>
-									</li>
-								<?php endforeach; wp_reset_postdata(); ?>
-								<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'The Law Students' )->ID ); ?>">learn more</a>
-						</ul>
-					</div>
-				</section>
 
-			<?php endwhile; // End of the loop. ?>
+						<div class="">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<div class="partner-logo">
+									<?php the_post_thumbnail( 'original' ); ?>
+								</div>
+							<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+							<?php 
+							$position_title = CFS()->get('position_title');
+
+							if (!empty($position_title)) : ?>
+							<div class="position"><?php echo $position_title?></div>
+						<?php endif; ?>
+
+						<?php 
+						$employed_at = CFS()->get('employed_at'); 
+						if (!empty( $employed_at )) : ?>
+						<div class="employed"><?php echo CFS()->get('employed_at')?></div>
+					<?php endif; ?>
+
+					<?php 
+					$biography = CFS()->get('biography');
+					if (!empty($biography)) : ?>
+					<div class="biography"><?php echo $biography?></div>
+				<?php endif; ?>
+			</div>
+
+		</li>
+	<?php endforeach; wp_reset_postdata(); ?>
+
+</ul>
+
+<?php endforeach; ?> 
+</div>
+
+</section>
+
+<?php endwhile; // End of the loop. ?>
+
+</main><!-- #main -->
+</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
