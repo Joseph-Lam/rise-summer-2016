@@ -1011,10 +1011,10 @@ object {
       margin: 0 10px; } }
 
 .footer-media {
-  color: white;
   text-align: center; }
   .footer-media h3 {
-    padding: 0; }
+    padding: 0;
+    color: white; }
     @media (min-width: 60rem) {
       .footer-media h3 {
         font-size: 2rem;
@@ -1811,12 +1811,15 @@ body .gform_wrapper .gfield_error input {
       padding: 5px 0; }
 
 .gfield_contains_required {
-  margin: 10px 0; }
+  margin: 1rem 0; }
 
 .ginput_container_phone input {
   border: none;
   border-bottom: 1px solid black;
   width: 100%; }
+
+#field_1_7 {
+  margin-top: 3rem; }
 
 .ginput_container_text input {
   width: 100%; }

@@ -216,7 +216,7 @@ body .gform_wrapper .gfield_error input  {
 }
 
 .gfield_contains_required {
-	margin: 10px 0;
+	margin: 1rem 0;
 }
 
 .ginput_container_phone {
@@ -225,6 +225,10 @@ body .gform_wrapper .gfield_error input  {
 		border-bottom: 1px solid black;
 		width: 100%;
 	}
+}
+
+#field_1_7 {
+	margin-top: 3rem;
 }
 
 //page 4

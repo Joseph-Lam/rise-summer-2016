@@ -79,10 +79,11 @@
 }
 
 .footer-media {
-	color: white;
+	
 	text-align: center;
 	h3 {
 		padding: 0;
+		color: white;
 		@include desktop {
 			font-size: $h3_size;
 			margin: 5px 0;
