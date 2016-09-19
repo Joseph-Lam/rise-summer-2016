@@ -1835,6 +1835,9 @@ body .gform_wrapper .gfield_error input {
   display: flex;
   width: 162px; }
 
+#field_1_21 {
+  margin-bottom: 3rem; }
+
 #input_1_24 {
   width: 40%;
   border-bottom: 2px solid #CCCCCC;
@@ -1894,6 +1897,9 @@ body .gform_wrapper .gfield_error input {
   border: none;
   border-right: 2px solid #CCCCCC;
   border-bottom: 2px solid #CCCCCC; }
+
+#field_1_27 {
+  margin: 3rem 0; }
 
 .gsection_description {
   height: 200px;
