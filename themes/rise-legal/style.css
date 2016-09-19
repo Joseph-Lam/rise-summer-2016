@@ -1098,7 +1098,7 @@ object {
   border-bottom: 10px solid white; }
 
 @media (min-width: 60rem) {
-  .people-list {
+  .group-list {
     display: none; } }
 
 .group-title {
@@ -1106,7 +1106,7 @@ object {
       flex-direction: column;
   padding-top: 3rem;
   text-align: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 5rem; }
   .group-title h3 {
     color: #155E89;
     margin-bottom: 0; }
@@ -1116,115 +1116,55 @@ object {
     .group-title {
       display: none; } }
 
-.our-staff,
-.our-board,
-.our-student {
+.group-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  padding: 5rem 0 3rem 0;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 5rem; }
+
+.group-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
   text-align: center; }
+
+.our-staff,
+.our-board {
+  width: 100%; }
+  .our-staff .biography,
+  .our-board .biography {
+    display: none; }
+
+.our-staff {
+  -ms-flex-order: -1;
+      order: -1; }
   @media (min-width: 60rem) {
-    .our-staff,
-    .our-board,
-    .our-student {
+    .our-staff {
       -ms-flex-flow: row wrap;
-          flex-flow: row wrap; } }
+          flex-flow: row wrap; }
+      .our-staff li {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        margin-bottom: 3rem; } }
 
-.indvid-staff-member {
-  margin-top: 3rem; }
-  @media (min-width: 60rem) {
-    .indvid-staff-member {
-      -ms-flex: 50%;
-          flex: 50%;
-      margin-bottom: 5rem; } }
-
-.staff-info {
-  margin-bottom: 1.5rem; }
-  .staff-info p {
-    margin: 3rem 0;
-    padding: 0; }
-    .staff-info p:nth-child(1) {
-      font-weight: bold; }
-
-.position,
-.employed {
+.modal-position,
+.position {
+  font-weight: bold;
+  margin: 3rem 0 0 0;
   padding: 0; }
 
-.position {
-  font-weight: bold; }
-
 .employed {
-  padding-bottom: 3rem; }
-
-.indvid-board-member {
-  margin-bottom: 3rem; }
-  .indvid-board-member p {
-    margin-bottom: 3rem; }
-  .indvid-board-member .position {
-    margin-bottom: 3rem; }
-  @media (min-width: 60rem) {
-    .indvid-board-member {
-      -ms-flex: 20%;
-          flex: 20%;
-      margin-bottom: 5rem; }
-      .indvid-board-member:nth-child(1), .indvid-board-member:nth-child(2) {
-        -ms-flex: 100%;
-            flex: 100%; } }
-
-.our-partners {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  padding: 5rem 0 3rem 0; }
-
-.indvid-partner {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 40%;
-  text-align: justify; }
-  .indvid-partner p {
-    display: none; }
-  @media (min-width: 60rem) {
-    .indvid-partner {
-      padding-right: 3rem; }
-      .indvid-partner p {
-        display: -ms-flexbox;
-        display: flex; } }
-
-.partner-logo img {
-  height: 15rem;
-  width: auto; }
-  @media (min-width: 60rem) {
-    .partner-logo img {
-      height: 20rem;
-      width: auto; } }
-
-.student-copy {
-  display: none; }
-  @media (min-width: 60rem) {
-    .student-copy {
-      display: -ms-flexbox;
-      display: flex;
-      margin-bottom: 5rem; } }
-
-.people-icon {
-  width: 5rem;
-  background: #4A4A4A; }
+  margin: 0 0 3rem 0; }
 
 /*--------------------------------------------------------------
 # Services Page Styles
