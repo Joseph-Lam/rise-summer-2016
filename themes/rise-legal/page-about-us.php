@@ -57,7 +57,7 @@ get_header(); ?>
 
 
 			<?php get_template_part( 'template-parts/content', 'about' ); ?>
-					<!-- <div class="staff container">
+					<div class="staff container">
 						<!-- STAFF HEADING -->
 						<?php 
 							$categories = array(
@@ -298,7 +298,7 @@ get_header(); ?>
 						</ul>
 					</div>
 				</section>
- -->
+
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

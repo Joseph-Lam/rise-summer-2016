@@ -35,7 +35,7 @@
 
 				<?php foreach($about_page_people_posts as $post) : setup_postdata( $post); ?>
 					<li class="">
-						<a href="#<?php the_title();?>" class="modal-btn btn">
+						<a href="#<?php the_title();?>" class="btn modal-btn">
 							<?php the_title();?>	
 						</a>
 
@@ -45,33 +45,63 @@
 								</a>
 
 								<h2><?php the_title();?></h2>
+
 								<?php if ( has_post_thumbnail() ) : ?>
 									<div>
 										<?php the_post_thumbnail( 'original' ); ?>
 									</div>
 								<?php endif; ?>
 
-								<p class="position"><?php echo CFS()->get('position_title')?></p>
+								<?php 
+								$position_title = CFS()->get('position_title');
 
-								<p class="employed"><?php echo CFS()->get('employed_at')?></p>
+								if (!empty($position_title)) : ?>
+									<div class="position"><?php echo $position_title?></div>
+								<?php endif; ?>
 
-								<p class="biography"><?php echo CFS()->get('biography')?></p>
+								<?php 
+								$employed_at = CFS()->get('employed_at'); 
+								if (!empty( $employed_at )) : ?>
+									<div class="employed"><?php echo CFS()->get('employed_at')?></div>
+								<?php endif; ?>
+
+								<?php 
+								$biography = CFS()->get('biography');
+								if (!empty($biography)) : ?>
+									<div class="biography"><?php echo $biography?></div>
+								<?php endif; ?>
+
 
 							</div>
 						</div>
-						<div class="staff-info">
+
+						<div class="">
 							<?php if ( has_post_thumbnail() ) : ?>
 								<div class="partner-logo">
 									<?php the_post_thumbnail( 'original' ); ?>
 								</div>
 							<?php endif; ?>
 
-							
-							<p><?php echo CFS()->get('position_title')?></p>
-						
-							<p><?php echo CFS()->get('employed_at')?></p>
-							<!-- <?php echo CFS()->get('biography')?> -->
+							<?php 
+								$position_title = CFS()->get('position_title');
+
+								if (!empty($position_title)) : ?>
+									<div class="position"><?php echo $position_title?></div>
+								<?php endif; ?>
+					
+							<?php 
+								$employed_at = CFS()->get('employed_at'); 
+								if (!empty( $employed_at )) : ?>
+									<div class="employed"><?php echo CFS()->get('employed_at')?></div>
+								<?php endif; ?>
+
+							<?php 
+								$biography = CFS()->get('biography');
+								if (!empty($biography)) : ?>
+									<div class="biography"><?php echo $biography?></div>
+								<?php endif; ?>
 						</div>
+
 					</li>
 				<?php endforeach; wp_reset_postdata(); ?>
 
