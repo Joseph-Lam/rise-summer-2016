@@ -1414,10 +1414,10 @@ object {
   padding: 0; }
 
 .contact-meta {
-  margin: 40px 0; }
+  margin: 3rem 0; }
 
 .responsive-map {
-  margin-bottom: 40px; }
+  margin-bottom: 4rem; }
   .responsive-map iframe {
     width: 100%; }
     @media (min-width: 60rem) {
