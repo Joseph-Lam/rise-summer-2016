@@ -21,6 +21,7 @@ input[type="submit"],
 	height: 5rem;
 	transition: background-color 0.3s ease, color 0.3s ease;
 	text-transform: capitalize;
+	// margin: $base_spacing_extra_large $base_spacing_large;
 	&:hover {
 		background-color: darken($white, 8%);
 	}

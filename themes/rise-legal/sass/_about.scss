@@ -67,7 +67,7 @@
 }
 
 //displays the lists of people as none
-.people-list {
+.group-list {
 	@include desktop {
 		display: none;	
 	}
@@ -79,7 +79,7 @@
 	flex-direction: column;
 	padding-top: $base_spacing_large;
 	text-align: center;
-	margin-bottom: $base_spacing_large;
+	margin-bottom: $base_spacing_extra_large;
 	h3{
 		color: $color_brand_blue;
 		margin-bottom: 0;
@@ -92,114 +92,41 @@
 	}
 }
 
-//sets flex direction for the sections
-.our-staff,
-.our-board,
-.our-student{
+.group-content{
 	@include flexify(center, center);
-	padding: $base_spacing_extra_large 0 $base_spacing_large 0;
+	flex-direction: column;
+	padding: $base_spacing_extra_large;
+	
+}
+.group-list{
+	@include flexify(center, center);
 	flex-direction: column;
 	text-align: center;
-	@include desktop {
-		flex-flow: row wrap;
-	}
-}
 
-
-//STAFF section styles
-.indvid-staff-member {
-	margin-top: $base_spacing_large;
-	@include desktop {
-		flex: 50%;
-		margin-bottom: $base_spacing_extra_large;
-	}
 }
-.staff-info {
-	margin-bottom: $base_spacing_large/2;
-	p{
-		margin: $base_spacing_large 0;
-		padding: 0;
-		&:nth-child(1) {
-			font-weight: bold;
-		}
-	}
-}
-//Staff Modal styles
-.position,
-.employed{
-	padding: 0;
-}
-.position{
-	font-weight: bold;
-}
-.employed {
-	padding-bottom: $base_spacing_large;
-}
-
-//BOARD section styles
-.indvid-board-member{
-	margin-bottom: $base_spacing_large;
-	p{
-		margin-bottom: $base_spacing_large;
-	}
-	.position{
-		margin-bottom: $base_spacing_large;
-	}
-	@include desktop {
-		flex: 20%;
-		margin-bottom: $base_spacing_extra_large;
-		&:nth-child(1),
-		&:nth-child(2) {
-			flex: 100%;
-		}
-
-	}
-}
-
-//PARTNERS section styles
-.our-partners{
-	@include flexify(center, flex-start);
-	padding: $base_spacing_extra_large 0 $base_spacing_large 0;
-}
-.indvid-partner {
-	@include flexify(center,center);
-	flex-direction:column;
-	width: 40%;
-	text-align: justify;
-	p {
+.our-staff,
+.our-board{
+	width: 100%;
+	.biography{
 		display: none;
 	}
+}
+.our-staff{
+	order: -1;
 	@include desktop {
-		padding-right: $base_spacing_large;
-		p {
-			display: flex;
+		flex-flow: row wrap;
+		li{
+			flex-basis: 50%;
+			margin-bottom: $base_spacing_large;
 		}
 	}
 }
-.partner-logo {
-	img {
-		height: 15rem;
-		width: auto;
-		@include desktop {
-			height: 20rem;
-			width: auto;
-		}
-	}
+.modal-position,
+.position{
+	font-weight: bold;
+	margin: $base_spacing_large 0 0 0;
+	padding: 0;
 }
-//STUDENT section styles
-
-.student-copy{
-	display:none;
-	@include desktop {
-		display: flex;
-		margin-bottom: $base_spacing_extra_large;
-	}
+.employed{
+	margin: 0 0 $base_spacing_large  0;
 }
-
-
-
-.people-icon{
-	width: 5rem;
-	background: $color_dark_grey;
-}
-

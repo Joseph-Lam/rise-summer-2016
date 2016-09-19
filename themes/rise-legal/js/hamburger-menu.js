@@ -12,7 +12,7 @@
 			$('div').removeClass('show');
 			$(this).addClass('show').data('about-nav');
 
-			$('.people-list').hide();
+			$('.group-list').hide();
 
 			$('.'+ contentToOpen).show();
 		})
