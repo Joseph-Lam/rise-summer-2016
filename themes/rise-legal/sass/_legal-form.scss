@@ -65,9 +65,6 @@ body .gform_wrapper .gfield_error input  {
 	border-bottom: 3px solid $color_light_red;
 }
 
-
-
-
 //radio checkbox styling
 .ginput_container_radio {
 	.gfield_radio {
@@ -146,6 +143,11 @@ body .gform_wrapper .gfield_error input  {
 
 //////////////////////////////
 //page 1
+
+.disappear {
+	display: none;
+}
+
 .ginput_container_email {
 	margin-bottom: 10px;
 	input {
