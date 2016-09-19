@@ -147,6 +147,9 @@ body .gform_wrapper .gfield_error input  {
 	}
 }
 
+#ui-datepicker-div {
+	display:none;
+}
 
 //////////////////////////////
 //page 1
@@ -228,7 +231,7 @@ body .gform_wrapper .gfield_error input  {
 }
 
 #field_1_7 {
-	margin-top: 3rem;
+	margin-top: $base_spacing_large;
 }
 
 //page 4
@@ -236,6 +239,10 @@ body .gform_wrapper .gfield_error input  {
 	input {
 		width: 100%;
 	}
+}
+
+#field_1_14 {
+	margin-top: $base_spacing_large;
 }
 
 //page 5

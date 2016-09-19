@@ -34,11 +34,8 @@
 		$('#gform_next_button_1_2').click(function() {
 			console.log('this button was clicked');
 			$('.show').addClass('disappear');
-			console.log('this content is hidden now!');
-			
+			console.log('this content is hidden now!');			
 		})
-
-
 	});
 
 })(jQuery);

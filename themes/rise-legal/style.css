@@ -1755,6 +1755,9 @@ body .gform_wrapper .gfield_error input {
     color: black;
     text-decoration: none; }
 
+#ui-datepicker-div {
+  display: none; }
+
 .disappear {
   display: none; }
 
@@ -1823,6 +1826,9 @@ body .gform_wrapper .gfield_error input {
 
 .ginput_container_text input {
   width: 100%; }
+
+#field_1_14 {
+  margin-top: 3rem; }
 
 .clear-multi {
   display: -ms-flexbox;
