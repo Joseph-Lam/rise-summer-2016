@@ -16,6 +16,21 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 
+				<section class="page-one-content">
+					
+				<?php echo CFS()->get( 'page_one_content' ); ?>				
+				
+				<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
+
+				<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Services' )->ID ); ?>">who can we help</a>
+
+
+
+				</section>
+
+
+
+
 				<div class="legal-form-content">
 					<?php the_content(); ?>
 					<?php
