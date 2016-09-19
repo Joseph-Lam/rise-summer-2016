@@ -11,7 +11,7 @@
 
 			<!-- GROUP HEADING -->
 			<div class="group-title">
-				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$group->slug.".svg"?>" class="people-icon">
+				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$group->slug."-dark.svg"?>" class="people-icon">
 				<h3><?php echo $group->name ?></h3>
 				<?php echo $group->description?>
 			</div>
@@ -70,7 +70,6 @@
 								if (!empty($biography)) : ?>
 									<div class="biography"><?php echo $biography?></div>
 								<?php endif; ?>
-
 
 							</div>
 						</div>
