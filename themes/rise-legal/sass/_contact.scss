@@ -10,19 +10,24 @@
 	}
 }
 
-.contact-meta {
+.container {
+	.contact-meta {
 	margin: 3rem 0;
+	}
 }
 
-.responsive-map {
-	margin-bottom: 4rem;
+.contact-content {
 	iframe {
+		margin-bottom: 4rem;
 		width: 100%;
+		pointer-events:none;
 		@include desktop {
+			pointer-events:visible;
 			width: 80%;
 		}
 	}
 }
+
 .contact-notes {
 	@include flexify(center, center);
 	flex-direction: column;
