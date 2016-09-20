@@ -85,7 +85,7 @@ add_filter( 'stylesheet_uri', 'rise_legal_minified_css', 10, 2 );
 function rise_legal_scripts() {
 	wp_enqueue_style( 'rise-legal-style', get_stylesheet_uri() );
 
-	wp_enqueue_script('jquery');
+	wp_enqueue_script('jquery', get_template_directory_uri() . '/node_modules/jquery/jquery.min.js', array('jquery'), false, true);
 	
 	wp_enqueue_script('hamburger-menu', get_template_directory_uri() . '/build/js/hamburger-menu.min.js', array('jquery'), false, true);
 	
