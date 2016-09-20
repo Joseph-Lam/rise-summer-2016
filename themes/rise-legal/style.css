@@ -820,6 +820,22 @@ object {
   min-width: 25rem;
   padding-right: 3rem; }
 
+.menu-wrap {
+  width: 15rem;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem; }
+  .menu-wrap img {
+    width: 100%; }
+  .menu-wrap:hover {
+    background-color: transparent; }
+  @media (min-width: 60rem) {
+    .menu-wrap {
+      display: none; } }
+
 .main-navigation {
   position: fixed;
   top: 0;
@@ -868,22 +884,6 @@ object {
       background-color: #884244; }
   .main-navigation .close-nav {
     cursor: pointer; }
-
-.menu-wrap {
-  width: 15rem;
-  cursor: pointer;
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-  padding: 0;
-  margin-bottom: 1rem; }
-  .menu-wrap img {
-    width: 100%; }
-  .menu-wrap:hover {
-    background-color: transparent; }
-  @media (min-width: 60rem) {
-    .menu-wrap {
-      display: none; } }
 
 .desktop-navigation {
   display: none; }
