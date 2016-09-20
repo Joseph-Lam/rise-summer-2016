@@ -2,8 +2,11 @@
 	
 	$(document).ready(function(){
 	//Script to open nav menu on mobile
-		$('.hamburger, .close-nav').click( function(e){
-			$('.main-navigation').toggleClass('open');
+		$('.hamburger').click( function(e){
+			$('.main-navigation').addClass('open');
+		});
+		$('.close-nav, .site-content').click( function(e){
+			$('.main-navigation').removeClass('open');
 		});
 
 

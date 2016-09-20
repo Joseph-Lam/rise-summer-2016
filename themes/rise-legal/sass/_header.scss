@@ -19,8 +19,27 @@
   min-width: 25rem;
   padding-right: $base_spacing_large;
 }
+  //Hamburger Menu Styles
+.menu-wrap{
+  width: 15rem;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin-bottom: $base_spacing;
+  img{
+    width: 100%;
+  }
+  &:hover {
+    background-color: transparent;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+// Mobile Navigation styles (move to nav sass after done)
 
-// Navigation styles (move to nav sass after done)
 .main-navigation {
   position: fixed;
   top: 0;
@@ -33,6 +52,7 @@
   overflow-y: scroll;
   transition: transform 0.3s ease;
   transform: translateX(30rem);
+  
   &.open{
     transform: translateX(0);
   }
@@ -47,7 +67,6 @@
     height: 40rem;
     width: 40%;
   }
-
   // Each Menu heading
   .menu-item{
     margin: 12%;
@@ -75,25 +94,7 @@
     cursor: pointer;
   }
 }
-  //Hamburger Menu Styles
-.menu-wrap{
-  width: 15rem;
-  cursor: pointer;
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-  padding: 0;
-  margin-bottom: $base_spacing;
-  img{
-    width: 100%;
-  }
-  &:hover {
-    background-color: transparent;
-  }
-  @include desktop {
-    display: none;
-  }
-}
+
 
 // Desktop Nav Styles
 .desktop-navigation{
