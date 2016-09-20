@@ -375,8 +375,6 @@ input[type="submit"],
   padding: 1.5rem 3rem;
   color: #4A4A4A;
   line-height: 1;
-  min-width: 20rem;
-  height: 5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-transform: capitalize; }
   button:hover,
@@ -802,10 +800,8 @@ object {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-align: end;
-      align-items: flex-end;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
   background-image: url("../../assets/backgrounds/header.jpg");
   background-size: cover;
   padding: 1rem 3rem 1rem 3rem;
@@ -853,7 +849,7 @@ object {
     height: 40rem;
     width: 40%; }
   .main-navigation .menu-item {
-    padding: 12%;
+    margin: 12%;
     margin-left: 3rem; }
     .main-navigation .menu-item a {
       color: white;
@@ -896,8 +892,9 @@ object {
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center; }
+      width: 75%; }
+      .desktop-navigation .menu-menu-1-container {
+        max-width: 70%; }
       .desktop-navigation .menu {
         margin: 0;
         display: -ms-flexbox;
@@ -905,26 +902,31 @@ object {
         -ms-flex-pack: start;
             justify-content: flex-start;
         -ms-flex-align: center;
-            align-items: center;
-        -ms-flex-flow: row;
-            flex-flow: row;
-        position: relative; }
+            align-items: center; }
       .desktop-navigation .menu-item {
-        padding: 0;
-        padding-right: 3rem; }
+        margin-right: 5%; }
         .desktop-navigation .menu-item a {
           color: white;
-          padding-bottom: .5rem;
-          font-size: 1.8rem; }
+          padding-bottom: .5rem; }
           .desktop-navigation .menu-item a:hover {
             border-bottom: 3px solid #EBF0F3; }
         .desktop-navigation .menu-item:nth-child(1) {
           display: none; }
+      .desktop-navigation .legal-btn-wrap {
+        width: 25%;
+        margin-left: 3%; }
       .desktop-navigation .legal-form {
+        min-width: 80%;
         font-size: 1.6rem; } }
 
+.nav-active {
+  border-bottom: none; }
+  @media (min-width: 60rem) {
+    .nav-active {
+      border-bottom: 3px solid #EBF0F3; } }
+
 .hdr-pusher {
-  height: 9.5rem; }
+  height: 9rem; }
 
 .site-footer {
   background-image: url("../../assets/backgrounds/desktop-footer.png");

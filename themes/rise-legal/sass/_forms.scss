@@ -17,8 +17,8 @@ input[type="submit"],
 	padding: 1.5rem $base_spacing_large;
 	color: $color_dark_grey;
 	line-height: 1;
-	min-width: 20rem;
-	height: 5rem;
+	// max-width: 20rem;
+	// height: 5rem;
 	transition: background-color 0.3s ease, color 0.3s ease;
 	text-transform: capitalize;
 	// margin: $base_spacing_extra_large $base_spacing_large;

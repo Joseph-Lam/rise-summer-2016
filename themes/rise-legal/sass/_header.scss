@@ -1,7 +1,6 @@
 //Setting Site background and fixedness
 .site-header {
-  @include flexify(space-between, flex-end);
-  align-content: flex-end;
+  @include flexify(space-between, center);
   // background: url('../../assets/backgrounds/mobile-header.png') center;
   background-image: url('../../assets/backgrounds/header.jpg');
   background-size: cover;
@@ -19,7 +18,6 @@
 .site-branding {
   min-width: 25rem;
   padding-right: $base_spacing_large;
-
 }
 
 // Navigation styles (move to nav sass after done)
@@ -52,7 +50,7 @@
 
   // Each Menu heading
   .menu-item{
-    padding: 12%;
+    margin: 12%;
     margin-left: $base_spacing_large;
     a{
       color: $white;
@@ -101,21 +99,24 @@
 .desktop-navigation{
   display: none;
   @include desktop {
-    @include flexify(space-between, center);
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    // @include flexify(space-between, center);
+    .menu-menu-1-container{
+    max-width: 70%;
+    
+    }
     .menu {
       margin: 0;
       @include flexify(flex-start, center);
-      flex-flow: row;
-      position: relative;
     }
     .menu-item{
-      padding: 0;
-      padding-right: $base_spacing_large;
+      margin-right: 5%;
       a{
         color: $white;
         padding-bottom: .5rem;
-        font-size: 1.8rem;
-        
+        // font-size: 1.8rem;
         &:hover{
           border-bottom: 3px solid $color_light_blue;
         }
@@ -124,12 +125,23 @@
         display: none;
       }
     }
+    .legal-btn-wrap{
+      width: 25%;
+      margin-left: 3%;
+      // z-index: -1;
+    }
     .legal-form{
+      min-width: 80%;
       font-size: 1.6rem;
      }    
   }
 }
-
+.nav-active{
+  border-bottom: none;
+  @include desktop {
+    border-bottom: 3px solid $color_light_blue;
+  }
+}
 .hdr-pusher{
-  height: 9.5rem;
+  height: 9rem;
 }
