@@ -28,11 +28,19 @@ get_header(); ?>
 				
 				<section>
 					<div class="title-banner donate-legal-stat">
-						<?php echo CFS()->get( 'legal_stat' ); ?>
+						<?php 
+							$legal_stat = CFS()->get( 'legal_stat' );
+							if(!empty($legal_stat)) {
+								echo $legal_stat; }; 
+							?>
 					</div>
 
 					<div class="donate-criteria container">
-						<?php echo CFS()->get( 'criteria' ); ?>
+						<?php 
+							$criteria = CFS()->get( 'criteria' );
+							if(!empty($criteria)) {
+								echo $criteria; }; 
+							?>
 					</div>
 				</section>
 
@@ -43,7 +51,11 @@ get_header(); ?>
 					</div>
 
 					<div class="donate-who-content container">
-						<?php echo CFS()->get( 'who_do_we_help' ); ?>
+						<?php 
+							$who_do_we_help = CFS()->get( 'who_do_we_help' );
+							if(!empty($who_do_we_help)) {
+								echo $who_do_we_help; }; 
+							?>
 					</div>
 				</section>
 
@@ -54,7 +66,11 @@ get_header(); ?>
 					</div>
 
 					<div class="donate-how-content container">
-						<?php echo CFS()->get( 'how_we_help_main_content' ); ?>
+						<?php 
+							$how_we_help_main_content = CFS()->get( 'how_we_help_main_content' );
+							if(!empty($how_we_help_main_content)) {
+								echo $how_we_help_main_content; }; 
+							?>
 					</div>
 
 				<ul class="donate-justice-container container">
@@ -62,7 +78,11 @@ get_header(); ?>
 						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-1.svg"?>">
 
 						<div class="donate-justice-meta">
-							<?php echo CFS()->get( 'how_we_help_justice_1' ); ?>
+							<?php 
+								$how_we_help_justice_1 = CFS()->get( 'how_we_help_justice_1' );
+								if(!empty($how_we_help_justice_1)) {
+									echo $how_we_help_justice_1; }; 
+							?>
 						</div>							
 					</li>
 
@@ -70,14 +90,22 @@ get_header(); ?>
 						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-2.svg"?>">
 
 						<div class="donate-justice-meta">
-							<?php echo CFS()->get( 'how_we_help_justice_2' ); ?>
+							<?php 
+								$how_we_help_justice_2 = CFS()->get( 'how_we_help_justice_2' );
+								if(!empty($how_we_help_justice_2)) {
+									echo $how_we_help_justice_2; }; 
+							?>
 						</div>
 					</li>
 
 					<li class="donate-justice">
 						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-3.svg"?>">
 						<div class="donate-justice-meta">
-							<?php echo CFS()->get( 'how_we_help_justice_3' ); ?>
+							<?php 
+								$how_we_help_justice_3 = CFS()->get( 'how_we_help_justice_3' );
+								if(!empty($how_we_help_justice_3)) {
+									echo $how_we_help_justice_3; }; 
+							?>		
 						</div>
 					</li>
 				</ul>

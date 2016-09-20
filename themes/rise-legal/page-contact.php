@@ -33,15 +33,27 @@ get_header(); ?>
 					<ul>
 						<li class="transit-information contact-notes">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-transit.svg"?>">
-							<?php echo CFS()->get( 'transit_information' ); ?>
+							<?php 
+								$transit_information = CFS()->get('transit_information');
+								if( !empty($transit_information) ){
+									echo $transit_information; };
+							?>
 						</li>
 						<li class="parking-information contact-notes">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-noparking.svg"?>">
-							<?php echo CFS()->get( 'parking_information' ); ?>
+							<?php 
+								$parking_information = CFS()->get('parking_information');
+								if( !empty($parking_information) ){
+									echo $parking_information; };
+							?>
 						</li>
 						<li class="wait-list-information contact-notes">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-hourglass.svg"?>">
-							<?php echo CFS()->get( 'wait_list_information' ); ?>
+							<?php 
+								$wait_list_information = CFS()->get('wait_list_information');
+								if( !empty($wait_list_information) ){
+									echo $wait_list_information; };
+							?>
 						</li>
 					</ul>
 					
