@@ -70,22 +70,15 @@
 		display: none;
 	}
 }
-//displays the lists of people as none
-.group-list {
-	@include desktop {
-		display: none;	
-	}
-}
 
-
-// style the section titles for mobile
+//MAIN PAGE CONTENT STYLES
+// style the section titles for mobile and display none desktop
 .group-title{
 	flex-direction: column;
-	padding-top: $base_spacing_large;
+	margin-top: $base_spacing_extra_large;
 	text-align: center;
-	margin-bottom: $base_spacing_extra_large;
+	margin-bottom: $base_spacing_large;
 	h3{
-		color: $color_brand_blue;
 		margin-bottom: 0;
 	}
 	img {
@@ -96,17 +89,23 @@
 	}
 }
 
+//layout the main content area
 .group-content{
 	@include flexify(center, center);
-	flex-direction: column;
-	padding: $base_spacing_extra_large;
-	
+	flex-direction: column;	
+	padding: $base_spacing_extra_large 0;
 }
 .group-list{
 	@include flexify(center, center);
 	flex-direction: column;
 	text-align: center;
-
+}
+.our-staff,
+.our-board,
+.our-partners {
+	.students-btn {
+		display: none;
+	}
 }
 .our-staff,
 .our-board{
@@ -137,6 +136,37 @@
 			&:nth-child(2){
 				flex-basis: 50%;
 			}
+		}
+	}
+}
+.our-partners{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.group-list{
+		display: flex;
+		flex-direction: row;
+	}
+	.group-item{
+		&:nth-child(1){
+			padding-right: 10%;
+			img {
+				height: 15rem;
+				width: auto;
+			}
+		}
+	}
+}
+.our-partners,
+.our-student{
+	.modal-btn {
+		display: none;
+	}
+	.biography {
+		display: none;
+		@include desktop {
+			display: flex; // Will need to change that later
+			text-align: justify;
 		}
 	}
 }
