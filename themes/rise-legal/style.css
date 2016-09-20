@@ -1098,6 +1098,10 @@ object {
   border-bottom: 10px solid white; }
 
 @media (min-width: 60rem) {
+  .group-master-item.hidden {
+    display: none; } }
+
+@media (min-width: 60rem) {
   .group-list {
     display: none; } }
 
