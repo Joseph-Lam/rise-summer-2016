@@ -33,7 +33,7 @@
 		<h3>
 			Connect with us
 		</h3>	
-		<a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
 		<a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>	
 	</div>	
