@@ -398,16 +398,18 @@ input[type="submit"],
 .blue-btn {
   background-color: #155E89;
   color: white; }
-  @media (min-width: 60rem) {
-    .blue-btn:hover {
-      background: #104666; } }
+  .blue-btn:hover {
+    background: #104666; }
+  .blue-btn:hover {
+    background-color: #104666; }
 
 .red-btn {
   background-color: #A44F52;
   color: white; }
-  @media (min-width: 60rem) {
-    .red-btn:hover {
-      background: #884244; } }
+  .red-btn:hover {
+    background: #884244; }
+  .red-btn:hover {
+    background-color: #884244; }
 
 /* Fields */
 input[type="text"],
@@ -639,9 +641,8 @@ textarea {
 .modal-btn {
   background-color: #155E89;
   color: white; }
-  @media (min-width: 60rem) {
-    .modal-btn:hover {
-      background: #104666; } }
+  .modal-btn:hover {
+    background: #104666; }
 
 .services-modal-btn {
   display: -ms-flexbox;
@@ -1745,9 +1746,8 @@ object {
   .gform_page_footer .gform_next_button {
     background-color: #155E89;
     color: white; }
-    @media (min-width: 60rem) {
-      .gform_page_footer .gform_next_button:hover {
-        background: #104666; } }
+    .gform_page_footer .gform_next_button:hover {
+      background: #104666; }
 
 .validation_error {
   color: #E0A5A7;
@@ -2013,9 +2013,8 @@ body .gform_wrapper .gfield_error input {
 #gform_submit_button_1 {
   background-color: #A44F52;
   color: white; }
-  @media (min-width: 60rem) {
-    #gform_submit_button_1:hover {
-      background: #884244; } }
+  #gform_submit_button_1:hover {
+    background: #884244; }
 
 .gform_confirmation_message_1 {
   display: -ms-flexbox;

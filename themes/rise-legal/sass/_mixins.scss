@@ -20,9 +20,8 @@
 @mixin button-color($bg, $font-color) {
 	background-color: $bg;
 	color: $font-color;
-	@include desktop {
-		&:hover {
-			background: darken($bg, 8%);
-		}
+	&:hover {
+		background: darken($bg, 8%);
 	}
+
 }

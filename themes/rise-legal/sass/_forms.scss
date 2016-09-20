@@ -12,17 +12,13 @@ input[type="submit"],
 	background: $white;
 	border: 0;
 	border-radius: 0.7rem;
-	// box-shadow: 0px 3px 6px $color_dark_grey;
 	box-shadow: 0 2px 4px rgba($color_dark_grey, 0.75);
 	padding: 1.5rem $base_spacing_large;
 	color: $color_dark_grey;
 	line-height: 1;
 	margin: $base_spacing_large;
-	// max-width: 20rem;
-	// height: 5rem;
 	transition: background-color 0.3s ease, color 0.3s ease;
 	text-transform: capitalize;
-	// margin: $base_spacing_extra_large $base_spacing_large;
 	&:hover {
 		background-color: darken($white, 8%);
 	}
@@ -33,9 +29,15 @@ input[type="submit"],
 }
 .blue-btn{
 	@include button-color($color_brand_blue, $white);
+	&:hover {
+		background-color: darken($color_brand_blue, 8%);
+	}
 }
 .red-btn {
 	@include button-color($color_brand_red, $white);
+	&:hover {
+		background-color: darken($color_brand_red, 8%);
+	}
 }
 /* Fields */
 
