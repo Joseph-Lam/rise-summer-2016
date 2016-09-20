@@ -36,6 +36,13 @@ include_once( RF_DIR . '/lib/functions/general.php' );
 register_activation_hook( __FILE__, array( 'RF_General', 'plugin_activation' ) );
 
 /**
+ * Remove default blog posts option in the dashboard
+ *
+ * @since 1.0.0
+ */
+include_once( RF_DIR . '/lib/functions/remove-posts.php' );
+
+/**
  * Post types
  *
  * @since 1.0.0
