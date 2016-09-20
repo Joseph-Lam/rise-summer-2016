@@ -20,7 +20,7 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<section class="contact-content">
-					<div class="container">
+					<div>
 						<?php the_content(); ?>
 					</div>
 
