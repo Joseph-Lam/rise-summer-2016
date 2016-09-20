@@ -66,7 +66,7 @@ get_header(); ?>
 
 						<!-- GROUP HEADING -->
 						<div class="<?php echo $group->slug; ?> group-master-item container <?php if($group->slug !== 'our-staff') echo 'hidden' ?>">
-							<div class="group-title">
+							<div class="group-title container">
 								<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$group->slug."-dark.svg"?>" class="people-icon">
 								<h3><?php echo $group->name ?></h3>
 								<?php echo $group->description?>
@@ -132,7 +132,7 @@ get_header(); ?>
 
 										<div class="group-item-showing">
 											<?php if ( has_post_thumbnail() ) : ?>
-												<div class="partner-logo">
+												<div class="people-image">
 													<?php the_post_thumbnail( 'original' ); ?>
 												</div>
 											<?php endif; ?>
@@ -156,6 +156,7 @@ get_header(); ?>
 												<div class="biography"><?php echo $biography?></div>
 											<?php endif; ?>
 										</div>
+										<a class="btn students-btn" href="<?php echo get_page_link( get_page_by_title( 'The Law Students' )->ID ); ?>">learn more</a>
 
 									</li>
 								<?php endforeach; wp_reset_postdata(); ?>

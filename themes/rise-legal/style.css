@@ -1103,18 +1103,13 @@ object {
   .group-master-item.hidden {
     display: none; } }
 
-@media (min-width: 60rem) {
-  .group-list {
-    display: none; } }
-
 .group-title {
   -ms-flex-direction: column;
       flex-direction: column;
-  padding-top: 3rem;
+  margin-top: 5rem;
   text-align: center;
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
   .group-title h3 {
-    color: #155E89;
     margin-bottom: 0; }
   .group-title img {
     width: 5rem; }
@@ -1131,7 +1126,7 @@ object {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding: 5rem; }
+  padding: 5rem 0; }
 
 .group-list {
   display: -ms-flexbox;
@@ -1143,6 +1138,11 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   text-align: center; }
+
+.our-staff .students-btn,
+.our-board .students-btn,
+.our-partners .students-btn {
+  display: none; }
 
 .our-staff,
 .our-board {
@@ -1176,6 +1176,38 @@ object {
       .our-board li:nth-child(1), .our-board li:nth-child(2) {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%; } }
+
+.our-partners {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .our-partners .group-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .our-partners .group-item:nth-child(1) {
+    padding-right: 10%; }
+    .our-partners .group-item:nth-child(1) img {
+      height: 15rem;
+      width: auto; }
+
+.our-partners .modal-btn,
+.our-student .modal-btn {
+  display: none; }
+
+.our-partners .biography,
+.our-student .biography {
+  display: none; }
+  @media (min-width: 60rem) {
+    .our-partners .biography,
+    .our-student .biography {
+      display: -ms-flexbox;
+      display: flex;
+      text-align: justify; } }
 
 .modal-position,
 .position {
