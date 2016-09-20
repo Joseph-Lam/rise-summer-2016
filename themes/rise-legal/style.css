@@ -607,7 +607,7 @@ textarea {
     max-height: 100%;
     overflow-y: scroll;
     position: relative;
-    padding: 3rem;
+    padding: 5rem;
     background-color: #EBF0F3;
     border-radius: 10px;
     text-align: left; }
@@ -764,12 +764,13 @@ object {
       align-items: center;
   -ms-flex-flow: column;
       flex-flow: column;
-  padding-bottom: 5rem; }
+  padding-bottom: 3rem; }
 
 .contact-process-image {
   margin-left: 10%; }
 
 .contact-process-content {
+  text-align: center;
   -ms-flex-flow: column;
       flex-flow: column; }
   .contact-process-content .btn {
@@ -1276,10 +1277,24 @@ object {
   .indvid-services-btn a img {
     width: 5rem; }
 
+.services-modal div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.services-modal img {
+  height: 5rem; }
+
 .what-we-do {
   -ms-flex-flow: column;
       flex-flow: column;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5rem; }
   .what-we-do h2 {
     margin: 0; }
 
