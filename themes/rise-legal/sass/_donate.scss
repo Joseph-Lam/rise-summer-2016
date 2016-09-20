@@ -12,14 +12,17 @@
 	background-color: $color_brand_blue;
 	color: white;
 	padding: 8%;
+	text-align: center;
 	@include desktop {
 		font-size: $h1_size;
-		padding: 7%''
+		padding: 7%;
 	}
 }	
 
 .donate-criteria {
 	padding: $base_spacing_extra_large 0;
+	text-align: center;
+
 }
 
 .donate-who-title {
@@ -36,6 +39,7 @@
 
 .donate-who-content {
 	padding: $base_spacing_extra_large 0;
+	text-align: center;
 }
 
 .donate-how-title {
