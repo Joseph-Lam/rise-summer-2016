@@ -2,7 +2,7 @@
 
 Developed by [Joseph Lam](https://github.com/Joseph-Lam "Joseph's Github Profile!") & [Terra Pope](https://github.com/teeppope "Terra's Github Profile!")
 
-![Rise Logo on Trees](rise.png)
+![Rise Logo on Trees](./themes/rise-legal/rise.png)
 
 ##About
 Rise Women's Legal Centre is a community resource developed to help women, and people who identify as women, get the legal assitence they need.
