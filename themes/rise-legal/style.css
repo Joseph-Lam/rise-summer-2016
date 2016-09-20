@@ -1667,9 +1667,7 @@ object {
       font-weight: 500;
       font-size: 2rem; }
   .gf_progressbar .percentbar_0 {
-    background-color: #EEEEEE; }
-    .gf_progressbar .percentbar_0 span {
-      color: #155E89; }
+    display: none; }
 
 .gform_page_footer {
   display: -ms-flexbox;
