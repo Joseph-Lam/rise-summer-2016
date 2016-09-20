@@ -78,22 +78,52 @@ get_header(); ?>
 
 				<section class="what-we-do container flex-center">
 					<h2>What We Do</h2>
-					<p><?php echo CFS()->get('what_we_do')?></p>
+					<p>
+						<?php 
+							$what_we_do = CFS()->get('what_we_do');
+							if( !empty($what_we_do) ){
+								echo $what_we_do; };
+						?>		
+					</p>
 					<div class="services-step-container">
 						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-lightbulb.svg"?>">
-							<p><?php echo CFS()->get('service_1')?></p>
+							<p>
+								<?php 
+									$service_1 = CFS()->get( 'service_1' );
+									if(!empty($service_1)) {
+										echo $service_1; }; 
+									?>
+							</p>
 						</div>
 						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-stack.svg"?>">
-							<p><?php echo CFS()->get('service_2')?></p>
+							<p>
+								<?php 
+									$service_2 = CFS()->get( 'service_2' );
+									if(!empty($service_2)) {
+										echo $service_2; }; 
+									?>
+							</p>
 						</div>
 						<div class="services-step">
 							<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-legalrep.svg"?>">
-							<p><?php echo CFS()->get('service_3')?></p>
+							<p>
+								<?php 
+									$service_3 = CFS()->get( 'service_3' );
+									if(!empty($service_3)) {
+										echo $service_3; }; 
+									?>
+							</p>
 						</div>
 					</div>
-					<p><?php echo CFS()->get('legal_services')?></p>
+					<p>
+						<?php 
+							$legal_services = CFS()->get( 'legal_services' );
+							if(!empty($legal_services)) {
+								echo $legal_services; }; 
+							?>
+					</p>
 				</section>
 				<section>
 					<div class="title-banner school-banner flex-center">
@@ -143,7 +173,13 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
 					<div class="contact-process-content container">
 						<p> 
-							We are now taking appointments for the month of <span class="month"> <?php echo CFS()->get('now_booking_month', 46) ?> </span>
+							We are now taking appointments for the month of <span class="month"> 
+							<?php 
+								$now_booking_month = CFS()->get('now_booking_month', 46);
+								if( !empty($now_booking_month)){
+									echo $now_booking_month; };
+								?> 
+							</span>
 						</p>
 						<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
 					</div>

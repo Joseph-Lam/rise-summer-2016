@@ -4,6 +4,10 @@
 </div>
 <div class="donate-content container flex-center">
 	<p>
-		<?php echo CFS()->get('how_to_donate', 46) ?>
+		<?php 
+			$how_to_donate = CFS()->get('how_to_donate', 46);
+			if( !empty($how_to_donate) ){
+				echo $how_to_donate; }; 
+		?>
 	</p>
 </div>

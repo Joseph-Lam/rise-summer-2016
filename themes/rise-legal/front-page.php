@@ -31,7 +31,13 @@ get_header(); ?>
 							<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
 							<div class="contact-process-content">
 								<p class="booking"> 
-									We are now taking appointments for the month of <span class="month"> <?php echo CFS()->get('now_booking_month') ?> </span>
+									We are now taking appointments for the month of <span class="month"> 
+									<?php 
+									$now_booking_month = CFS()->get('now_booking_month');
+									if (!empty($now_booking_month)) {
+										echo $now_booking_month;
+									} ?> 
+									</span>
 								</p>
 								<div class="contact-process-btn">
 									<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
