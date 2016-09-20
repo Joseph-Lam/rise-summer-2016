@@ -5,6 +5,8 @@
 		$('.hamburger, .close-nav').click( function(e){
 			$('.main-navigation').toggleClass('open');
 		});
+
+
 	//Script to show/hide people groups
 		$('.about-nav-link').click(function(){
 			var contentToOpen = $(this).data('about-nav');
@@ -12,9 +14,9 @@
 			$('div').removeClass('show');
 			$(this).addClass('show').data('about-nav');
 
-			$('.group-list').hide();
+			$('.group-master-item').addClass('hidden');
 
-			$('.'+ contentToOpen).show();
+			$('.'+ contentToOpen).removeClass('hidden');
 		})
 
 	//Script to show/hide resources

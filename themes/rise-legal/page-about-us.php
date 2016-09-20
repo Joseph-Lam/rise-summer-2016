@@ -43,7 +43,7 @@ get_header(); ?>
 
 							<?php foreach ( $terms as $term ) :  ?>
 								
-								<div class="about-nav-link" data-about-nav="<?php echo $term->slug;?> "> 
+								<div class="about-nav-link <?php if($term->slug === 'our-staff') echo 'show' ?>" data-about-nav="<?php echo $term->slug;?> "> 
 									<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$term->slug.".svg"?>">
 									<h3><?php echo $term->name ?></h3>
 								</div>
@@ -62,10 +62,10 @@ get_header(); ?>
 				$groups = get_terms( $categories );
 				?>
 				<div class="group-content flex-center " >	
-					<?php foreach ( $groups as $group ) :  ?>
+					<?php foreach ( $groups as $index => $group ) : ?>
 
 						<!-- GROUP HEADING -->
-						<div class="<?php echo $group->slug; ?> container">
+						<div class="<?php echo $group->slug; ?> group-master-item container <?php if($group->slug !== 'our-staff') echo 'hidden' ?>">
 							<div class="group-title">
 								<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$group->slug."-dark.svg"?>" class="people-icon">
 								<h3><?php echo $group->name ?></h3>

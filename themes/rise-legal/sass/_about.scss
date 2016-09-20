@@ -65,7 +65,11 @@
 .show{
 	border-bottom: 10px solid $white;
 }
-
+.group-master-item.hidden{
+	@include desktop {
+		display: none;
+	}
+}
 //displays the lists of people as none
 .group-list {
 	@include desktop {
