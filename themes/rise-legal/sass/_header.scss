@@ -105,23 +105,23 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    width: 90%;
     .menu-menu-1-container{
-     flex-basis: 60%;
-     display: flex;
-     justify-content: flex-end;
+     flex-basis: 65%;
     }
     .legal-btn-wrap{
-      flex-basis: 35%;
+      flex-basis: 30%;
       display: flex;
       justify-content: flex-end;
     }
     .menu{
       display: flex;
       flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
     }
     .menu-item{
-      margin-right: 5%;
+      margin-right: 7%;
       a{
         color: $white;
         padding-bottom: .5rem;
