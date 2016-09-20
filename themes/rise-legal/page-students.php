@@ -37,6 +37,7 @@ get_header(); ?>
 						<?php echo CFS()->get( 'externship' ); ?>
 					</div>
 
+					<h2> Program Components </h2>
 
 					<ul class="container">
 						<li class="student-features">

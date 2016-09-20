@@ -29,5 +29,6 @@
 			$('.'+ rangeToOpen).show();
 
 		});
+	});
 
 })(jQuery);
