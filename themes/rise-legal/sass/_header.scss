@@ -94,30 +94,38 @@
     cursor: pointer;
   }
 }
-
+.legal-form{
+  margin: 0;
+}
 
 // Desktop Nav Styles
 .desktop-navigation{
   display: none;
   @include desktop {
     display: flex;
-    justify-content: space-between;
-    width: 75%;
-    // @include flexify(space-between, center);
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
     .menu-menu-1-container{
-    max-width: 70%;
-    
+     flex-basis: 65%;
     }
-    .menu {
-      margin: 0;
-      @include flexify(flex-start, center);
+    .legal-btn-wrap{
+      flex-basis: 30%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
     }
     .menu-item{
-      margin-right: 5%;
+      margin-right: 7%;
       a{
         color: $white;
         padding-bottom: .5rem;
-        // font-size: 1.8rem;
+        font-size: 1.8rem;
         &:hover{
           border-bottom: 3px solid $color_light_blue;
         }
@@ -126,15 +134,6 @@
         display: none;
       }
     }
-    .legal-btn-wrap{
-      width: 25%;
-      margin-left: 3%;
-      // z-index: -1;
-    }
-    .legal-form{
-      min-width: 80%;
-      font-size: 1.6rem;
-     }    
   }
 }
 .nav-active{
@@ -143,6 +142,12 @@
     border-bottom: 3px solid $color_light_blue;
   }
 }
+.legal-btn-wrap{
+
+}
+.legal-form{
+  font-size: 1.6rem;
+} 
 .hdr-pusher{
   height: 9rem;
 }

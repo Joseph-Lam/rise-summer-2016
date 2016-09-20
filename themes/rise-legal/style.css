@@ -375,6 +375,7 @@ input[type="submit"],
   padding: 1.5rem 3rem;
   color: #4A4A4A;
   line-height: 1;
+  margin: 3rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-transform: capitalize; }
   button:hover,
@@ -764,17 +765,33 @@ object {
       align-items: center;
   -ms-flex-flow: column;
       flex-flow: column;
-  padding-bottom: 3rem; }
+  margin-bottom: 5rem; }
 
 .contact-process-image {
   margin-left: 10%; }
 
 .contact-process-content {
-  text-align: center;
-  -ms-flex-flow: column;
-      flex-flow: column; }
-  .contact-process-content .btn {
-    margin-bottom: 3rem; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center; }
+
+.contact-process-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .contact-process-btn a {
+    margin-bottom: 1rem; }
+  @media (min-width: 60rem) {
+    .contact-process-btn {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
 
 .month {
   font-weight: bold; }
@@ -885,46 +902,57 @@ object {
   .main-navigation .close-nav {
     cursor: pointer; }
 
+.legal-form {
+  margin: 0; }
+
 .desktop-navigation {
   display: none; }
   @media (min-width: 60rem) {
     .desktop-navigation {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      width: 75%; }
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      width: 90%; }
       .desktop-navigation .menu-menu-1-container {
-        max-width: 70%; }
-      .desktop-navigation .menu {
-        margin: 0;
+        -ms-flex-preferred-size: 65%;
+            flex-basis: 65%; }
+      .desktop-navigation .legal-btn-wrap {
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
         display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+      .desktop-navigation .menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
         -ms-flex-pack: start;
             justify-content: flex-start;
-        -ms-flex-align: center;
-            align-items: center; }
+        width: 100%; }
       .desktop-navigation .menu-item {
-        margin-right: 5%; }
+        margin-right: 7%; }
         .desktop-navigation .menu-item a {
           color: white;
-          padding-bottom: .5rem; }
+          padding-bottom: .5rem;
+          font-size: 1.8rem; }
           .desktop-navigation .menu-item a:hover {
             border-bottom: 3px solid #EBF0F3; }
         .desktop-navigation .menu-item:nth-child(1) {
-          display: none; }
-      .desktop-navigation .legal-btn-wrap {
-        width: 25%;
-        margin-left: 3%; }
-      .desktop-navigation .legal-form {
-        min-width: 80%;
-        font-size: 1.6rem; } }
+          display: none; } }
 
 .nav-active {
   border-bottom: none; }
   @media (min-width: 60rem) {
     .nav-active {
       border-bottom: 3px solid #EBF0F3; } }
+
+.legal-form {
+  font-size: 1.6rem; }
 
 .hdr-pusher {
   height: 9rem; }
@@ -1529,12 +1557,32 @@ object {
       background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg); } }
 
 .donate-content {
+  margin-top: 5rem;
   -ms-flex-flow: column;
       flex-flow: column;
-  text-align: center;
-  padding: 3rem 0; }
-  .donate-content a {
+  text-align: center; }
+  @media (min-width: 60rem) {
+    .donate-content {
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .donate-content a {
+        margin-bottom: 5rem; } }
+
+.donate-content-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 5rem; }
+  .donate-content-btn a {
     margin-bottom: 0; }
+  @media (min-width: 60rem) {
+    .donate-content-btn {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      margin-bottom: 5rem; } }
 
 .resources-content {
   -ms-flex-flow: column;

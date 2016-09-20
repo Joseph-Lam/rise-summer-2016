@@ -29,16 +29,25 @@
 .contact-process{
 	@include flexify(center, center);
 	flex-flow: column;
-	padding-bottom: $base_spacing_large;
+	margin-bottom: $base_spacing_extra_large;
 }
 .contact-process-image{
 	margin-left: 10%;
 }
 .contact-process-content {
+	@include flexify (center, center);
+	flex-direction: column;
 	text-align: center;
-	flex-flow: column;
-	.btn {
-		margin-bottom: $base_spacing_large;
+
+}
+.contact-process-btn{
+	display: flex;
+	flex-direction: column;
+	a{
+		margin-bottom: $base_spacing;
+	}
+	@include desktop {
+		flex-direction: row;
 	}
 }
 .month{

@@ -29,12 +29,14 @@ get_header(); ?>
 							<h2 class="flex-center"> Contact Process</h2>
 						<!-- This function gets the contact process icons -->
 							<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
-							<div class="contact-process-content flex-center">
-								<p> 
+							<div class="contact-process-content">
+								<p class="booking"> 
 									We are now taking appointments for the month of <span class="month"> <?php echo CFS()->get('now_booking_month') ?> </span>
 								</p>
-								<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
-								<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Services' )->ID ); ?>">who can we help</a>
+								<div class="contact-process-btn">
+									<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
+									<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Services' )->ID ); ?>">who can we help</a>
+								</div>
 							</div>
 						</section>
 
@@ -42,7 +44,9 @@ get_header(); ?>
 
 							<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
 
-							<div class="donate-content flex-center">
+							<div class="donate-content-btn flex-center">
+								<a class="btn red-btn" href="https://www.canadahelps.org/en/charities/west-coast-leaf/">Donate</a> 
+
 								<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Why Donate?' )->ID ); ?>">why donate?</a>
 							</div>
 
