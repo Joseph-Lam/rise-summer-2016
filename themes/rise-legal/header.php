@@ -44,14 +44,14 @@
 		</header><!-- #masthead -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 	
-						<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-exit-white.svg'?>" class="close-nav">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-exit-white.svg'?>" class="close-nav">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-						<button class="legal-form">
-							<a href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">
-								legal contact form
-							</a>
-						</button>
+				<button class="legal-form">
+					<a href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">
+						legal contact form
+					</a>
+				</button>
 					
 			</nav><!-- #site-navigation -->
 

@@ -902,46 +902,58 @@ object {
   .main-navigation .close-nav {
     cursor: pointer; }
 
+.legal-form {
+  margin: 0; }
+
 .desktop-navigation {
   display: none; }
   @media (min-width: 60rem) {
     .desktop-navigation {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      width: 75%; }
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      width: 100%; }
       .desktop-navigation .menu-menu-1-container {
-        max-width: 70%; }
-      .desktop-navigation .menu {
-        margin: 0;
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-        -ms-flex-align: center;
-            align-items: center; }
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+      .desktop-navigation .legal-btn-wrap {
+        -ms-flex-preferred-size: 35%;
+            flex-basis: 35%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+      .desktop-navigation .menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row; }
       .desktop-navigation .menu-item {
         margin-right: 5%; }
         .desktop-navigation .menu-item a {
           color: white;
-          padding-bottom: .5rem; }
+          padding-bottom: .5rem;
+          font-size: 1.8rem; }
           .desktop-navigation .menu-item a:hover {
             border-bottom: 3px solid #EBF0F3; }
         .desktop-navigation .menu-item:nth-child(1) {
-          display: none; }
-      .desktop-navigation .legal-btn-wrap {
-        width: 25%;
-        margin-left: 3%; }
-      .desktop-navigation .legal-form {
-        min-width: 80%;
-        font-size: 1.6rem; } }
+          display: none; } }
 
 .nav-active {
   border-bottom: none; }
   @media (min-width: 60rem) {
     .nav-active {
       border-bottom: 3px solid #EBF0F3; } }
+
+.legal-form {
+  font-size: 1.6rem; }
 
 .hdr-pusher {
   height: 9rem; }
