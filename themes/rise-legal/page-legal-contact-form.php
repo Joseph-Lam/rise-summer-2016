@@ -15,26 +15,6 @@ get_header(); ?>
 				<header class="entry-header legal-form-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
-				
-				<div class="show">
-					<p>testing if this will disappear</p>
-				</div>
-
-
-				<section id="page-one-content" class ="container">
-					
-					<div class="legal-form-intro">
-						<?php echo CFS()->get( 'page_one_content' ); ?>	
-					</div>
-
-					<div class ="page-one-button-spacing">
-						<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Services' )->ID ); ?>">who can we help</a>
-
-					</div>
-
-					<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
-
-				</section>
 
 				<div class="container">
 					<?php the_content(); ?>
