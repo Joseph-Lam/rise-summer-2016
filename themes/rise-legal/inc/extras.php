@@ -41,6 +41,7 @@ function rise_legal_banner_image_styles() {
                             linear-gradient( to bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 1)),
                             url({$banner_image});
                         background-size: cover;
+                        backgound-position: 70%;
                     }";
             wp_add_inline_style( 'rise-legal-style', $custom_css );
 
