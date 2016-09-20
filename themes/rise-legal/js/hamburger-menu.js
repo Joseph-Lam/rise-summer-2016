@@ -34,16 +34,6 @@
 			$('.'+ rangeToOpen).show();
 
 		});
-
-	//Script to show/hide Page one content of Legal Contact Form
-		$('#gform_next_button_1_2').click(function() {
-			console.log('this button was clicked');
-			$('.show').addClass('disappear');
-			console.log('this content is hidden now!');
-			
-		})
-
-
 	});
 
 })(jQuery);

@@ -33,9 +33,9 @@
 		<h3>
 			Connect with us
 		</h3>	
-		<a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="https://www.facebook.com/Rise-Womens-Legal-Centre-1788604658043368/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
-		<a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>	
+		<a href="https://twitter.com/RiseWomensLegal"><i class="fa fa-twitter" aria-hidden="true"></i></a>	
 	</div>	
 
 </footer>

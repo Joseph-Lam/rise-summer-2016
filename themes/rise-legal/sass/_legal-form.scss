@@ -39,16 +39,14 @@
 		}
 	}
 	.percentbar_0 {
-		background-color: $color_light_grey;
-		span {
-			color: $color_brand_blue;
-		}
+		display:none;
 	}
 }
 
 .gform_page_footer {
 	@include flexify(center,center);
-	
+	margin-top: $base_spacing_large;
+	margin-bottom: $base_spacing_extra_large;	
 	input {
 		margin: 0 2rem;
 	}
@@ -147,6 +145,9 @@ body .gform_wrapper .gfield_error input  {
 	}
 }
 
+#ui-datepicker-div {
+	display:none;
+}
 
 //////////////////////////////
 //page 1
@@ -177,6 +178,9 @@ body .gform_wrapper .gfield_error input  {
 	flex-direction: column;
 }
 
+#field_1_44 {
+	text-align: center;
+}
 
 //page 2
 
@@ -228,7 +232,7 @@ body .gform_wrapper .gfield_error input  {
 }
 
 #field_1_7 {
-	margin-top: 3rem;
+	margin-top: $base_spacing_large;
 }
 
 //page 4
@@ -238,10 +242,22 @@ body .gform_wrapper .gfield_error input  {
 	}
 }
 
+#field_1_14 {
+	margin-top: $base_spacing_large;
+}
+
+#input_1_18 {
+	border: 1px solid black;
+}
+
 //page 5
 .clear-multi {
 	display: flex;
 	width: 162px;
+}
+
+#field_1_21 {
+	margin-bottom: $base_spacing_large;
 }
 
 #input_1_24 {
@@ -299,6 +315,9 @@ body .gform_wrapper .gfield_error input  {
 	}
 }
 
+#field_1_27 {
+	margin: 3rem 0;
+}
 
 //page 6
 .gsection_description {
@@ -328,6 +347,10 @@ body .gform_wrapper .gfield_error input  {
 	@include flexify(center,center);
 }
 
+#field_1_35 {
+	margin-bottom: $base_spacing_large;
+}
+
 //page 7
 .gform_validation_container {
 	display: none;
@@ -335,6 +358,7 @@ body .gform_wrapper .gfield_error input  {
 
 .ui-datepicker-trigger {
 	cursor: pointer;
+	margin: 1rem;
 }
 
 //thank you page
