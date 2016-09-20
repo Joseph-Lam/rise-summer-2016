@@ -12,14 +12,17 @@
 	background-color: $color_brand_blue;
 	color: white;
 	padding: 8%;
+	text-align: center;
 	@include desktop {
 		font-size: $h1_size;
-		padding: 7%''
+		padding: 7%;
 	}
 }	
 
 .donate-criteria {
 	padding: $base_spacing_extra_large 0;
+	text-align: center;
+
 }
 
 .donate-who-title {
@@ -36,6 +39,7 @@
 
 .donate-who-content {
 	padding: $base_spacing_extra_large 0;
+	text-align: center;
 }
 
 .donate-how-title {
@@ -80,6 +84,7 @@
 	background-position: center;
 	color: white;
 	width: 100%;
+	background-size: cover;
 	@include desktop {
 		background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg);
 	}
@@ -99,6 +104,8 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	// text-align: center;
+
 	margin-bottom: $base_spacing_extra_large;
 	a{
 		margin-bottom: 0;
@@ -107,4 +114,11 @@
 		flex-direction: row;
 		margin-bottom: $base_spacing_extra_large;
 	}
+}
+
+.donate-page-btn {
+	display: block;
+	text-align: center;
+	margin-top: $base_spacing_large;
+	margin-bottom: 9rem;
 }

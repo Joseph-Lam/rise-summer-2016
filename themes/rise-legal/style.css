@@ -1455,13 +1455,14 @@ object {
 .contact-meta {
   margin: 3rem 0; }
 
-.responsive-map {
-  margin-bottom: 4rem; }
-  .responsive-map iframe {
-    width: 100%; }
-    @media (min-width: 60rem) {
-      .responsive-map iframe {
-        width: 80%; } }
+.contact-content iframe {
+  margin-bottom: 4rem;
+  width: 100%;
+  pointer-events: none; }
+  @media (min-width: 60rem) {
+    .contact-content iframe {
+      pointer-events: visible;
+      width: 80%; } }
 
 .contact-notes {
   display: -ms-flexbox;
@@ -1494,14 +1495,16 @@ object {
 .donate-legal-stat {
   background-color: #155E89;
   color: white;
-  padding: 8%; }
+  padding: 8%;
+  text-align: center; }
   @media (min-width: 60rem) {
     .donate-legal-stat {
       font-size: 2.8rem;
-      padding: 7% ""; } }
+      padding: 7%; } }
 
 .donate-criteria {
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  text-align: center; }
 
 .donate-who-title {
   background-image: url("../../assets/images/mobile/donate-whodohelp-mobile.jpg");
@@ -1514,7 +1517,8 @@ object {
     color: white; }
 
 .donate-who-content {
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  text-align: center; }
 
 .donate-how-title {
   background-image: url("../../assets/images/mobile/donate-howwehelp-mobile.jpg");
@@ -1551,7 +1555,8 @@ object {
   background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
   background-position: center;
   color: white;
-  width: 100%; }
+  width: 100%;
+  background-size: cover; }
   @media (min-width: 60rem) {
     .donate-banner {
       background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg); } }
@@ -1583,6 +1588,12 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
       margin-bottom: 5rem; } }
+
+.donate-page-btn {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 9rem; }
 
 .resources-content {
   -ms-flex-flow: column;
