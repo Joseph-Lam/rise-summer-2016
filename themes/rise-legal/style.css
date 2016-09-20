@@ -375,6 +375,7 @@ input[type="submit"],
   padding: 1.5rem 3rem;
   color: #4A4A4A;
   line-height: 1;
+  margin: 3rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-transform: capitalize; }
   button:hover,
@@ -764,17 +765,33 @@ object {
       align-items: center;
   -ms-flex-flow: column;
       flex-flow: column;
-  padding-bottom: 3rem; }
+  margin-bottom: 5rem; }
 
 .contact-process-image {
   margin-left: 10%; }
 
 .contact-process-content {
-  text-align: center;
-  -ms-flex-flow: column;
-      flex-flow: column; }
-  .contact-process-content .btn {
-    margin-bottom: 3rem; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center; }
+
+.contact-process-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .contact-process-btn a {
+    margin-bottom: 1rem; }
+  @media (min-width: 60rem) {
+    .contact-process-btn {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
 
 .month {
   font-weight: bold; }
@@ -1528,12 +1545,32 @@ object {
       background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg); } }
 
 .donate-content {
+  margin-top: 5rem;
   -ms-flex-flow: column;
       flex-flow: column;
-  text-align: center;
-  padding: 3rem 0; }
-  .donate-content a {
+  text-align: center; }
+  @media (min-width: 60rem) {
+    .donate-content {
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .donate-content a {
+        margin-bottom: 5rem; } }
+
+.donate-content-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 5rem; }
+  .donate-content-btn a {
     margin-bottom: 0; }
+  @media (min-width: 60rem) {
+    .donate-content-btn {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      margin-bottom: 5rem; } }
 
 .resources-content {
   -ms-flex-flow: column;

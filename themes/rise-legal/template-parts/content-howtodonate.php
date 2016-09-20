@@ -6,7 +6,4 @@
 	<p>
 		<?php echo CFS()->get('how_to_donate', 46) ?>
 	</p>
-	
-	<a class="btn red-btn" href="https://www.canadahelps.org/en/charities/west-coast-leaf/">Donate</a> 
-
 </div>

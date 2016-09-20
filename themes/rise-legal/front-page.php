@@ -44,7 +44,7 @@ get_header(); ?>
 
 							<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
 
-							<div class="donate-content flex-center">
+							<div class="donate-content-btn flex-center">
 								<a class="btn red-btn" href="https://www.canadahelps.org/en/charities/west-coast-leaf/">Donate</a> 
 
 								<a class="btn" href="<?php echo get_page_link( get_page_by_title( 'Why Donate?' )->ID ); ?>">why donate?</a>

@@ -84,7 +84,11 @@ get_header(); ?>
 				</section>
 				
 				<section class="donate">
-					<?php get_template_part( 'template-parts/content', 'howtodonate' ); ?>
+					<?php get_template_part( 'template-parts/content', 'howtodonate' ); 
+					?>
+					<div class="donate-content-btn">
+						<a class="btn red-btn" href="https://www.canadahelps.org/en/charities/west-coast-leaf/">Donate</a> 
+					</div>
 				</section>
 
 
