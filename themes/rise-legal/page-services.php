@@ -141,7 +141,7 @@ get_header(); ?>
 					<h2 class="flex-center"> Contact Process</h2>
 				<!-- This function gets the contact process icons -->
 					<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
-					<div class="contact-process-content container flex-center">
+					<div class="contact-process-content container">
 						<p> 
 							We are now taking appointments for the month of <span class="month"> <?php echo CFS()->get('now_booking_month', 46) ?> </span>
 						</p>
