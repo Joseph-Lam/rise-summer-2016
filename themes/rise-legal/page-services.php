@@ -25,12 +25,17 @@ get_header(); ?>
 				
 				<section class="who-we-help">
 					<div class="title-banner services-banner flex-center">
-						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-familyhelp.svg"?>" class="rise-about-logo">	
+						<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-familyhelp.svg"?>">	
 						<h2>Who We Help</h2>
 					</div>
 					<!-- Services Modal Buttons -->
 					<div class="services-info">
-						<p class="container"><?php echo CFS()->get('who_we_help')?></p>
+						<p class="container">
+							<?php 
+							$who_we_help = CFS()->get('who_we_help');
+							if( !empty($who_we_help));
+								echo $who_we_help; ?>	 
+						</p>
 						<ul class="services">
 							<?php
 								$args = array(
@@ -45,11 +50,11 @@ get_header(); ?>
 								<li class="indvid-services">
 									<div class="indvid-services-btn">
 										<a href="#<?php the_title();?>" class="services-modal-btn">
-											<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">		
+											<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">
 										</a>
 										<p><?php the_title();?></p>
 									</div>
-									<div id="<?php the_title();?>" class="modalDialog">
+									<div id="<?php the_title();?>" class="modalDialog services-modal">
 										<div>
 											<a href="#close" title="Close" class="close">
 											</a>
@@ -136,9 +141,9 @@ get_header(); ?>
 					<h2 class="flex-center"> Contact Process</h2>
 				<!-- This function gets the contact process icons -->
 					<?php get_template_part( 'template-parts/content', 'contact-process' ); ?>
-					<div class="contact-process flex-center">
+					<div class="contact-process-content container flex-center">
 						<p> 
-							We are now taking appointments for the month of <?php echo CFS()->get('now_booking_month', 46) ?> 
+							We are now taking appointments for the month of <span class="month"> <?php echo CFS()->get('now_booking_month', 46) ?> </span>
 						</p>
 						<a class="red-btn btn " href="<?php echo get_page_link( get_page_by_title( 'Legal Contact Form' )->ID ); ?>">legal contact form</a>
 					</div>

@@ -29,12 +29,13 @@
 .contact-process{
 	@include flexify(center, center);
 	flex-flow: column;
-	padding-bottom: $base_spacing_extra_large;
+	padding-bottom: $base_spacing_large;
 }
 .contact-process-image{
 	margin-left: 10%;
 }
 .contact-process-content {
+	text-align: center;
 	flex-flow: column;
 	.btn {
 		margin-bottom: $base_spacing_large;

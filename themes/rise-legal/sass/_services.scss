@@ -52,11 +52,22 @@
 	}
 
 }
+.services-modal {
+	div{
+		// padding: $base_spacing_large;
+		@include flexify(center, center);
+		flex-direction: column;
+	}
+	img {
+		height: 5rem;
+	}
+}
 
 //What we do section
 .what-we-do {
 	flex-flow: column;
 	text-align: center;
+	margin-bottom: $base_spacing_extra_large; 
 	h2{
 		margin: 0;
 	}
