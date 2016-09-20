@@ -28,7 +28,11 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-helphand.svg"?>">	
 				
 				<h3>External Help</h3>
-				<?php echo CFS()->get('external_help')?>
+				<?php 
+				$external_help = CFS()->get('external_help');
+				if (!empty($external_help)) : ?>
+					<?php echo $external_help?>
+				<?php endif; ?>
 
 			</section>
 
@@ -38,8 +42,7 @@ get_header(); ?>
 					'a-b' => array('a', 'b'),
 					'c-d' => array('c', 'd'),
 					'e-j' => array('e', 'f', 'g', 'h', 'i', 'j'),
-					'k-m' => array('k', 'l', 'm'),
-					'n-p' => array('n', 'o', 'p'),
+					'k-p' => array('k', 'l', 'm', 'n', 'o', 'p'),
 					'q-t' => array('q', 'r', 's', 't'),
 					'u-z' => array('u', 'v', 'w', 'x', 'y', 'y')
 					);
@@ -53,31 +56,28 @@ get_header(); ?>
 							<section class="resources container">
 								<?php foreach($alphas as $name => $alpha) {
 									?>
-				
-										<ul class="resource-list <?php echo $name; ?>">
-											<?php
-											$args = array(
-												'post_type' => 'resources',
-												'numberposts' => -1,
-												'order' => 'ASC',
-												'tax_query' => array(
-													array(
-														'taxonomy' => 'alpha',
-														'field' => 'slug',
-														'terms' => $alpha
-														)
+									<ul class="resource-list <?php echo $name; ?>">
+										<?php
+										$args = array(
+											'post_type' => 'resources',
+											'numberposts' => -1,
+											'order' => 'ASC',
+											'tax_query' => array(
+												array(
+													'taxonomy' => 'alpha',
+													'field' => 'slug',
+													'terms' => $alpha
 													)
-												);
-											$resources_page_ab_posts = get_posts($args);
-											?>
-											<?php foreach($resources_page_ab_posts as $post) : setup_postdata( $post ); ?>
+												)
+											);
+										$resources_page_ab_posts = get_posts($args);
+										?>
+										<?php foreach($resources_page_ab_posts as $post) : setup_postdata( $post ); ?>
 											<li class="resource-post">
 												<?php the_content();?>
 											</li>
 										<?php endforeach; wp_reset_postdata(); ?>
 									</ul>
-
-					
 								<?php }?>
 							</section>
 

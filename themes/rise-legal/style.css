@@ -1496,11 +1496,16 @@ object {
   padding-bottom: 5rem; }
   .resources-content img {
     margin-top: 5rem; }
+  .resources-content h3 {
+    margin-bottom: 0; }
+  .resources-content p {
+    margin-top: 0; }
 
 .resource-banner {
   background-color: #155E89;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+      flex-flow: row wrap;
+  padding: 3rem 0; }
   .resource-banner button {
     display: -ms-flexbox;
     display: flex;
@@ -1508,12 +1513,11 @@ object {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    margin: 3rem;
+    margin: 1rem;
     border: 3px solid white;
     border-radius: 0;
     font-weight: bold;
-    letter-spacing: 3px;
-    min-width: 2rem; }
+    letter-spacing: 3px; }
     .resource-banner button:hover {
       color: #155E89;
       background-color: #EBF0F3; }
