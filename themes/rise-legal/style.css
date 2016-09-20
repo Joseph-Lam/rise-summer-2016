@@ -1675,7 +1675,9 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem; }
   .gform_page_footer input {
     margin: 0 2rem; }
   .gform_page_footer .gform_next_button {
@@ -1779,6 +1781,9 @@ body .gform_wrapper .gfield_error input {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+
+#field_1_44 {
+  text-align: center; }
 
 .gfield_label {
   font-size: 2.2rem; }

@@ -45,7 +45,8 @@
 
 .gform_page_footer {
 	@include flexify(center,center);
-	
+	margin-top: $base_spacing_large;
+	margin-bottom: $base_spacing_extra_large;	
 	input {
 		margin: 0 2rem;
 	}
@@ -177,6 +178,9 @@ body .gform_wrapper .gfield_error input  {
 	flex-direction: column;
 }
 
+#field_1_44 {
+	text-align: center;
+}
 
 //page 2
 
