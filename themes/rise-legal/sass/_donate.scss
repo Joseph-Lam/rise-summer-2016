@@ -80,6 +80,7 @@
 	background-position: center;
 	color: white;
 	width: 100%;
+	background-size: cover;
 	@include desktop {
 		background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg);
 	}
@@ -99,6 +100,8 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	// text-align: center;
+
 	margin-bottom: $base_spacing_extra_large;
 	a{
 		margin-bottom: 0;
@@ -107,4 +110,11 @@
 		flex-direction: row;
 		margin-bottom: $base_spacing_extra_large;
 	}
+}
+
+.donate-page-btn {
+	display: block;
+	text-align: center;
+	margin-top: $base_spacing_large;
+	margin-bottom: 9rem;
 }

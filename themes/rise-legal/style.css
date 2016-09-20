@@ -1551,7 +1551,8 @@ object {
   background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
   background-position: center;
   color: white;
-  width: 100%; }
+  width: 100%;
+  background-size: cover; }
   @media (min-width: 60rem) {
     .donate-banner {
       background-image: url(../../assets/images/desktop/donate-howtodonate-desktop.jpg); } }
@@ -1583,6 +1584,12 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
       margin-bottom: 5rem; } }
+
+.donate-page-btn {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 9rem; }
 
 .resources-content {
   -ms-flex-flow: column;
