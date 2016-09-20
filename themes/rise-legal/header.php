@@ -41,6 +41,7 @@
 			</nav><!-- #site-navigation -->
 			
 		</header><!-- #masthead -->
+		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<img src="<?php echo get_template_directory_uri() . '/assets/icons/icon-exit-white.svg'?>" class="close-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
