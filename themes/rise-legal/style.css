@@ -1938,11 +1938,15 @@ body .gform_wrapper .gfield_error input {
   -ms-flex-align: center;
       align-items: center; }
 
+#field_1_35 {
+  margin-bottom: 3rem; }
+
 .gform_validation_container {
   display: none; }
 
 .ui-datepicker-trigger {
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 1rem; }
 
 #gform_submit_button_1 {
   background-color: #A44F52;

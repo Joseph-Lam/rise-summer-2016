@@ -347,6 +347,10 @@ body .gform_wrapper .gfield_error input  {
 	@include flexify(center,center);
 }
 
+#field_1_35 {
+	margin-bottom: $base_spacing_large;
+}
+
 //page 7
 .gform_validation_container {
 	display: none;
@@ -354,6 +358,7 @@ body .gform_wrapper .gfield_error input  {
 
 .ui-datepicker-trigger {
 	cursor: pointer;
+	margin: 1rem;
 }
 
 //thank you page
