@@ -87,7 +87,7 @@ function rise_legal_scripts() {
 
 	wp_enqueue_script('jquery', get_template_directory_uri() . '/node_modules/jquery/jquery.min.js', array('jquery'), false, true);
 	
-	wp_enqueue_script('hamburger-menu', get_template_directory_uri() . '/build/js/hamburger-menu.min.js', array('jquery'), false, true);
+	wp_enqueue_script('main.js', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), false, true);
 	
 	wp_enqueue_script( 'rise-legal-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	

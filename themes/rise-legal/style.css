@@ -917,9 +917,6 @@ object {
       -ms-flex-pack: end;
           justify-content: flex-end;
       width: 90%; }
-      .desktop-navigation .menu-menu-1-container {
-        -ms-flex-preferred-size: 65%;
-            flex-basis: 65%; }
       .desktop-navigation .legal-btn-wrap {
         -ms-flex-preferred-size: 30%;
             flex-basis: 30%;
