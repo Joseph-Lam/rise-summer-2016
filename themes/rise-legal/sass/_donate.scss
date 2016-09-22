@@ -67,18 +67,24 @@
 }
 
 .donate-justice {
-	display: flex;
-	flex-direction: row;
-	margin: $base_spacing_large;
-	img {
+	text-align: center;
+	margin: $base_spacing_large 0;
+	
+	@include desktop {
+		display: flex;
+		flex-direction: row;
+		margin: $base_spacing_large;
+		img {
 		margin-right: $base_spacing_large;
-
+		}	
 	}
 }
 .donate-justice-meta {
-	text-align: left;
-
+	@include desktop {
+		text-align: left;	
+	}
 }
+
 .donate-banner {
 	background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
 	background-position: center;
@@ -104,8 +110,6 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	// text-align: center;
-
 	margin-bottom: $base_spacing_extra_large;
 	a{
 		margin-bottom: 0;

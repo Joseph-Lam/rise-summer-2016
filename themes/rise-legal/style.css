@@ -1540,16 +1540,21 @@ object {
   padding-bottom: 5rem; }
 
 .donate-justice {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  margin: 3rem; }
-  .donate-justice img {
-    margin-right: 3rem; }
+  text-align: center;
+  margin: 3rem 0; }
+  @media (min-width: 60rem) {
+    .donate-justice {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      margin: 3rem; }
+      .donate-justice img {
+        margin-right: 3rem; } }
 
-.donate-justice-meta {
-  text-align: left; }
+@media (min-width: 60rem) {
+  .donate-justice-meta {
+    text-align: left; } }
 
 .donate-banner {
   background-image: url(../../assets/images/mobile/donate-howtodonate-mobile.jpg);
