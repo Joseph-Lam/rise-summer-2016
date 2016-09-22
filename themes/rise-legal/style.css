@@ -1709,7 +1709,7 @@ object {
     border: none; }
 
 .legal-form-header {
-  margin-left: 13%; }
+  text-align: center; }
 
 .legal-form-intro {
   text-align: center; }
