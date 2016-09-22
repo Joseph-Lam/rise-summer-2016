@@ -246,8 +246,16 @@ body .gform_wrapper .gfield_error input  {
 	margin-top: $base_spacing_large;
 }
 
+#field_1_18 {
+	display: flex;
+	flex-flow: wrap;
+	label {
+		width: 3%;	
+	}
+}
+
 #input_1_18 {
-	border: 1px solid black;
+	border: 1px solid black;	
 }
 
 //page 5
@@ -257,7 +265,11 @@ body .gform_wrapper .gfield_error input  {
 }
 
 #field_1_21 {
+	display: flex;
 	margin-bottom: $base_spacing_large;
+	label {
+		width: 7%;
+	}
 }
 
 #input_1_24 {

@@ -1911,6 +1911,14 @@ body .gform_wrapper .gfield_error input {
 #field_1_14 {
   margin-top: 3rem; }
 
+#field_1_18 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
+  #field_1_18 label {
+    width: 3%; }
+
 #input_1_18 {
   border: 1px solid black; }
 
@@ -1920,7 +1928,11 @@ body .gform_wrapper .gfield_error input {
   width: 162px; }
 
 #field_1_21 {
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 3rem; }
+  #field_1_21 label {
+    width: 7%; }
 
 #input_1_24 {
   width: 40%;
