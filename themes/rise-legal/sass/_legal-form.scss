@@ -235,6 +235,37 @@ body .gform_wrapper .gfield_error input  {
 	margin-top: $base_spacing_large;
 }
 
+//page 3
+#field_1_46 {
+	display: flex;
+	flex-flow: wrap;
+}
+
+#input_1_46 {
+	border: 1px solid black;
+	margin-bottom: $base_spacing_large;
+}
+
+#input_1_47 {
+	margin-bottom: $base_spacing;
+}
+
+#field_1_47 {
+	.gfield_description {
+		margin: $base_spacing_large 0;
+	}
+}
+
+#field_1_48 {
+	display: flex;
+	flex-flow: wrap;
+}
+
+#input_1_48 {
+	border: 1px solid black;
+	margin-bottom: $base_spacing_large;
+}
+
 //page 4
 .ginput_container_text {
 	input {
@@ -255,7 +286,7 @@ body .gform_wrapper .gfield_error input  {
 }
 
 #input_1_18 {
-	border: 1px solid black;	
+	border: 1px solid black; 	
 }
 
 //page 5
